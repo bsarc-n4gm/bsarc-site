@@ -2,6 +2,10 @@
 # BSARC HOMEPAGE DATA SHEET - EDIT THIS FILE TO UPDATE THE SITE
 # ====================================================================
 
+[banner]
+image = "/images/club_banner_summer.webp"
+alt = "Summer Banner"
+
 [welcome]
 heading = "Welcome to N4GM"
 subheading = "Brunswick Shores Amateur Radio Club"
