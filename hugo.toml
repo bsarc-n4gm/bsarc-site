@@ -1,4 +1,11 @@
-baseURL = 'http://192.168.68.109/'
+#baseURL = 'http://192.168.68.109/'
+############################
+#Added for git update
+baseURL = 'https://ka4evr.github.io/bsarc-site/'
+canonifyURLs = true
+relativeURLs = false
+############################
+
 languageCode = 'en-us'
 title = "Brunswick Shores Amateur Radio Club"
 theme = 'ananke'
