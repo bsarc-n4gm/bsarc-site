@@ -2,9 +2,15 @@
 # BSARC HOMEPAGE DATA SHEET - EDIT THIS FILE TO UPDATE THE SITE
 # ====================================================================
 
+[special_notice]
+active = true      # Set to false to instantly hide the alert box from the site
+color = "danger"   # Options: "danger" (red for weather/canceled meetings), "warning" (yellow), "info" (blue)
+heading = "⚠️ Skywarn Activation Alert"
+message = "A tropical storm warning has been issued for Brunswick County. The club net is on standby status on the 147.315 repeater. Listen out for active emergency traffic updates."
+
 [banner]
 image = "/images/club_banner_summer.webp"
-alt = "Summer Banner"
+alt = "Brunswick Shores ARC Summer Field Operations Header Layout"
 
 [welcome]
 heading = "Welcome to N4GM"

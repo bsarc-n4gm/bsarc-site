@@ -21,14 +21,29 @@
     </div>
 </div>
 
-<div class="full-bleed-banner" style="margin-bottom: 30px; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden;">
-    <img src="/images/club_banner_field_day.webp" alt="Summer Banner" style="width: 100%; height: auto; display: block;">
+{{ $homeData := site.Data.homepage }}
+<div class="header-banner-box">
+    <img src="{{ $homeData.banner.image | relURL }}" 
+         alt="{{ $homeData.banner.alt }}" 
+         style="width: 100%; height: auto; display: block; max-height: 280px; object-fit: cover;">
 </div>
 
 <table style="width: 100%; max-width: 1200px; margin: 0 auto; border-collapse: collapse; border: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
   <tr style="vertical-align: top; border: none;">
     
     <td style="width: 70%; padding-right: 40px; border: none; background: transparent; box-sizing: border-box;">
+        
+        {{ if $homeData.special_notice.active }}
+            {{ $bg := "#e3f2fd" }}{{ $border := "#bbdefb" }}{{ $text := "#0d47a1" }} {{ if eq $homeData.special_notice.color "danger" }}
+                {{ $bg = "#fde8e8" }}{{ $border = "#f8b4b4" }}{{ $text = "#9b1c1c" }} {{ else if eq $homeData.special_notice.color "warning" }}
+                {{ $bg = "#fdf6b2" }}{{ $border = "#fce8b2" }}{{ $text = "#723b13" }} {{ end }}
+
+            <div style="background-color: {{ $bg }}; border: 2px solid {{ $border }}; border-radius: 6px; padding: 15px; margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                <h3 style="margin: 0 0 6px 0; font-size: 16px; font-weight: bold; color: {{ $text }};">{{ $homeData.special_notice.heading }}</h3>
+                <p style="margin: 0; font-size: 14px; color: {{ $text }}; line-height: 1.5;">{{ $homeData.special_notice.message }}</p>
+            </div>
+        {{ end }}
+
         <div style="text-align: center; margin-bottom: 20px;">
             <img src="/images/club_logo.webp" alt="BSARC Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
         </div>
@@ -112,6 +127,7 @@
                 <strong>Questions?</strong> Email our <a href="mailto:treasurer@n4gm.org" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Treasurer</a>.
             </p>
         </div>
+        
         <div style="margin-bottom: 35px;">
             <h3 style="font-size: 14px; font-weight: bold; margin: 0 0 10px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; color: #111111;">QRZ Callsign Lookup</h3>
             <form action="https://www.qrz.com/db/" method="get" target="_blank" style="display: flex; gap: 8px;">
@@ -175,7 +191,7 @@
             </p>
             <a href="/fcc-renewal/"
             style="display: inline-block; width: 100%; text-align: center; box-sizing: border-box; padding: 8px 12px; font-size: 13px; background-color: #111111; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; transition: background-color 0.15s ease;">
-                � Launch FCC Renewal Information
+                📡 Launch FCC Renewal Information
             </a>
         </div>
 
