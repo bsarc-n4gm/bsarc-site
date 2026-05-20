@@ -1,9 +1,4 @@
-```python
-# Let's generate a highly polished README.md file in the workspace context.
-# Since we need to follow adaptive length and depth rules, let's craft a comprehensive markdown document 
-# that outlines every file structure, command, logic loop rules, and deployment procedures for the club.
-
-readme_content = """# 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
+📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
 Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** paired with the customized **Ananke Theme** to compile a ultra-fast, modern, database-free web application hosted entirely via **GitHub Pages**.
 
