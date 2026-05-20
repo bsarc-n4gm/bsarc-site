@@ -92,8 +92,8 @@ zoom_url = ""
 [[event]]
 date = "2026-06-10"
 display_date = "June 10"
-name = "Monthly Board Meeting"
-location = "Zoom Video Conference"
+name = "Monthly Club Meeting - Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
+location = "Zoom Video Conference (6:00 PM)"
 zoom_url = "https://us02web.zoom.us/j/85277169324?pwd=WmdzYUxmcDF6eVpqTDVFRE5HZ1hJQT09"
 
 [[event]]
@@ -116,6 +116,13 @@ display_date = "July 4"
 name = "4th of July Parade"
 location = "Local Parade Route (9:00 AM)"
 zoom_url = ""
+
+[[event]]
+date = "2026-07-08"
+display_date = "Jul 8"
+name = "Monthly Club Meeting - BEMC HQ, 795 Ocean Hwy, Supply, NC 28462"
+location = "Zoom Video Conference (6:00 PM)"
+zoom_url = "https://us02web.zoom.us/j/85277169324?pwd=WmdzYUxmcDF6eVpqTDVFRE5HZ1hJQT09"
 
 [[event]]
 date = "2026-10-03"
