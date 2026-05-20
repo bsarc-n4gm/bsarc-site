@@ -1,5 +1,19 @@
 # ====================================================================
-# OFFICIAL 2026 CLUB CALENDAR - UPDATED 2/25/2026
+# OFFICIAL BSARC CLUB CALENDAR DATA SHEET
+# ====================================================================
+# INSTRUCTIONS FOR EDITORS AND CLUB OFFICERS:
+# 
+# 💡 General Formatting Rules:
+#    - Text values MUST be wrapped in double quotation marks: "text"
+#    - The "date" field MUST match standard system syntax format: "YYYY-MM-DD"
+#      (e.g., "2026-05-13"). This allows the website to automatically archive
+#      past items and calculate the rolling 90-day homepage filter!
+#    - The "display_date" field is what text actually shows on the screen 
+#      to users (perfect for handling multi-day events like hamfests).
+# 
+# 📝 How to remove an entry:
+#    - Simply delete the complete block starting from [[event]] down to 
+#      the location line.
 # ====================================================================
 last_updated = "February 25, 2026"
 
