@@ -1,0 +1,139 @@
+# ====================================================================
+# BSARC MULTI-SELLER MARKETPLACE DATA SHEET
+# ====================================================================
+
+# --- EQUIPMENT WANTED ---
+# Drop any items members are actively looking to buy right here
+
+[[wanted]]
+item = "HF Mobile Antenna (Screwdriver Style)"
+details = "Looking for a working Tarheel, High Sierra, or Little Tarheel II for a mobile installation. Capable of 80m-10m preferred."
+buyer_name = "John Doe"
+buyer_call = "W4XYZ"
+buyer_email = "w4xyz@gmail.com"
+
+[[wanted]]
+item = "Heal Set / Boom Mic Headset"
+details = "Looking for a clean Heil Pro Set Elite or Pro 7 with an Icom 8-pin adapter element."
+buyer_name = "Bob Smith"
+buyer_call = "N4ABC"
+buyer_email = "n4abc@gmail.com"
+
+
+# --- EQUIPMENT FOR SALE ---
+# Your existing listings stay right below, perfectly separated
+
+[[items]]
+name = "Legacy 13.8V 20-Amp Linear Power Supply"
+price = ""
+free = true          # <-- Add this flag for items given away
+seller_name = "Mark"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Heavy transformer style supply. Works perfectly."
+specs = [
+  "Regulated 13.8 VDC output up to 20 Amps surge",
+  "Features analog voltage and current monitoring meters on the front panel",
+  "Great starter asset for powering an HF rig or VHF base station in a new ham's shack"
+]
+
+[[items]]
+name = "Elecraft K3S-F, P3-F and SP3 Station"
+price = "$3000"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "QRZ info valid. Original box included for most items."
+specs = [
+  "Main receiver filters: 13, 2.8, 2.1, 1.8, 400 (plus spare 6k filter)",
+  "Sub receiver filters: 13, 2.8, 2.1, 1.8, 400 (plus spare 6k filter)",
+  "ATU, 100 Watts, General Coverage board installed on main and sub",
+  "TCXO Module, K144XV 2 Meter module installed",
+  "K3EXREF Frequency Lock Option",
+  "P3 has TX with 2k sensor and SVGA module for an external display monitor",
+  "Includes utility program to unlock (MARS MOD)",
+  "Excellent cosmetic and electronic condition"
+]
+
+[[items]]
+name = "Elecraft KX3-F, PX3-F QRP Station"
+price = "$1300"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Contact seller for photos or additional details."
+specs = [
+  "Includes 2-meter module, ATU, Filters, internal clock, and battery charger (every factory option)",
+  "MARS MOD unlocked. Both units have side rails and protective covers",
+  "KX3 upgraded with aftermarket heat sink and weighted tuning knobs",
+  "Includes Elecraft KXPD2 CW precision paddle, hand mic, and necessary connection cables",
+  "Includes Elecraft AX1 multi-band antenna with 40-meter extension coil"
+]
+
+[[items]]
+name = "Elecraft KPA 500 Amplifier & KAT500 Antenna Tuner"
+price = "$2250"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "All equipment in excellent condition cosmetically and electronically."
+specs = [
+  "Features integrated remote monitor module tracking SWR, Power, Temperature, Current, and Voltage",
+  "Clean output line paths"
+]
+
+[[items]]
+name = "Hardrock 50 QRP Amplifier with Built-in ATU"
+price = "$350"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Will bundle with the Elecraft KX3 setup."
+specs = [
+  "Works perfectly paired with low-power QRP transceivers"
+]
+
+[[items]]
+name = "Icom IC-706 MKII G Mobile HF/VHF/UHF Transceiver"
+price = "$500"
+sold = true
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Includes hand mic and separation cable."
+specs = [
+  "Equipped with narrow filter modification",
+  "Includes OPC-581 separation cable, head unit mobile mount bracket, and fused power cable",
+  "MARS MOD unlocked"
+]
+
+[[items]]
+name = "Icom IC-7000 Base/Mobile Transceiver"
+price = "$600"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Excellent condition."
+specs = [
+  "Includes SKT-7000 separation attachment installation kit",
+  "Includes factory hand microphone",
+  "MARS MOD unlocked"
+]
+
+[[items]]
+name = "FlexRadio Systems Flex-5000A SDR Transceiver with ATU"
+price = "$600"
+sold = true
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Requires FireWire interface."
+specs = [
+  "Equipped with internal Antenna Tuner Unit (ATU)",
+  "Includes high-speed FireWire interface data cable and heavy-duty DC power cable"
+]
+
+[[items]]
+name = "FlexRadio Systems Flex-6500 Signature Series SDR w/ ATU"
+price = "$1300"
+seller_name = "Erin Douna"
+seller_email = "erin.douna@gmail.com"
+seller_note = "Smart SDR v3.10.10"
+specs = [
+  "Equipped with integrated internal automatic antenna tuner unit",
+  "Features SmartSDR software environment compatibility v3.10.10",
+  "MARS MOD unlocked"
+]
