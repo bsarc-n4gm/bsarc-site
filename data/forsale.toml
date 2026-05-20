@@ -179,3 +179,42 @@ specs = [
   "Features SmartSDR software environment compatibility v3.10.10",
   "MARS MOD unlocked"
 ]
+
+[[items]]
+name = "Yaesu FT-891 HF transceiver"
+price = "$575"
+sold = false
+free = false
+seller_name = "Mike Neveaux"
+seller_call = "K4OSG"
+seller_email = "astroplt@me.com"
+seller_note = "Transceiver is virtually new"
+specs = [
+  "Transceiver is virtually new with only 2 hrs of air time new $600-$800"
+]
+
+[[items]]
+name = "Powerwerx PS 30 AMP"
+price = "$85"
+sold = false
+free = false
+seller_name = "Mike Neveaux"
+seller_call = "K4OSG"
+seller_email = "astroplt@me.com"
+seller_note = "Transceiver is virtually new"
+specs = [
+  "New $169"
+]
+
+[[items]]
+name = "ICOM 7300"
+price = ""
+sold = false
+free = false
+seller_name = "Mike Neveaux"
+seller_call = "K4OSG"
+seller_email = "astroplt@me.com"
+seller_note = "Up for Sale"
+specs = [
+  ""
+]
