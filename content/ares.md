@@ -5,7 +5,7 @@ draft: false
 layout: "single"
 ---
 
-<img src="/library/ares-150.gif" alt="ARES Logo Shield" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
+<img src="/images/ares_logo.svg" alt="ARES Logo Shield" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
 
 # Brunswick County ARES Emergency Operations
 

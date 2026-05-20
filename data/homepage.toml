@@ -16,10 +16,14 @@
 
 # ====================================================================
 # 🖼️ SEASONAL HEADER BANNER
+# club_banner_summer.webp
+# club_banner_fall.webp
+# club_banner_winter.webp
+# club_banner_spring.webp
 # ====================================================================
 [banner]
 image = "/images/club_banner_summer.webp" # Path to your image asset file
-alt = "Brunswick Shores ARC Summer Field Operations Header Layout"
+alt = "Brunswick Shores ARC Banner"
 
 
 # ====================================================================
