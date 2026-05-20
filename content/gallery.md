@@ -5,6 +5,8 @@ menu: "main"
 weight: 40
 ---
 
+<img src="/images/club_logo.webp" alt="BSARC Club Logo" style="float: right; margin: 0 0 20px 20px; max-width: 150px; height: auto; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));">
+
 Welcome to the BSARC Activities and Media gallery! Click any event title below to expand its photo grid. Click any thumbnail image inside to view the full-resolution photo in a new tab.
 
 ## 📅 2025 Events
