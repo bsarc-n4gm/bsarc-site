@@ -34,9 +34,31 @@
                         </h3>
                     </div>
                     
-                    <div style="font-size: 12px; color: #555555; background-color: #f7f7f7; padding: 6px 10px; border-radius: 4px; border-left: 3px solid #555555; line-height: 1.4;">
-                        📍 <strong>Location:</strong> {{ .location }}
-                    </div>
+                    {{ if .zoom_url }}
+                        <a href="{{ .zoom_url }}" 
+                           target="_blank" 
+                           title="Launch live Zoom conference room option in a new tab"
+                           style="font-size: 12px; color: #1b5e20; background-color: #e8f5e9; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #2e7d32; line-height: 1.4; text-decoration: none; display: block; transition: all 0.15s ease; box-sizing: border-box;"
+                           onmouseover="this.style.backgroundColor='#c8e6c9'; this.style.borderColor='#1b5e20';"
+                           onmouseout="this.style.backgroundColor='#e8f5e9'; this.style.borderColor='#2e7d32';">
+                            💻 <strong style="text-decoration: underline;">Join Zoom Video Meeting</strong>
+                        </a>
+
+                    {{ else if findRE "(?i)(air|remote|online|repeater|net)" .location }}
+                        <div style="font-size: 12px; color: #555555; background-color: #f7f7f7; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #777777; line-height: 1.4; box-sizing: border-box;">
+                            📻 <strong>Details:</strong> {{ .location }}
+                        </div>
+
+                    {{ else }}
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ .location | urlize }}" 
+                           target="_blank" 
+                           title="Open address map location in a new browser tab"
+                           style="font-size: 12px; color: #1565c0; background-color: #f4f8fb; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #1565c0; line-height: 1.4; text-decoration: none; display: block; transition: all 0.15s ease; box-sizing: border-box;"
+                           onmouseover="this.style.backgroundColor='#eef5fc'; this.style.borderColor='#0d47a1';"
+                           onmouseout="this.style.backgroundColor='#f4f8fb'; this.style.borderColor='#1565c0';">
+                            📍 <span style="text-decoration: underline;"><strong>Location:</strong> {{ .location }}</span>
+                        </a>
+                    {{ end }}
                 </div>
                 
             </div>
