@@ -106,21 +106,74 @@ Controls elected Board positions and appointed task chairs independently from th
 │   ├── members.toml         # Complete active club member table database
 │   ├── notice.toml          # Emergency alerts notice profiles & chronological log logs
 │   └── roster.toml          # Appointed committee chairs and corporate board roles
-├── content/                 # Site layout markup pages paths
-│   ├── calendar.md          # Content route that executes the Master Calendar template
-│   ├── notice.md            # Content route that executes the Tactical Log Timeline template
-│   └── board.md             # Officers roster listing page wrapping the club logo
-├── layouts/                 # Custom layout blueprints overriding theme defaults
-│   ├── _default/            
-│   │   └── dashboard.html   # Main double-column framework master template layout
-│   └── shortcodes/          # Extracted shortcode macro snippets loops
-│       ├── club_calendar.html     # Automated 3-month homepage rolling date window
-│       ├── master_calendar.html   # Splitted month-by-month itinerary maps engine
-│       ├── incident_log.html      # Chronological emergency activation log feed
-│       └── swap_listings.html     # Marketplace multi-column product matrix grid
-├── static/                  # Permanent asset storage (Never touched by the compiler)
-│   ├── library/             # Core documents vaults, PDFs, application forms, rules
-│   └── images/              # Media directory hosting logos and webp seasonal headers
+├── content/                    # Pure markdown content source tracking routing files
+│   ├── _index.md               # Home Page metadata route targets
+│   ├── ares.md                 # Amateur Radio Emergency Service profile portal
+│   ├── arrl.md                 # American Radio Relay League affiliation credentials
+│   ├── board.md                # Layout template page for officers wrapping the club logo
+│   ├── calendar.md             # Subpage container serving the Master Itinerary Timeline
+│   ├── fcc-renewal.md          # Reference instructions guide for vanity call signs & licensing
+│   ├── forsale.md              # Equipment swapfest market hub route path
+│   ├── gallery.md              # Media layout index container for historical events
+│   ├── links.md                # Extracted links page sorting amateur radio resources
+│   ├── notice.md               # Active Incident tactical chronological logger page
+│   ├── qsl-info.md             # DX collection information, bureaus, and card routes
+│   ├── repeaters.md            # Hardware coordinates list page for club systems
+│   ├── roster.md               # Alpha directory membership roster table container
+│   ├── uunaa.md                # Club history archive logs parameters sheet
+│   └── welcome-kit.md          # Onboarding handbook kit guide line parameters for new hams
+├── layouts/                    # Custom layout blueprints overriding standard theme rules
+│   ├── index.html              # Custom base entry route initialization point
+│   ├── _default/               
+│   │   ├── dashboard.html      # Main double-column framework master template layout
+│   │   ├── single.html         # Structural template layout rule mapping single pages
+│   │   └── _markup/            
+│   │       └── render-link.html# Specialized pipeline script automating internal link paths
+│   └── shortcodes/             # Isolated presentation snippets triggered inside markdown
+│       ├── calendar_updated.html   # Experimental calendar block processing test sheet
+│       ├── club_calendar.html      # Automated 3-month homepage rolling date window
+│       ├── club_roster.html        # Maps elected board profiles and appointed task columns
+│       ├── gallery_grid.html       # Auto-compiles squared horizontal multi-image layout matrix
+│       ├── incident_log.html       # Chronological log tactical log block timeline
+│       ├── master_calendar.html    # Splitted month-by-month itinerary grids builder
+│       ├── member_directory.html   # Logic loops compiling alpha membership rows
+│       ├── repeater_table.html     # Compiles active technical systems metrics
+│       ├── swap_listings.html      # Marketplace multi-column equipment card block rows
+│       └── toc.html                # Automates floating Table of Contents index blocks
+├── static/                     # Permanent assets (Served directly at root level mapping)
+│   ├── images/                 # Logo graphics, vector emblems, and webp seasonal headers
+│   │   ├── ares_logo.svg
+│   │   ├── arrl_logo.webp
+│   │   ├── bsarc_repeater_logo.webp
+│   │   ├── club_banner_fall.webp
+│   │   ├── club_banner_field_day.webp
+│   │   ├── club_banner_spring.webp
+│   │   ├── club_banner_summer.webp
+│   │   ├── club_banner.webp
+│   │   ├── club_banner_winter.webp
+│   │   ├── club_logo.webp
+│   │   └── club_repeater_logo.webp
+│   ├── media/                  # Chronological photo vaults serving image galleries
+│   │   ├── 2008/oak-island-2008/
+│   │   ├── 2023/old-baldy-2023/
+│   │   ├── 2024/field-day-2024/ & winter-field-day-2024/
+│   │   └── 2025/cp-2025/
+│   └── pdf/                    # Document vaults hosting permanent fillable club records
+│       ├── amateur_test_sessions.pdf
+│       ├── ares_member_registration.pdf
+│       ├── arrl_band_plan.pdf
+│       ├── bsarc_articles_of_formation.pdf
+│       ├── bsarc_by_laws.pdf
+│       ├── bsarc_county_deeds_p1.pdf
+│       ├── bsarc_county_deeds_p2.pdf
+│       ├── bsarc_membership_application.pdf
+│       ├── bsarc_sro.pdf
+│       ├── bsarc_state_filing_2007.pdf
+│       ├── ccr_form.pdf
+│       ├── club_clothing_and_attire.pdf
+│       ├── credential_application_fillable_copy.pdf
+│       ├── emergency_procedure_2017-03-17.pdf
+│       └── weekly_bulletin.pdf
 └── hugo.toml                # Main system configuration file mapping links and menus
 
 ```
