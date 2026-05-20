@@ -13,18 +13,6 @@
 #                                    block to add another line item to the site!
 # ====================================================================
 
-# ====================================================================
-# 🚨 EMERGENCY ALERTS & SPECIAL NOTICES
-# ====================================================================
-[special_notice]
-active = true      # Toggles alert on/off. Options: true (visible), false (hidden)
-color = "danger"   # Background color style theme. Options:
-                   #   - "danger"  (Loud red alert box for weather or canceled events)
-                   #   - "warning" (High-visibility yellow box for advisories/reminders)
-                   #   - "info"    (Clean blue box for general club news announcements)
-heading = "⚠️ Skywarn Activation Alert"
-message = "A tropical storm warning has been issued for Brunswick County. The club net is on standby status on the 147.315 repeater. Listen out for active emergency traffic updates."
-
 
 # ====================================================================
 # 🖼️ SEASONAL HEADER BANNER

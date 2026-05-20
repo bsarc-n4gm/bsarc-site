@@ -33,14 +33,32 @@
     
     <td style="width: 70%; padding-right: 40px; border: none; background: transparent; box-sizing: border-box;">
         
-        {{ if $homeData.special_notice.active }}
-            {{ $bg := "#e3f2fd" }}{{ $border := "#bbdefb" }}{{ $text := "#0d47a1" }} {{ if eq $homeData.special_notice.color "danger" }}
-                {{ $bg = "#fde8e8" }}{{ $border = "#f8b4b4" }}{{ $text = "#9b1c1c" }} {{ else if eq $homeData.special_notice.color "warning" }}
-                {{ $bg = "#fdf6b2" }}{{ $border = "#fce8b2" }}{{ $text = "#723b13" }} {{ end }}
+        {{ $noticeData := site.Data.notice }}
+        {{ if $noticeData.active }}
+            {{ $bg := "#e3f2fd" }}{{ $border := "#bbdefb" }}{{ $text := "#0d47a1" }}{{ $btnBg := "#1565c0" }}{{ $btnHover := "#0d47a1" }}
+            
+            {{ if eq $noticeData.color "danger" }}
+                {{ $bg = "#fde8e8" }}{{ $border = "#f8b4b4" }}{{ $text = "#9b1c1c" }}{{ $btnBg = "#c62828" }}{{ $btnHover = "#9b1c1c" }}
+            {{ else if eq $noticeData.color "warning" }}
+                {{ $bg = "#fdf6b2" }}{{ $border = "#fce8b2" }}{{ $text = "#723b13" }}{{ $btnBg = "#723b13" }}{{ $btnHover = "#4a250a" }}
+            {{ end }}
 
-            <div style="background-color: {{ $bg }}; border: 2px solid {{ $border }}; border-radius: 6px; padding: 15px; margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                <h3 style="margin: 0 0 6px 0; font-size: 16px; font-weight: bold; color: {{ $text }};">{{ $homeData.special_notice.heading }}</h3>
-                <p style="margin: 0; font-size: 14px; color: {{ $text }}; line-height: 1.5;">{{ $homeData.special_notice.message }}</p>
+            <div style="background-color: {{ $bg }}; border: 2px solid {{ $border }}; border-radius: 6px; padding: 20px; margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+                <div style="flex-grow: 1; min-width: 280px;">
+                    <h3 style="margin: 0 0 6px 0; font-size: 16px; font-weight: bold; color: {{ $text }};">{{ $noticeData.heading }}</h3>
+                    <p style="margin: 0; font-size: 14px; color: {{ $text }}; line-height: 1.5;">{{ $noticeData.message }}</p>
+                </div>
+                
+                {{ if $noticeData.link_button_active }}
+                <div>
+                    <a href="/notice/" 
+                       style="display: inline-block; padding: 8px 16px; font-size: 13px; background-color: {{ $btnBg }}; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; white-space: nowrap; transition: background-color 0.15s ease;"
+                       onmouseover="this.style.backgroundColor='{{ $btnHover }}'"
+                       onmouseout="this.style.backgroundColor='{{ $btnBg }}'">
+                        {{ $noticeData.link_button_text }}
+                    </a>
+                </div>
+                {{ end }}
             </div>
         {{ end }}
 

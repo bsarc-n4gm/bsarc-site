@@ -1,0 +1,28 @@
+# ====================================================================
+# 🚨 BSARC EMERGENCY ACTIVATION & INCIDENT LOG LOGS
+# ====================================================================
+# INSTRUCTIONS FOR EMERGENCY OPERATORS & PIOS:
+# 
+# 💡 Formatting Rules:
+#    - Text values MUST be wrapped in double quotation marks: "text"
+#    - To append a new status update to the log page, copy a complete
+#      [[updates]] block, paste it at the bottom, and change the text fields.
+# ====================================================================
+
+active = true      # Toggles homepage alert banner. Options: true, false
+color = "danger"   # Banner theme profile color. Options: "danger" (red), "warning" (yellow), "info" (blue)
+heading = "⚠️ Skywarn Activation Alert"
+message = "A tropical storm warning has been issued for Brunswick County. The club net is on standby status on the 147.315 repeater. Listen out for active emergency traffic updates."
+
+# Link Button Settings:
+link_button_active = true                 # Set to true to show a button linking to the detailed incident log page
+link_button_text = "🔗 View Live Incident Log" # The text displayed inside the homepage button
+
+# --- LIVE LOG TIMELINE UPDATES ---
+[[updates]]
+timestamp = "May 20, 2026 - 11:30 AM"
+log_text = "Primary net operations shifted to the backup 444.300 MHz Calabash repeater due to localized intermod issues on the primary tower site link paths."
+
+[[updates]]
+timestamp = "May 20, 2026 - 09:00 AM"
+log_text = "Skywarn net officially activated by N4GM net control operators. Mobile spotters are requested to monitor local coastal storm surge levels safely."

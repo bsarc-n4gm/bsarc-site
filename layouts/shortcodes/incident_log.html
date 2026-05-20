@@ -1,0 +1,31 @@
+{{ $notice := site.Data.notice }}
+
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 10px 0;">
+    
+    <div style="background-color: #f7f9fa; border-left: 4px solid #333333; padding: 15px; margin-bottom: 35px; border-radius: 0 4px 4px 0;">
+        <h3 style="margin: 0 0 6px 0; font-size: 16px; font-weight: bold; color: #111111;">🎯 Current Operation Objective</h3>
+        <p style="margin: 0; font-size: 14px; color: #444444; line-height: 1.5;">{{ $notice.message }}</p>
+    </div>
+
+    <h2 style="font-size: 18px; color: #111111; margin-bottom: 20px; border-bottom: 2px solid #111111; padding-bottom: 6px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.02em;">
+        ⏱️ Chronological Tactical Log Feed
+    </h2>
+
+    {{ if $notice.updates }}
+        {{ range $notice.updates }}
+        <div style="margin-bottom: 20px; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); overflow: hidden;">
+            <div style="background-color: #f1f5f9; color: #475569; padding: 6px 12px; font-size: 12px; font-weight: bold; letter-spacing: 0.02em; border-bottom: 1px solid #e2e8f0;">
+                📡 Log Entry Timestamp: {{ .timestamp }}
+            </div>
+            <div style="padding: 12px 15px; font-size: 14px; color: #1e293b; line-height: 1.5; background-color: #fff;">
+                {{ .log_text }}
+            </div>
+        </div>
+        {{ end }}
+    {{ else }}
+        <div style="text-align: center; padding: 30px; color: #777777; border: 1px dashed #cccccc; border-radius: 6px; font-style: italic;">
+            No ongoing chronological tactical wire log entries posted for this activation window block.
+        </div>
+    {{ end }}
+
+</div>
