@@ -1,40 +1,14 @@
-version:
-Markdown
-
 # 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
 Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
 
 ---
 
-## 🛠️ Quick Start Station Commands
-
-To test modifications locally or deploy updates directly to the live server, open your Zorin terminal workspace at `/home/mark/bsarc-site` and execute these specific command line strings:
-
-### 1. Launch Local Testing Sandbox Server
-```bash
-hugo server --bind 0.0.0.0 --baseURL [http://192.168.68.109](http://192.168.68.109) --port 1313 -D
-
-    Local Sandbox URL: Open Firefox and navigate to http://localhost:1313/
-
-    Local Network IP Scaling: View real-time layout rendering across mobile devices or tablets on your garage network via http://192.168.68.109:1313/.
-
-    Live-Reload Automation: Any text content or data sheet modification saved inside VS Code will instantly recompile in milliseconds and automatically update your open browser window.
-
-2. Lock in a Change Milestone & Push Live
-Bash
-
-git add .
-git commit -m "docs(bulletins): publish weekly bulletin for current timeline"
-git push origin main
-
-    Pushing changes to the master main branch immediately alerts your automated GitHub Actions server compiler. The remote production pipeline will rebuild the entire platform and deploy your updates to the web within 30 seconds automatically.
-
 🏗️ Web Framework Directory Topography
 
 This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
 Plaintext
-
+```bash
 /home/mark/bsarc-site/
 ├── data/                           # 📂 MASTER STRUCTURAL TEXT SHEETS (MAIN WORKSPACE)
 │   ├── calendar.toml               # Chronological club activities & exam logs sheet
@@ -106,12 +80,12 @@ Plaintext
         ├── bsarc_membership_application.pdf
         ├── bsarc_sro.pdf
         └── weekly_bulletin.pdf
-
-📂 Data Sheets Reference Guide (/data/)
+```
 ---
 
 📂 Data Sheets Reference Guide (/data/)
 
+---
 To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
 
 🏠 1. Homepage Registry (data/homepage.toml)
@@ -126,15 +100,30 @@ Controls core text elements, routine net schedules, and background info markers 
 
     [[repeaters]] -> Updates the core infrastructure logs panel in your sidebar column.
 
-📅 2. Event Itinerary Almanac (data/calendar.toml)
 
-Manages your club activity calendar, VE testing milestones, hamfests, and community field deployments.
+### 📅 2. Event Itinerary Almanac (`data/calendar.toml`)
 
-    Strict Date Formatting (date = "YYYY-MM-DD"): This layout variable field must remain fully standardized (e.g., "2026-06-27"). The site uses this parameter string to automate date-sorting logic math behind the scenes.
+Manages your deep annual club activity schedule, scheduled Volunteer Examiner (VE) testing milestones, regional hamfests, public service deployments, and special club functions.
 
-    Automated Calendar Archiving: Events scheduled for today or the future will cleanly group themselves by month under bold text headings at the top of the calendar. The millisecond an event date passes, the shortcode engine automatically shifts it into a clean, collapsible accordion history drawer at the bottom of the page to eliminate scroller clutter.
+#### 💡 Strict Formatting Rules:
+* **System Date Target (`date = "YYYY-MM-DD"`):** Text format string matching strict syntax (e.g., `"2026-06-27"`). The site layouts utilize this exact string to run mathematical sorting loops.
+* **Homepage Rolling 90-Day Window:** The landing column automatically filters the data array, hiding items scheduled further out than **90 days from today** to maintain a compact dashboard view.
+* **Display Date (`display_date = "text"`):** Dictates exactly what text label prints on screen to users (e.g., `"January 24-25"` or `"June 10"`).
+* **Isolated Hour Tag (`time = "text"`):** Isolates the meeting hour cleanly across table headers (e.g., `"6:00 PM"`). Leave as empty quotes `""` if not applicable.
+* **String Values:** All text parameters must be securely wrapped inside double quotation marks (`""`).
 
-    🔒 Secure Zoom Meeting Toggle (zoom_meeting = true/false): To safeguard your remote conferencing windows from automated bots or web-scraping utilities, set this key parameter to true (lowercase, no quotation marks) on any meeting block. The website code will intercept the flag and print a professional, unclickable lock icon notice instructing members to check their private club email bulletin for the hidden meeting link.
+#### 🛠️ Automated Smart-Link Badge Engine (Routing Rules):
+The shortcode template evaluates your parameters line-by-line to render optimized UI badges on the fly. Every parameter key must be defined—use empty quotation marks `""` if a link or path is missing.
+
+* **🔒 Secure Zoom Meeting Toggle (`zoom_meeting = true/false`):** Set to `true` (lowercase, no quotes) to automatically overlay a secure, unclickable lock shield layout over the event card. This warns bots and displays a notice instructing members to retrieve the link out of their private email dispatch.
+* **❌ Event Cancellations (`canceled = true/false`):** Setting to `true` forces an immediate crimson alert border, strikes a line across titles, masks action links, and appends an alert banner reading: `🚫 Called off due to scheduling logistics.`
+* **📻 On-Air / Net Badges:** If the `location` field text includes keywords like *"Air"*, *"Net"*, *"Remote"*, or *"Conference"*, the system auto-seals the card into a clean, unclickable info badge.
+* **📍 Physical Venue GPS Routing:** If the `location` field contains a standard facility street address, the template intercepts the string and automatically generates an interactive blue action button linked directly to **Google Maps GPS Navigation**.
+* **🌐 External Web Info Links (`link_url = "https://..."`):** If populated with an active web link, the card automatically generates a blue **"🌐 Visit Event Website"** interactive action shortcut.
+* **📄 Media Flyer Downloads (`flyer_path = "/pdf/flyer.pdf"`):** If populated with a relative file pathway pointing to your static directory vault, the card automatically hooks up an orange **"📄 View Event Flyer (PDF)"** download target button.
+
+#### 📁 Chronological Pipeline Archiving:
+Events today or in the future group themselves under bold text chapter headers corresponding to the month and year of operation. The exact millisecond an event date passes, the shortcode layout engine automatically strips the card layout, compiles it down into a simplified table row entry, and relocates it inside a collapsible accordion history drawer at the bottom of the page to eliminate scrolling clutter indefinitely.
 
 🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
 
@@ -171,11 +160,13 @@ Weekly updates compiled by the Club Secretary are handled through an automated m
 To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your content/bulletins/ folder path using the date naming convention (e.g., bulletin-2026-05-21.md). Paste this exact front matter block at the absolute top:
 Markdown
 
+```text
 ---
 title: "Weekly Bulletin: Write Your Core Focus Headline Here"
 date: 2026-05-21
 draft: false
 ---
+```
 
 ### 📡 Active Dispatch Updates Go Here...
 
@@ -202,83 +193,6 @@ Controls elected Board positions and appointed task chairs independently from th
     [[officers]] -> Manages the core Board of Directors.
 
     [[committees]] -> Manages event chairs, food teams, trustees, and specialized volunteer roles.
-
-🏗️ Web Framework Directory Topography
-
-This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
-Plaintext
-
-/home/mark/bsarc-site/
-├── data/                           # 📂 MASTER STRUCTURAL TEXT SHEETS (MAIN WORKSPACE)
-│   ├── calendar.toml               # Chronological club activities & exam logs sheet
-│   ├── forsale.toml                # Active ham radio swapfest marketplace entries
-│   ├── homepage.toml               # Front dashboard text strings and net frequency lists
-│   ├── members.toml                # Complete verified active club member registry table
-│   ├── notice.toml                 # Tactical emergency alert banners config matrix
-│   └── roster.toml                 # Elected corporate board roles and committee chairs
-├── content/                        # 📄 PUBLIC WEBSITE EDITABLE CORE PAGES
-│   ├── _index.md                   # Home screen metadata initialization routing anchors
-│   ├── ares.md                     # Amateur Radio Emergency Service overview node
-│   ├── arrl.md                     # American Radio Relay League affiliate profiles
-│   ├── board.md                    # Officers & Volunteers list container layout
-│   ├── bulletin-archive.md         # The main listing database page for past dispatches
-│   ├── bulletins/                  # 🗞️ RAW WEEKLY DISPATCH MARKDOWN QUEUE
-│   │   ├── bulletin-2026-01-05.md  # Individual weekly bulletin file source entry nodes
-│   │   └── [ ... remains chronological ... ]
-│   ├── calendar.md                 # Subpage layout container serving the Master Itinerary
-│   ├── fcc-renewal.md              # Reference instructions guide for licensing renewals
-│   ├── forsale.md                  # Equipment swapfest market marketplace hub route
-│   ├── gallery.md                  # Media layout grid container for event pictures
-│   ├── links.md                    # Extracted reference links collection catalog
-│   ├── notice.md                   # Active Incident tactical timeline log page
-│   ├── qsl-info.md                 # DX collection bureaus and confirmation routes
-│   ├── repeaters.md                # Hardware coordinate lists for regional hf/vhf systems
-│   ├── roster.md                   # Alpha directory membership roster table container
-│   ├── skywarn.md                  # Severe weather spotter training notification link
-│   ├── uunaa.md                    # Club history archive logs parameters sheet
-│   └── welcome-kit.md              # Onboarding handbook kit guide line for new hams
-├── layouts/                        # 🎨 PRODUCTION PRESENTATION OVERRIDE BLUEPRINTS
-│   ├── index.html                  # Base template entry route initialization point
-│   ├── _default/                   
-│   │   ├── dashboard.html          # Main double-column index frame architecture layout
-│   │   ├── single.html             # Base structural template loop styling single articles
-│   │   └── _markup/                
-│   │       └── render-link.html    # Specialized script mapping relative subpage URLs
-│   └── shortcodes/                 # Presentation snippets triggered inside markdown pages
-│       ├── bulletin_vault.html     # Compiles your stylized bulletin history archive blocks
-│       ├── calendar_updated.html   # Sandbox parsing file for calendar processing tests
-│       ├── club_calendar.html      # Automated 3-month homepage rolling upcoming window
-│       ├── club_roster.html        # Loops elected board profiles and appointed task grids
-│       ├── gallery_grid.html       # Auto-compiles horizontal multi-image layout matrix
-│       ├── incident_log.html       # Chronological emergency tactical timeline logger element
-│       ├── master_calendar.html    # Automated active future grids & past archive details drawer
-│       ├── member_directory.html   # Logic loops compiling membership columns alphabetically
-│       ├── repeater_table.html     # Compiles active infrastructure frequency logs metrics
-│       ├── swap_listings.html      # Marketplace equipment listing card block template loop
-│       └── toc.html                # Auto-generates interactive floating Tables of Contents
-└── static/                         # 🖼️ PERMANENT UNCHANGING WEB GRAPHIC MEDIA VAULTS
-    ├── images/                     # Club vectors, icons, badges, and seasonal banners
-    │   ├── ares_logo.svg
-    │   ├── arrl_logo.webp
-    │   ├── bsarc_repeater_logo.webp
-    │   ├── club_banner.webp
-    │   ├── club_logo.webp
-    │   ├── skywarn.svg
-    │   └── www_icon.png
-    ├── media/                      # Chronological event folders serving gallery matrices
-    │   ├── 2008/oak-island-2008/
-    │   ├── 2023/old-baldy-2023/
-    │   ├── 2024/field-day-2024/
-    │   └── 2025/cp-2025/
-    └── pdf/                        # Legal charter bylaws and fillable application forms
-        ├── amateur_test_sessions.pdf
-        ├── ares_member_registration.pdf
-        ├── arrl_band_plan.pdf
-        ├── bsarc_articles_of_formation.pdf
-        ├── bsarc_by_laws.pdf
-        ├── bsarc_membership_application.pdf
-        ├── bsarc_sro.pdf
-        └── weekly_bulletin.pdf
 
 
 📝 Operators Syntax Rules Checklist
