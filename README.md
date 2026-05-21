@@ -1,6 +1,10 @@
+PDFs.
+📝 The Blueprint: Copy and Paste into your README.md
+Markdown
+
 # 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
-Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
+Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** paired with the customized **Ananke Theme** to compile an ultra-fast, modern, database-free web application hosted entirely via **GitHub Pages**.
 
 ---
 
@@ -10,26 +14,101 @@ To test modifications locally or deploy updates directly to the live server, ope
 
 ### 1. Launch Local Testing Sandbox Server
 ```bash
-hugo server --bind 0.0.0.0 --baseURL [http://192.168.68.109](http://192.168.68.109) --port 1313 -D
+hugo server --bind 0.0.0.0
 
-    Local Sandbox URL: Open Firefox and navigate to http://localhost:1313/
+    Local URL: Open Firefox and navigate to http://localhost:1313/
 
-    Local Network IP Scaling: View real-time layout rendering across mobile devices or tablets on your garage network via http://192.168.68.109:1313/.
+    Network URL: View layout scaling on tablets or smartphones using your local garage network IP layout (e.g., http://192.168.68.109:1313/).
 
-    Live-Reload Automation: Any text content or data sheet modification saved inside VS Code will instantly recompile in milliseconds and automatically update your open browser window.
+    The sandbox features Live-Reloading—any text edit saved in VS Code will instantly refresh the browser view in milliseconds without needing to restart the process.
 
 2. Lock in a Change Milestone & Push Live
 Bash
 
 git add .
-git commit -m "docs(bulletins): publish weekly bulletin for current timeline"
+git commit -m "type(scope): descriptive command message here"
 git push origin main
 
-    Pushing changes to the master main branch immediately alerts your automated GitHub Actions server compiler. The remote production pipeline will rebuild the entire platform and deploy your updates to the web within 30 seconds automatically.
+    Pushing your commits to the master main branch immediately kicks off an automated cloud compiler actions sequence. The live servers at www.n4gm.org will complete rendering your new layout within 30 seconds automatically.
 
-🏗️ Web Framework Directory Topography
+📂 Data Sheets Reference Guide (/data/)
 
-This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
+To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
+🏠 1. Homepage Registry (data/homepage.toml)
+
+Controls core text elements, routine net schedules, and background info markers displayed on the front screen dashboard layout.
+
+    [banner] -> Alters the primary background header picture graphic path layout asset and alternate text descriptions.
+
+    [welcome] -> Houses the landing page greetings text, subtitle notes, and modification dates.
+
+    [[nets]] -> List array containing your weekly Shrimp NET and AUXCOM parameters. To add an entire new routine net, copy a group blocks section from [[nets]] to time and paste it directly underneath.
+
+    [[repeaters]] -> Updates the core infrastructure logs panel in your sidebar column.
+
+📅 2. Event Itinerary Almanac (data/calendar.toml)
+
+Manages your deep annual club activity schedule, club contests, and VE testing sessions.
+
+    Real Date Parameters (date = "YYYY-MM-DD"): This is a mandatory strict format parameter (e.g., "2026-06-27"). The homepage shortcode uses this to automate date-math tracking loops.
+
+    Homepage Rolling 3-Month Window: The home screen automatically filters and hides any event further out than 90 days from today, keeping the landing column clear and compact.
+
+    Homepage Completed Window: When an event passes, it automatically moves into a grey "Recent Completed Events" trailing panel listing for 3 loops before dropping off into history.
+
+    The Master Calendar Subpage (/calendar/): Displayed by clicking the centerpiece router button block. This page bypasses all window limits and generates your complete year-by-year agenda grouped neatly under bold month chapters.
+
+    Smart Link Routing Badge Engine:
+
+        If you populate the zoom_url = "https://..." line, the card automatically converts its location block into a clickable green 💻 Join Zoom Video Meeting action button.
+
+        If the location field contains strings like "On the Air" or "Remote", it seals into a stable gray information badge.
+
+        If it is a physical asset name or address, it automatically maps the string into a high-contrast blue button link routing directly out to Google Maps GPS Navigation.
+
+🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
+
+Manages the interactive equipment marketplace rosters. Copied entries must explicitly containerize every layout key to prevent data parsing crashes.
+
+    price = "$500" -> Standard cash price entry string formatting wrapper.
+
+    sold = true -> Fades out the item listing card background, slashes a strike-through line across titles, strips off email action links, and attaches a red ❌ SOLD flag.
+
+    free = true -> Instantly bypasses cash price rendering and introduces a premium purple highlight banner block reading 🎁 FREE TO GOOD HOME.
+
+🚨 4. Tactical Emergency Notices (data/notice.toml)
+
+Allows individual appointed Emergency Coordinators (ECs) or PIO operators to issue broadcast advisories without accessing full website settings.
+
+    active = true -> Drops a thick, beautiful alert message block right at the top of the main homepage content column. Set to false to clear the notice away.
+
+    color = "danger" -> Swaps styles instantly based on severity fields. Options include:
+
+        "danger" -> Bold crimson red block for heavy weather developments, Skywarn flags, or cancelled meetings.
+
+        "warning" -> Amber yellow block for local advisories, upcoming dues deadlines, or routine test reminders.
+
+        "info" -> Calm ocean blue banner block for general special event news.
+
+    link_button_active = true -> Draws an action button inside the alert that maps out to a deep subpage (/notice/). This page parses your ongoing chronological line-by-line [[updates]] log feed timeline wire as an activation window unfolds.
+
+👥 5. Membership Database (data/members.toml)
+
+Manages the complete active alphabetical membership roster directory table.
+
+    To add an entry, copy a full [[member]] block and paste it at the bottom.
+
+    Fields map automatically to columns on the public index directory block. Keep strings wrapped in quotation marks.
+
+🏛️ 6. Leadership & Committees (data/roster.toml)
+
+Controls elected Board positions and appointed task chairs independently from the raw membership roster.
+
+    [[officers]] -> Manages the core Board of Directors.
+
+    [[committees]] -> Manages event chairs, food teams, trustees, and specialized volunteer roles.
+
+🏗️ Folder Hierarchy Topography
 Plaintext
 
 /home/mark/bsarc-site/
@@ -104,75 +183,12 @@ Plaintext
         ├── bsarc_sro.pdf
         └── weekly_bulletin.pdf
 
-📂 Data Sheets Reference Guide (/data/)
-
-Modify the structured text configuration parameters inside the files within the data/ folder to quickly safely manipulate public data layout fields:
-🏠 1. Homepage Registry (data/homepage.toml)
-
-Controls text blocks, schedules, and active information cards displayed across the front screen grid rows.
-
-    [banner] -> Modifies paths for seasonal background pictures and alternate text labels.
-
-    [welcome] -> Houses your primary landing greetings headline text body.
-
-    [[nets]] -> Updates the active rows inside your main screen "Club Net Schedules" data table layout.
-
-📅 2. Event Itinerary Almanac (data/calendar.toml)
-
-Manages your club activity calendar, VE testing milestones, hamfests, and community field deployments.
-
-    Strict Date Formatting (date = "YYYY-MM-DD"): This layout variable field must remain fully standardized (e.g., "2026-06-27"). The site uses this parameter string to automate date-sorting logic math behind the scenes.
-
-    Automated Calendar Archiving: Events scheduled for today or the future will cleanly group themselves by month under bold text headings at the top of the calendar. The millisecond an event date passes, the shortcode engine automatically shifts it into a clean, collapsible accordion history drawer at the bottom of the page to eliminate scroller clutter.
-
-    🔒 Secure Zoom Meeting Toggle (zoom_meeting = true/false): To safeguard your remote conferencing windows from automated bots or web-scraping utilities, set this key parameter to true (lowercase, no quotation marks) on any meeting block. The website code will intercept the flag and print a professional, unclickable lock icon notice instructing members to check their private club email bulletin for the hidden meeting link.
-
-🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
-
-Manages the equipment marketplace cards.
-
-    sold = true -> Fades out the item listing card background, strikes a line across titles, strips off email paths, and attaches a bold red ❌ SOLD flag automatically.
-
-    free = true -> Overrides cash pricing brackets and introduces a purple highlight banner block reading 🎁 FREE TO GOOD HOME.
-
-🚨 4. Tactical Emergency Notices (data/notice.toml)
-
-Allows individual appointed Emergency Coordinators (ECs) or PIO operators to issue broadcast advisories right at the top of the main content column.
-
-    active = true -> Drops a thick, beautiful alert message block right at the top of the main homepage. Set to false to clear the notice away.
-
-    color = "danger" -> Swaps styles instantly based on severity fields: "danger" (crimson red block), "warning" (amber yellow block), or "info" (ocean blue block).
-
-🗞️ Automated Weekly Bulletins Pipeline (/content/bulletins/)
-
-Weekly updates compiled by the Club Secretary are handled through an automated multi-file content queue execution framework:
-1. Creating a New Dispatch
-
-To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your content/bulletins/ folder path using the date naming convention (e.g., bulletin-2026-05-21.md). Paste this exact front matter block at the absolute top:
-Markdown
-
----
-title: "Weekly Bulletin: Write Your Core Focus Headline Here"
-date: 2026-05-21
-draft: false
----
-
-### 📡 Active Dispatch Updates Go Here...
-
-2. How the Automated Sorting Framework Operates
-
-The system completely handles site logistics dynamically based on your Front Matter parameters:
-
-    The Homepage Spotlight: The system loops through your bulletins directory, isolates the file with the newest calendar date stamp parameter, and prints its summary block live inside the homepage sidebar 🗞️ Secretary's Desk panel module window automatically.
-
-    The Historical Vault Landing Hub: The moment a newer bulletin file is uploaded, older dispatches are automatically transitioned down into your running master listing database subpage at /bulletin-archive/. They group themselves inside a custom chronological index block marked with highly visible 📅 Week of [Date] indicator badges without an admin ever having to update links manually!
-
 📝 Operators Syntax Rules Checklist
 
     Always Seal String Paths: Every textual input entry value MUST be nested safely inside double quotation marks ("Value").
 
     Booleans stay Lowercase: Logistical true/false logic parameter tags must remain fully lowercase and completely free of quotes (true or false).
 
-    Sanitize Arrays: Bullet points inside data specification loops (specs = [ "Line 1", "Line 2" ]) must be fully comma-separated to keep the parser engine from throwing syntax exceptions.
+    Sanitize Arrays: Bullet points inside spec loops (specs = [ "Line 1", "Line 2" ]) must be fully comma-separated to keep the parser engine from throwing syntax exception errors.
 
 Brunswick Shores Amateur Radio Club — Securing Reliable Communications for Southeastern North Carolina Since 2026.
