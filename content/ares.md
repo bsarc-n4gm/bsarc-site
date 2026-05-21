@@ -15,6 +15,20 @@ Every licensed amateur, regardless of membership in the ARRL or any other organi
 
 <div style="clear: both;"></div>
 
+<div style="background-color: #f0f4f8; border-left: 4px solid #1565c0; padding: 15px; border-radius: 4px; margin: 25px 0; font-family: sans-serif; line-height: 1.5; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+    <div style="flex: 1; min-width: 250px;">
+      <strong style="color: #0d47a1; font-size: 15px; display: block; margin-bottom: 4px;">🌪️ Skywarn Weather Spotter Integration Notice</strong>
+      <span style="font-size: 13px; color: #455a64;">BSARC works closely with the NWS during severe or tropical storm activations. Track reporting modes, checklists, and active dashboard links inside our portal.</span>
+    </div>
+    <div>
+      <a href="/skywarn/" style="display: inline-block; background-color: #1565c0; color: white; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: background 0.15s ease;" onmouseover="this.style.backgroundColor='#0d47a1';" onmouseout="this.style.backgroundColor='#1565c0';">
+        Go to Skywarn Page →
+      </a>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## 📂 Operational Documentation & Forms
