@@ -5,10 +5,10 @@
     <loc>http://192.168.68.109:1313/gallery/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.68.109:1313/notice/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.68.109:1313/bulletins/</loc>
+    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/notice/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/calendar/</loc>
@@ -17,13 +17,13 @@
     <loc>http://192.168.68.109:1313/skywarn/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-20/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.68.109:1313/forsale/</loc>
     <lastmod>2026-05-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/qsl-info/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-18/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/ares/</loc>
@@ -52,6 +52,12 @@
   </url><url>
     <loc>http://192.168.68.109:1313/links/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-11/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-04/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/categories/</loc>
   </url><url>
