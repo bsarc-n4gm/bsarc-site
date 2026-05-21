@@ -7,6 +7,7 @@ Welcome to the official station log and technical operating manual for the **BSA
 📂 Data Sheets Reference Guide (/data/)
 
 To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
+
 🏠 1. Homepage Registry (data/homepage.toml)
 
 Controls core text elements, routine net schedules, and background info markers displayed on the front screen dashboard layout.
@@ -58,6 +59,7 @@ Allows individual appointed Emergency Coordinators (ECs) or PIO operators to iss
 🗞️ 5. Automated Weekly Bulletins Pipeline (/content/bulletins/)
 
 Weekly updates compiled by the Club Secretary are handled through an automated multi-file content queue execution framework:
+
 1. Creating a New Dispatch
 
 To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your content/bulletins/ folder path using the date naming convention (e.g., bulletin-2026-05-21.md). Paste this exact front matter block at the absolute top:
