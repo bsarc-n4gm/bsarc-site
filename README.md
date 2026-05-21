@@ -4,29 +4,6 @@ Welcome to the official station log and technical operating manual for the **BSA
 
 ---
 
-## 🛠️ Quick Start Station Commands
-
-To test modifications locally or deploy updates directly to the live server, open your Zorin terminal workspace at `/home/mark/bsarc-site` and execute these specific command line strings:
-
-### 1. Launch Local Testing Sandbox Server
-```bash
-hugo server --bind 0.0.0.0
-
-    Local URL: Open Firefox and navigate to http://localhost:1313/
-
-    Network URL: View layout scaling on tablets or smartphones using your local garage network IP layout (e.g., http://192.168.68.109:1313/).
-
-    The sandbox features Live-Reloading—any text edit saved in VS Code will instantly refresh the browser view in milliseconds without needing to restart the process.
-
-2. Lock in a Change Milestone & Push Live
-Bash
-
-git add .
-git commit -m "type(scope): descriptive command message here"
-git push origin main
-
-    Pushing your commits to the master main branch immediately kicks off an automated cloud compiler actions sequence. The live servers at www.n4gm.org will complete rendering your new layout within 30 seconds automatically.
-
 📂 Data Sheets Reference Guide (/data/)
 
 To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
@@ -44,23 +21,13 @@ Controls core text elements, routine net schedules, and background info markers 
 
 📅 2. Event Itinerary Almanac (data/calendar.toml)
 
-Manages your deep annual club activity schedule, club contests, and VE testing sessions.
+Manages your club activity calendar, VE testing milestones, hamfests, and community field deployments.
 
-    Real Date Parameters (date = "YYYY-MM-DD"): This is a mandatory strict format parameter (e.g., "2026-06-27"). The homepage shortcode uses this to automate date-math tracking loops.
+    Strict Date Formatting (date = "YYYY-MM-DD"): This layout variable field must remain fully standardized (e.g., "2026-06-27"). The site uses this parameter string to automate date-sorting logic math behind the scenes.
 
-    Homepage Rolling 3-Month Window: The home screen automatically filters and hides any event further out than 90 days from today, keeping the landing column clear and compact.
+    Automated Calendar Archiving: Events scheduled for today or the future will cleanly group themselves by month under bold text headings at the top of the calendar. The millisecond an event date passes, the shortcode engine automatically shifts it into a clean, collapsible accordion history drawer at the bottom of the page to eliminate scroller clutter.
 
-    Homepage Completed Window: When an event passes, it automatically moves into a grey "Recent Completed Events" trailing panel listing for 3 loops before dropping off into history.
-
-    The Master Calendar Subpage (/calendar/): Displayed by clicking the centerpiece router button block. This page bypasses all window limits and generates your complete year-by-year agenda grouped neatly under bold month chapters.
-
-    Smart Link Routing Badge Engine:
-
-        If you populate the zoom_url = "https://..." line, the card automatically converts its location block into a clickable green 💻 Join Zoom Video Meeting action button.
-
-        If the location field contains strings like "On the Air" or "Remote", it seals into a stable gray information badge.
-
-        If it is a physical asset name or address, it automatically maps the string into a high-contrast blue button link routing directly out to Google Maps GPS Navigation.
+    🔒 Secure Zoom Meeting Toggle (zoom_meeting = true/false): To safeguard your remote conferencing windows from automated bots or web-scraping utilities, set this key parameter to true (lowercase, no quotation marks) on any meeting block. The website code will intercept the flag and print a professional, unclickable lock icon notice instructing members to check their private club email bulletin for the hidden meeting link.
 
 🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
 
@@ -88,7 +55,31 @@ Allows individual appointed Emergency Coordinators (ECs) or PIO operators to iss
 
     link_button_active = true -> Draws an action button inside the alert that maps out to a deep subpage (/notice/). This page parses your ongoing chronological line-by-line [[updates]] log feed timeline wire as an activation window unfolds.
 
-👥 5. Membership Database (data/members.toml)
+🗞️ 5. Automated Weekly Bulletins Pipeline (/content/bulletins/)
+
+Weekly updates compiled by the Club Secretary are handled through an automated multi-file content queue execution framework:
+1. Creating a New Dispatch
+
+To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your content/bulletins/ folder path using the date naming convention (e.g., bulletin-2026-05-21.md). Paste this exact front matter block at the absolute top:
+Markdown
+
+---
+title: "Weekly Bulletin: Write Your Core Focus Headline Here"
+date: 2026-05-21
+draft: false
+---
+
+### 📡 Active Dispatch Updates Go Here...
+
+2. How the Automated Sorting Framework Operates
+
+The system completely handles site logistics dynamically based on your Front Matter parameters:
+
+    The Homepage Spotlight: The system loops through your bulletins directory, isolates the file with the newest calendar date stamp parameter, and prints its summary block live inside the homepage sidebar 🗞️ Secretary's Desk panel module window automatically.
+
+    The Historical Vault Landing Hub: The moment a newer bulletin file is uploaded, older dispatches are automatically transitioned down into your running master listing database subpage at /bulletin-archive/. They group themselves inside a custom chronological index block marked with highly visible 📅 Week of [Date] indicator badges without an admin ever having to update links manually!
+
+👥 6. Membership Database (data/members.toml)
 
 Manages the complete active alphabetical membership roster directory table.
 
@@ -96,7 +87,7 @@ Manages the complete active alphabetical membership roster directory table.
 
     Fields map automatically to columns on the public index directory block. Keep strings wrapped in quotation marks.
 
-🏛️ 6. Leadership & Committees (data/roster.toml)
+🏛️ 7. Leadership & Committees (data/roster.toml)
 
 Controls elected Board positions and appointed task chairs independently from the raw membership roster.
 
