@@ -35,7 +35,7 @@ display_date = "January 24-25"
 name = "❄️ Winter Field Day"
 location = "Dutchman's Creek County Park, 4750 Fish Factory Rd SE, Southport, NC 28461"
 time = ""
-zoom_url = ""
+zoom_meeting = false
 canceled = true
 
 [[event]]
@@ -44,7 +44,7 @@ display_date = "February 13-14"
 name = "📆 Orlando HamCation"
 location = "Central Florida Fairgrounds and Expo Park, 4603 W Colonial Dr, Orlando, FL 32808"
 time = ""
-zoom_url = ""
+zoom_meeting = false
 link_url = "https://www.hamcation.com/"
 flyer_path = ""
 canceled = false
@@ -55,7 +55,7 @@ display_date = "March 1"
 name = "🎉 North Carolina QSO Party"
 location = "On the Air"
 time = "10:00 AM - 8:00 PM EST"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -64,7 +64,7 @@ display_date = "March 1"
 name = "📚 VE Test Session"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "9:30 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -73,7 +73,7 @@ display_date = "March 6-7"
 name = "📆 Charlotte Hamfest"
 location = "Charlotte, NC"
 time = "Fri 3PM-7PM, Sat 8:30AM-3PM"
-zoom_url = ""
+zoom_meeting = false
 link_url = "https://charlottehamfest.org/"
 flyer_path = "/library/charlotte_2026_flyer.pdf" # Put your PDFs right inside your static/library/ folder!
 canceled = false
@@ -84,7 +84,7 @@ display_date = "April 4"
 name = "📆 RARSfest / Raleigh Hamfest"
 location = "Raleigh, NC"
 time = ""
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -93,7 +93,7 @@ display_date = "April 11"
 name = "Bald Head Island Activation"
 location = "Bald Head Island"
 time = ""
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -102,7 +102,7 @@ display_date = "April 18"
 name = "📚 VE Test Session"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "9:30 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -112,7 +112,7 @@ name = "🏎️ Cape Fear Cruisers Car Club Show"
 location = "Southport, NC"
 time = ""
 link_url = "https://capefearcruisers.com/2026-r%26r-red-white-blue"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -122,7 +122,7 @@ name = "📆 Dayton Hamvention"
 location = "Xenia, OH"
 time = ""
 link_url = "https://hamvention.org/"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -131,7 +131,7 @@ display_date = "June 10"
 name = "📆 Monthly Club Meeting - Calabash EMS"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "6:00 PM"
-zoom_url = "https://us02web.zoom.us/j/85277169324?pwd=WmdzYUxmcDF6eVpqTDVFRE5HZ1hJQT09"
+zoom_meeting = true
 canceled = false
 
 [[event]]
@@ -140,7 +140,7 @@ display_date = "June 27"
 name = "📚 VE Test Session"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "9:30 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -149,7 +149,7 @@ display_date = "June 27-28"
 name = "🏕️ ARRL Field Day"
 location = "Calabash Town Park"
 time = "Starts 9:00 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -159,7 +159,7 @@ name = "🎆 4th of July Parade"
 location = "Southport NC 28461"
 time = "9:00 AM"
 link_url = "https://nc4thofjuly.com/"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -168,7 +168,7 @@ display_date = "July 8"
 name = "📆 Monthly Club Meeting - BEMC"
 location = "BEMC HQ, 795 Ocean Hwy, Supply, NC 28462"
 time = "6:00 PM"
-zoom_url = "https://us02web.zoom.us/j/85277169324?pwd=WmdzYUxmcDF6eVpqTDVFRE5HZ1hJQT09"
+zoom_meeting = true
 canceled = false
 
 [[event]]
@@ -177,7 +177,7 @@ display_date = "October 3"
 name = "📚 VE Test Session"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "9:30 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = true
 
 [[event]]
@@ -186,7 +186,7 @@ display_date = "October 17"
 name = "📚 VE Test Session"
 location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
 time = "9:30 AM"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -196,7 +196,7 @@ name = "🏕️ JOTA (Scouts Jamboree on the Air)"
 location = "Dutchman's Creek County Park"
 time = ""
 link_url = "https://www.jotajoti.info/jota"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -206,7 +206,7 @@ name = "🏎️ Cape Fear Cruisers Car Club Show"
 location = "Southport, NC"
 time = ""
 link_url = "https://capefearcruisers.com/2026-classiccarsrockroll"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -216,7 +216,7 @@ name = "JARSfest"
 location = "The Farm at 95 in Selma NC"
 time = "8:00 A.M. - 1:30 P.M."
 link_url = "https://jars.net/jarsfest-2026"
-zoom_url = ""
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -225,5 +225,5 @@ display_date = "December 9"
 name = "🎄 Annual Club Christmas Party"
 location = "Los Nuevos Charros Mexican Restaurant, 1021 Beach Dr SW, Sunset Beach, NC 28468"
 time = ""
-zoom_url = ""
+zoom_meeting = false
 canceled = false
