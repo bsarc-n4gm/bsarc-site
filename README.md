@@ -97,7 +97,10 @@ Controls elected Board positions and appointed task chairs independently from th
 
     [[committees]] -> Manages event chairs, food teams, trustees, and specialized volunteer roles.
 
-🏗️ Folder Hierarchy Topography (Relative)
+🏗️ Web Framework Directory Topography
+
+This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
+Plaintext
 
 /home/mark/bsarc-site/
 ├── data/                           # 📂 MASTER STRUCTURAL TEXT SHEETS (MAIN WORKSPACE)
@@ -170,6 +173,7 @@ Controls elected Board positions and appointed task chairs independently from th
         ├── bsarc_membership_application.pdf
         ├── bsarc_sro.pdf
         └── weekly_bulletin.pdf
+
 
 📝 Operators Syntax Rules Checklist
 
