@@ -88,18 +88,34 @@ Plaintext
 ---
 To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
 
-🏠 1. Homepage Registry (data/homepage.toml)
+### 🏠 1. Homepage Registry (`data/homepage.toml`)
 
-Controls core text elements, routine net schedules, and background info markers displayed on the front screen dashboard layout.
+Controls core text elements, scheduled routine radio nets, alternating monthly meeting coordinates, and backend repeater status variables displayed across the front screen dashboard columns.
 
-    [banner] -> Alters the primary background header picture graphic path layout asset and alternate text descriptions.
+#### 💡 Strict Formatting Rules:
+* **String Wrapped Values:** All text descriptions, names, dates, and frequencies MUST remain fully nested inside double quotation marks (`"Value"`).
+* **Booleans stay Lowercase:** Binary configuration options must be explicitly written in lowercase without quotation marks (`true` or `false`).
+* **Syntax Blocks Type Legend:**
+  * **Single Brackets `[like_this]`:** Defines a standalone configuration section that renders exactly **ONCE** on the page. Tweaking fields updates that specific location; do not duplicate these headers.
+  * **Double Brackets `[[like_this]]`:** Defines an array map index. This acts as a repeater list. You can cleanly copy/paste a full block section to add an extra line entry row automatically.
 
-    [welcome] -> Houses the landing page greetings text, subtitle notes, and modification dates.
+#### 📦 Individual Table Sections Reference:
 
-    [[nets]] -> List array containing your weekly Shrimp NET and AUXCOM parameters. To add an entire new routine net, copy a group blocks section from [[nets]] to time and paste it directly underneath.
-
-    [[repeaters]] -> Updates the core infrastructure logs panel in your sidebar column.
-
+* **🖼️ Seasonal Header Banner (`[banner]`):** Sets the graphic asset path and description for your centerpiece top header background layout.
+  * `image` -> Targets your current active season layout vector (e.g., `"/images/club_banner_spring.webp"`). To shift seasons on the live server, move the comment hash (`#`) to toggle out paths.
+  * `alt` -> Alternate screen-reader metadata string descriptive wrapper.
+* **📝 Welcome Greetings Matrix (`[welcome]`):** Standard text entry fields updating the dashboard primary landing header.
+  * `heading` & `subheading` -> Primary layout bold text headers.
+  * `text` -> The primary background context paragraph block welcoming new newcomers.
+  * `last_updated` -> Text string stamping your maintenance cycles directly onto the dashboard.
+* **🎙️ Routine Net Lists (`[[nets]]`):** Repeated data loops populating your "Club Net Schedules" index frame table.
+  * Keys include `name`, `freq`, and `time`. To add a net, duplicate a complete `[[nets]]` array chunk and drop it directly below the previous item.
+* **🏛️ Meeting Alternation Schedules (`[meetings.monthly]`, `[[meetings.locations]]`, & `[meetings.breakfast]`):** Coordinates text frames and automates the alternating location table outputs.
+  * `[meetings.monthly].text` -> Handles descriptive text regarding general operations and Zoom email distribution notices.
+  * `[[meetings.locations]]` -> Multi-row tracking map evaluating months (e.g., `months = "Jan, Mar, May..."`) against the facility `name` and `address`. Hugo iterates over these loops to draw the alternate schedule matrix card blocks automatically.
+  * `[meetings.breakfast].text` -> Updates the day, hour, and restaurant address mapping logs for the informal mid-week gatherings.
+* **⚡ Repeater Infrastructure Metrics (`[[repeaters]]`):** Feeds technical specifications directly into your active dashboard hardware column block lists.
+  * Keys require exact parameter lines: `frequency`, `offset`, `tone`, `location`, and `notes`. To add or decommission a repeater, simply add or remove an entire `[[repeaters]]` bracket matrix array stack block.
 
 ### 📅 2. Event Itinerary Almanac (`data/calendar.toml`)
 
@@ -125,7 +141,7 @@ The shortcode template evaluates your parameters line-by-line to render optimize
 #### 📁 Chronological Pipeline Archiving:
 Events today or in the future group themselves under bold text chapter headers corresponding to the month and year of operation. The exact millisecond an event date passes, the shortcode layout engine automatically strips the card layout, compiles it down into a simplified table row entry, and relocates it inside a collapsible accordion history drawer at the bottom of the page to eliminate scrolling clutter indefinitely.
 
-🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
+🔄 3. Swapfest Marketplace Dashboard (`data/forsale.toml`)
 
 Manages the interactive equipment marketplace rosters. Copied entries must explicitly containerize every layout key to prevent data parsing crashes.
 
@@ -135,7 +151,7 @@ Manages the interactive equipment marketplace rosters. Copied entries must expli
 
     free = true -> Instantly bypasses cash price rendering and introduces a premium purple highlight banner block reading 🎁 FREE TO GOOD HOME.
 
-🚨 4. Tactical Emergency Notices (data/notice.toml)
+🚨 4. Tactical Emergency Notices (`data/notice.toml`)
 
 Allows individual appointed Emergency Coordinators (ECs) or PIO operators to issue broadcast advisories without accessing full website settings.
 
@@ -151,7 +167,7 @@ Allows individual appointed Emergency Coordinators (ECs) or PIO operators to iss
 
     link_button_active = true -> Draws an action button inside the alert that maps out to a deep subpage (/notice/). This page parses your ongoing chronological line-by-line [[updates]] log feed timeline wire as an activation window unfolds.
 
-🗞️ 5. Automated Weekly Bulletins Pipeline (/content/bulletins/)
+🗞️ 5. Automated Weekly Bulletins Pipeline (`/content/bulletins/`)
 
 Weekly updates compiled by the Club Secretary are handled through an automated multi-file content queue execution framework:
 
@@ -178,7 +194,7 @@ The system completely handles site logistics dynamically based on your Front Mat
 
     The Historical Vault Landing Hub: The moment a newer bulletin file is uploaded, older dispatches are automatically transitioned down into your running master listing database subpage at /bulletin-archive/. They group themselves inside a custom chronological index block marked with highly visible 📅 Week of [Date] indicator badges without an admin ever having to update links manually!
 
-👥 6. Membership Database (data/members.toml)
+👥 6. Membership Database (`data/members.toml`)
 
 Manages the complete active alphabetical membership roster directory table.
 
@@ -186,7 +202,7 @@ Manages the complete active alphabetical membership roster directory table.
 
     Fields map automatically to columns on the public index directory block. Keep strings wrapped in quotation marks.
 
-🏛️ 7. Leadership & Committees (data/roster.toml)
+🏛️ 7. Leadership & Committees (`data/roster.toml`)
 
 Controls elected Board positions and appointed task chairs independently from the raw membership roster.
 
