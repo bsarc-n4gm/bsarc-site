@@ -52,11 +52,9 @@
                             <div style="font-size: 12px; color: #555555; background-color: #f7f7f7; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #777777;">📻 <strong>Details:</strong> {{ .location }}</div>
                         {{ end }}
                         {{ if .zoom_url }}
-                            {{ if (eq $.Site.Data.calendar.show_zoom_globally true) }}
-                                <a href="{{ .zoom_url }}" target="_blank" rel="noopener" style="font-size: 12px; color: #1b5e20; background-color: #e8f5e9; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #2e7d32; text-decoration: none; display: block; box-sizing: border-box;">💻 <strong style="text-decoration: underline;">Join Zoom Video Meeting</strong></a>
-                            {{ else }}
-                                <div style="font-size: 11px; color: #718096; background-color: #f7f7f7; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #cbd5e0; font-style: italic;">🔒 Zoom button activates morning of the meeting.</div>
-                            {{ end }}
+                            <div style="font-size: 11px; color: #2c5282; background-color: #ebf8ff; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #3182ce; line-height: 1.4; box-sizing: border-box; font-style: italic; font-weight: 500; margin-top: 2px;">
+                                🔒 Video Meeting link is distributed securely to members via the weekly email dispatch.
+                            </div>
                         {{ end }}
                         {{ if .link_url }}
                             <a href="{{ .link_url }}" target="_blank" rel="noopener" style="font-size: 12px; color: #01579b; background-color: #e1f5fe; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #0288d1; text-decoration: none; display: block; box-sizing: border-box;">🌐 <strong>Visit Event Website</strong></a>

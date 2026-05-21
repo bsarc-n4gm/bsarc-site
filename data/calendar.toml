@@ -26,9 +26,6 @@
 #                     it appends an orange "📄 View Event Flyer" button automatically.
 # ====================================================================
 
-# GLOBAL SECURITY CONTROLS
-show_zoom_globally = false
-
 # Calendar Last Updated Date Field
 last_updated = "February 25, 2026"
 
