@@ -4,59 +4,65 @@
 <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 10px 0;">
     
     {{ $currentMonth := "" }}
+    {{ $firstMonth := true }}
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px;">
+    {{ range $events }}
+        {{ $itemMonth := index (split .display_date " ") 0 }}
         
-        {{ range $events }}
-            {{ $itemMonth := index (split .display_date " ") 0 }}
-            
-            {{ $isPast := lt .date $nowString }}
-            {{ $isCanceled := eq .canceled true }}
-            {{ $isMeeting := findRE "(?i)^Monthly Club Meeting" .name }}
-            
-            {{ $headerBg := "#2e7d32" }} {{ if $isCanceled }}
-                {{ $headerBg = "#d32f2f" }} {{ else if $isPast }}
-                {{ $headerBg = "#777777" }} {{ else if $isMeeting }}
-                {{ $headerBg = "#1b365d" }} {{ end }}
+        {{ $isPast := lt .date $nowString }}
+        {{ $isCanceled := eq .canceled true }}
+        {{ $isMeeting := findRE "(?i)^Monthly Club Meeting" .name }}
+        
+        {{ $headerBg := "#2e7d32" }}
+        {{ if $isCanceled }}
+            {{ $headerBg = "#d32f2f" }}
+        {{ else if $isPast }}
+            {{ $headerBg = "#777777" }}
+        {{ else if $isMeeting }}
+            {{ $headerBg = "#1b365d" }}
+        {{ end }}
 
-            {{ if ne $itemMonth $currentMonth }}
-                {{ $currentMonth = $itemMonth }}
-                
-                </div>
-                <h2 style="grid-column: 1 / -1; font-size: 20px; color: #111111; margin: 40px 0 15px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em; font-family: 'Helvetica Neue', Arial, sans-serif;">
-                    📅 {{ $currentMonth }} 2026
-                </h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; width: 100%;">
+        {{ if ne $itemMonth $currentMonth }}
+            {{ $currentMonth = $itemMonth }}
+            {{ if not $firstMonth }}
+                </div>{{ else }}
+                {{ $firstMonth = false }}
             {{ end }}
             
-            <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); display: flex; flex-direction: column; overflow: hidden; transition: transform 0.15s ease; {{ if $isCanceled }}border-left: 4px solid #d32f2f; background-color: #fffafb;{{ else if $isPast }}opacity: 0.55; border-left: 4px solid #bcbcbc;{{ end }}" 
-                 {{ if and (not $isPast) (not $isCanceled) }}
-                 onmouseover="this.style.transform='translateY(-2px)'" 
-                 onmouseout="this.style.transform='none'"
-                 {{ end }}>
-                
-                <div style="background-color: {{ $headerBg }}; color: #ffffff; padding: 8px 12px; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; {{ if and $isPast (not $isCanceled) }}text-decoration: line-through;{{ end }}">
-                    {{ if $isCanceled }}⚠️ CANCELED: {{ else if $isPast }}✅ Completed: {{ else }}{{ end }}{{ .display_date }}
+            <h2 style="font-size: 20px; color: #111111; margin: 40px 0 15px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em;">
+                📅 {{ $currentMonth }} 2026
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; width: 100%; margin-bottom: 20px;">
+        {{ end }}
+        
+        <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); display: flex; flex-direction: column; overflow: hidden; transition: transform 0.15s ease; {{ if $isCanceled }}border-left: 4px solid #d32f2f; background-color: #fffafb;{{ else if $isPast }}opacity: 0.55; border-left: 4px solid #bcbcbc;{{ end }}" 
+             {{ if and (not $isPast) (not $isCanceled) }}
+             onmouseover="this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.transform='none'"
+             {{ end }}>
+            
+            <div style="background-color: {{ $headerBg }}; color: #ffffff; padding: 8px 12px; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; {{ if and $isPast (not $isCanceled) }}text-decoration: line-through;{{ end }}">
+                {{ if $isCanceled }}⚠️ CANCELED: {{ else if $isPast }}✅ Completed: {{ else }}📆 {{ end }}{{ .display_date }}
+            </div>
+            
+            <div style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
+                <div style="margin-bottom: 4px;">
+                    <h3 style="margin: 0; font-size: 15px; font-weight: bold; color: #111111; line-height: 1.4; {{ if or $isPast $isCanceled }}text-decoration: line-through; color: #777777;{{ end }}">
+                        {{ .name }}
+                    </h3>
+                    {{ if .time }}
+                        <div style="font-size: 13px; color: {{ if $isCanceled }}#b91c1c{{ else if $isPast }}#888888{{ else }}#e65100{{ end }}; font-weight: bold; margin-top: 4px; {{ if $isCanceled }}text-decoration: line-through;{{ end }}">
+                            🕒 {{ .time }}
+                        </div>
+                    {{ end }}
                 </div>
                 
-                <div style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
-                    <div style="margin-bottom: 4px;">
-                        <h3 style="margin: 0; font-size: 15px; font-weight: bold; color: #111111; line-height: 1.4; {{ if or $isPast $isCanceled }}text-decoration: line-through; color: #777777;{{ end }}">
-                            {{ .name }}
-                        </h3>
-                        {{ if .time }}
-                            <div style="font-size: 13px; color: {{ if $isCanceled }}#b91c1c{{ else if $isPast }}#888888{{ else }}#e65100{{ end }}; font-weight: bold; margin-top: 4px; {{ if $isCanceled }}text-decoration: line-through;{{ end }}">
-                                🕒 {{ .time }}
-                            </div>
-                        {{ end }}
-                    </div>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                      {{ if $isCanceled }}
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    {{ if $isCanceled }}
                         <div style="font-size: 11px; color: #b91c1c; background-color: #fef2f2; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #ef4444; line-height: 1.4; font-weight: 500;">
-                          🚫 This schedule block has been officially canceled due to operational logistics.
+                            🚫 This schedule block has been officially canceled due to operational logistics.
                         </div>
-                      {{ else }}
+                    {{ else }}
                         {{ if and .location (not (findRE "(?i)(air|remote|online|repeater|net)" .location)) }}
                             {{ if $isPast }}
                                 <div style="font-size: 12px; color: #777777; background-color: #f5f5f5; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #9e9e9e; line-height: 1.4; box-sizing: border-box;">
@@ -100,12 +106,8 @@
                                 </div>
                             {{ end }}
                         {{ end }}
-                      {{ end }}
-                    </div>
-                </div>
-                
-            </div>
-            {{ if and .link_url (not $isCanceled) }}
+
+                        {{ if .link_url }}
                             <a href="{{ .link_url }}" 
                                target="_blank" 
                                rel="noopener"
@@ -117,7 +119,7 @@
                             </a>
                         {{ end }}
 
-                        {{ if and .flyer_path (not $isCanceled) }}
+                        {{ if .flyer_path }}
                             <a href="{{ .flyer_path | relURL }}" 
                                target="_blank" 
                                rel="noopener"
@@ -128,7 +130,9 @@
                                 📄 <strong>View Event Flyer (PDF)</strong>
                             </a>
                         {{ end }}
-        {{ end }}
-        
-    </div> 
-</div>
+                    {{ end }}
+                </div>
+            </div>
+            
+        </div>{{ end }}
+    </div></div>
