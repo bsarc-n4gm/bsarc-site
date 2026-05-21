@@ -1,7 +1,113 @@
+version:
+Markdown
+
 # 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
-Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** paired with the customized **Ananke Theme** to compile an ultra-fast, modern, database-free web application hosted entirely via **GitHub Pages**.
+Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
 
+---
+
+## 🛠️ Quick Start Station Commands
+
+To test modifications locally or deploy updates directly to the live server, open your Zorin terminal workspace at `/home/mark/bsarc-site` and execute these specific command line strings:
+
+### 1. Launch Local Testing Sandbox Server
+```bash
+hugo server --bind 0.0.0.0 --baseURL [http://192.168.68.109](http://192.168.68.109) --port 1313 -D
+
+    Local Sandbox URL: Open Firefox and navigate to http://localhost:1313/
+
+    Local Network IP Scaling: View real-time layout rendering across mobile devices or tablets on your garage network via http://192.168.68.109:1313/.
+
+    Live-Reload Automation: Any text content or data sheet modification saved inside VS Code will instantly recompile in milliseconds and automatically update your open browser window.
+
+2. Lock in a Change Milestone & Push Live
+Bash
+
+git add .
+git commit -m "docs(bulletins): publish weekly bulletin for current timeline"
+git push origin main
+
+    Pushing changes to the master main branch immediately alerts your automated GitHub Actions server compiler. The remote production pipeline will rebuild the entire platform and deploy your updates to the web within 30 seconds automatically.
+
+🏗️ Web Framework Directory Topography
+
+This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
+Plaintext
+
+/home/mark/bsarc-site/
+├── data/                           # 📂 MASTER STRUCTURAL TEXT SHEETS (MAIN WORKSPACE)
+│   ├── calendar.toml               # Chronological club activities & exam logs sheet
+│   ├── forsale.toml                # Active ham radio swapfest marketplace entries
+│   ├── homepage.toml               # Front dashboard text strings and net frequency lists
+│   ├── members.toml                # Complete verified active club member registry table
+│   ├── notice.toml                 # Tactical emergency alert banners config matrix
+│   └── roster.toml                 # Elected corporate board roles and committee chairs
+├── content/                        # 📄 PUBLIC WEBSITE EDITABLE CORE PAGES
+│   ├── _index.md                   # Home screen metadata initialization routing anchors
+│   ├── ares.md                     # Amateur Radio Emergency Service overview node
+│   ├── arrl.md                     # American Radio Relay League affiliate profiles
+│   ├── board.md                    # Officers & Volunteers list container layout
+│   ├── bulletin-archive.md         # The main listing database page for past dispatches
+│   ├── bulletins/                  # 🗞️ RAW WEEKLY DISPATCH MARKDOWN QUEUE
+│   │   ├── bulletin-2026-01-05.md  # Individual weekly bulletin file source entry nodes
+│   │   └── [ ... remains chronological ... ]
+│   ├── calendar.md                 # Subpage layout container serving the Master Itinerary
+│   ├── fcc-renewal.md              # Reference instructions guide for licensing renewals
+│   ├── forsale.md                  # Equipment swapfest market marketplace hub route
+│   ├── gallery.md                  # Media layout grid container for event pictures
+│   ├── links.md                    # Extracted reference links collection catalog
+│   ├── notice.md                   # Active Incident tactical timeline log page
+│   ├── qsl-info.md                 # DX collection bureaus and confirmation routes
+│   ├── repeaters.md                # Hardware coordinate lists for regional hf/vhf systems
+│   ├── roster.md                   # Alpha directory membership roster table container
+│   ├── skywarn.md                  # Severe weather spotter training notification link
+│   ├── uunaa.md                    # Club history archive logs parameters sheet
+│   └── welcome-kit.md              # Onboarding handbook kit guide line for new hams
+├── layouts/                        # 🎨 PRODUCTION PRESENTATION OVERRIDE BLUEPRINTS
+│   ├── index.html                  # Base template entry route initialization point
+│   ├── _default/                   
+│   │   ├── dashboard.html          # Main double-column index frame architecture layout
+│   │   ├── single.html             # Base structural template loop styling single articles
+│   │   └── _markup/                
+│   │       └── render-link.html    # Specialized script mapping relative subpage URLs
+│   └── shortcodes/                 # Presentation snippets triggered inside markdown pages
+│       ├── bulletin_vault.html     # Compiles your stylized bulletin history archive blocks
+│       ├── calendar_updated.html   # Sandbox parsing file for calendar processing tests
+│       ├── club_calendar.html      # Automated 3-month homepage rolling upcoming window
+│       ├── club_roster.html        # Loops elected board profiles and appointed task grids
+│       ├── gallery_grid.html       # Auto-compiles horizontal multi-image layout matrix
+│       ├── incident_log.html       # Chronological emergency tactical timeline logger element
+│       ├── master_calendar.html    # Automated active future grids & past archive details drawer
+│       ├── member_directory.html   # Logic loops compiling membership columns alphabetically
+│       ├── repeater_table.html     # Compiles active infrastructure frequency logs metrics
+│       ├── swap_listings.html      # Marketplace equipment listing card block template loop
+│       └── toc.html                # Auto-generates interactive floating Tables of Contents
+└── static/                         # 🖼️ PERMANENT UNCHANGING WEB GRAPHIC MEDIA VAULTS
+    ├── images/                     # Club vectors, icons, badges, and seasonal banners
+    │   ├── ares_logo.svg
+    │   ├── arrl_logo.webp
+    │   ├── bsarc_repeater_logo.webp
+    │   ├── club_banner.webp
+    │   ├── club_logo.webp
+    │   ├── skywarn.svg
+    │   └── www_icon.png
+    ├── media/                      # Chronological event folders serving gallery matrices
+    │   ├── 2008/oak-island-2008/
+    │   ├── 2023/old-baldy-2023/
+    │   ├── 2024/field-day-2024/
+    │   └── 2025/cp-2025/
+    └── pdf/                        # Legal charter bylaws and fillable application forms
+        ├── amateur_test_sessions.pdf
+        ├── ares_member_registration.pdf
+        ├── arrl_band_plan.pdf
+        ├── bsarc_articles_of_formation.pdf
+        ├── bsarc_by_laws.pdf
+        ├── bsarc_membership_application.pdf
+        ├── bsarc_sro.pdf
+        └── weekly_bulletin.pdf
+
+📂 Data Sheets Reference Guide (/data/)
 ---
 
 📂 Data Sheets Reference Guide (/data/)
