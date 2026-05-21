@@ -6,11 +6,14 @@
 
 <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 10px 0;">
     
-    {{ $currentMonth := "" }}
-    {{ $firstMonth := true }}
+    {{ $currentSectionKey := "" }}
+    {{ $firstSection := true }}
     
     {{ range sort $upcomingEvents "date" "asc" }}
         {{ $itemMonth := index (split .display_date " ") 0 }}
+        {{ $eventYear := substr .date 0 4 }}
+        {{ $sectionKey := printf "%s %s" $itemMonth $eventYear }}
+        
         {{ $isCanceled := eq .canceled true }}
         {{ $isMeeting := findRE "(?i)^Monthly Club Meeting" .name }}
         
@@ -18,19 +21,19 @@
         {{ if $isCanceled }} {{ $headerBg = "#d32f2f" }}
         {{ else if $isMeeting }} {{ $headerBg = "#1b365d" }} {{ end }}
 
-        {{ if ne $itemMonth $currentMonth }}
-            {{ $currentMonth = $itemMonth }}
-            {{ if not $firstMonth }} </div> {{ else }} {{ $firstMonth = false }} {{ end }}
+        {{ if ne $sectionKey $currentSectionKey }}
+            {{ $currentSectionKey = $sectionKey }}
+            {{ if not $firstSection }} </div> {{ else }} {{ $firstSection = false }} {{ end }}
             
             <h2 style="font-size: 18px; color: #111111; margin: 35px 0 15px 0; border-bottom: 2px solid #2e7d32; padding-bottom: 6px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em;">
-                📅 {{ $currentMonth }} Operations
+                📅 {{ $itemMonth }} {{ $eventYear }} Operations
             </h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; width: 100%; margin-bottom: 20px;">
         {{ end }}
         
         <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); display: flex; flex-direction: column; overflow: hidden; transition: transform 0.15s ease; {{ if $isCanceled }}border-left: 4px solid #d32f2f; background-color: #fffafb;{{ end }}" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
             <div style="background-color: {{ $headerBg }}; color: #ffffff; padding: 8px 12px; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">
-                {{ if $isCanceled }}⚠️ CANCELED: {{ else }}📆 {{ end }}{{ .display_date }}
+                {{ if $isCanceled }}⚠️ CANCELED: {{ else }}📆 {{ end }}{{ .display_date }}, {{ $eventYear }}
             </div>
             <div style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
                 <div>
@@ -87,8 +90,9 @@
                         </thead>
                         <tbody>
                             {{ range sort $pastEvents "date" "desc" }}
+                            {{ $pastEventYear := substr .date 0 4 }}
                             <tr style="border-bottom: 1px solid #eeeeee; background-color: #fdfdfd;" onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='#fdfdfd'">
-                                <td style="padding: 10px 12px; font-weight: bold; color: #777777; text-decoration: line-through;">{{ .display_date }}</td>
+                                <td style="padding: 10px 12px; font-weight: bold; color: #777777; text-decoration: line-through;">{{ .display_date }}, {{ $pastEventYear }}</td>
                                 <td style="padding: 10px 12px; color: #666666;">
                                     <strong style="color: #555555;">{{ .name }}</strong>
                                     {{ if .time }}<span style="font-size: 11px; color: #888888; margin-left: 8px;">🕒 {{ .time }}</span>{{ end }}
