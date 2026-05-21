@@ -25,7 +25,10 @@
           {{ $counter = add $counter 1 }}
           {{ $isCanceled := eq .canceled true }}
           <tr style="border-bottom: 1px solid #eeeeee; background-color: {{ if $isCanceled }}#fff5f5{{ else }}#ffffff{{ end }};">
-            <td style="padding: 12px 10px; font-weight: bold; color: {{ if $isCanceled }}#cc0000; text-decoration: line-through;{{ else }}#111111{{ end }}; vertical-align: top;">{{ .display_date }}</td>
+            
+            <td style="padding: 12px 10px; font-weight: bold; color: {{ if $isCanceled }}#cc0000; text-decoration: line-through;{{ else }}#111111{{ end }}; vertical-align: top;">
+              {{ .display_date }}
+            </td>
             
             <td style="padding: 12px 10px; color: #111111; vertical-align: top;">
               {{ if $isCanceled }}
@@ -46,6 +49,7 @@
               {{ if $isCanceled }}
                 <div style="color: #aa0000; font-weight: 500; font-style: italic;">This event has been called off. Notice posted via web desk.</div>
               {{ else }}
+                
                 {{ if and .location (not (findRE "(?i)(air|remote|online|repeater|net|zoom)" .location)) }}
                   <div style="margin-bottom: 6px;">
                     📍 <strong>In-Person:</strong> {{ .location }}
@@ -71,8 +75,24 @@
                     </div>
                   {{ end }}
                 {{ end }}
-              {{ end }}
-            </td>
+
+                {{ if .link_url }}
+                  <div style="margin-top: 6px; padding-top: 4px; border-top: 1px dotted #dddddd; font-size: 13px;">
+                    🌐 <a href="{{ .link_url }}" target="_blank" rel="noopener" style="color: #0288d1; font-weight: bold; text-decoration: underline;">
+                      Visit Event Website
+                    </a>
+                  </div>
+                {{ end }}
+
+                {{ if .flyer_path }}
+                  <div style="margin-top: 6px; padding-top: 4px; border-top: 1px dotted #dddddd; font-size: 13px;">
+                    📄 <a href="{{ .flyer_path | relURL }}" target="_blank" rel="noopener" style="color: #f57c00; font-weight: bold; text-decoration: underline;">
+                      View Event Flyer (PDF)
+                    </a>
+                  </div>
+                {{ end }}
+
+              {{ end }} </td>
           </tr>
         {{ end }}
       {{ end }}

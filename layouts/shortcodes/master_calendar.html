@@ -105,6 +105,29 @@
                 </div>
                 
             </div>
+            {{ if and .link_url (not $isCanceled) }}
+                            <a href="{{ .link_url }}" 
+                               target="_blank" 
+                               rel="noopener"
+                               title="Open official event website landing page in a new browser tab"
+                               style="font-size: 12px; color: #01579b; background-color: #e1f5fe; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #0288d1; line-height: 1.4; text-decoration: none; display: block; transition: all 0.15s ease; box-sizing: border-box; margin-top: 2px;"
+                               onmouseover="this.style.backgroundColor='#b3e5fc';"
+                               onmouseout="this.style.backgroundColor='#e1f5fe';">
+                                🌐 <strong>Visit Event Website</strong>
+                            </a>
+                        {{ end }}
+
+                        {{ if and .flyer_path (not $isCanceled) }}
+                            <a href="{{ .flyer_path | relURL }}" 
+                               target="_blank" 
+                               rel="noopener"
+                               title="Open download package or event informational flyer in a new browser tab"
+                               style="font-size: 12px; color: #e65100; background-color: #fff3e0; padding: 8px 10px; border-radius: 4px; border-left: 3px solid #f57c00; line-height: 1.4; text-decoration: none; display: block; transition: all 0.15s ease; box-sizing: border-box; margin-top: 2px;"
+                               onmouseover="this.style.backgroundColor='#ffe0b2';"
+                               onmouseout="this.style.backgroundColor='#fff3e0';">
+                                📄 <strong>View Event Flyer (PDF)</strong>
+                            </a>
+                        {{ end }}
         {{ end }}
         
     </div> 

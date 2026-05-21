@@ -20,6 +20,10 @@
 #                            it displays a safe, unclickable gray info panel.
 #     - Physical Venues: If it is a real venue street address, it automatically 
 #                        formats a blue interactive button routed to Google Maps!
+#     - External Web Info: If "link_url" contains a web link, it appends a blue
+#                          "🌐 Visit Event Website" shortcut automatically.
+#     - Media Flyers: If "flyer_path" targets an asset (e.g., "/library/flyer.pdf"),
+#                     it appends an orange "📄 View Event Flyer" button automatically.
 # ====================================================================
 
 # GLOBAL SECURITY CONTROLS
@@ -44,6 +48,8 @@ name = "📆 Orlando HamCation"
 location = "Central Florida Fairgrounds and Expo Park, 4603 W Colonial Dr, Orlando, FL 32808"
 time = ""
 zoom_url = ""
+link_url = "https://www.hamcation.com/"
+flyer_path = ""
 canceled = false
 
 [[event]]
@@ -71,6 +77,8 @@ name = "📆 Charlotte Hamfest"
 location = "Charlotte, NC"
 time = "Fri 3PM-7PM, Sat 8:30AM-3PM"
 zoom_url = ""
+link_url = "https://charlottehamfest.org/"
+flyer_path = "/library/charlotte_2026_flyer.pdf" # Put your PDFs right inside your static/library/ folder!
 canceled = false
 
 [[event]]
