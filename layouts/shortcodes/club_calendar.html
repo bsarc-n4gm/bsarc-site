@@ -23,10 +23,56 @@
       {{ range sort $upcomingEvents "date" "asc" }}
         {{ if le .date $maxUpcomingDate }}
           {{ $counter = add $counter 1 }}
-          <tr style="border-bottom: 1px solid #eeeeee; background-color: #ffffff;">
-            <td style="padding: 12px 10px; font-weight: bold; color: #111111;">{{ .display_date }}</td>
-            <td style="padding: 12px 10px; color: #111111;"><strong>{{ .name }}</strong></td>
-            <td style="padding: 12px 10px; color: #555555; font-style: italic;">{{ .location }}</td>
+          {{ $isCanceled := eq .canceled true }}
+          <tr style="border-bottom: 1px solid #eeeeee; background-color: {{ if $isCanceled }}#fff5f5{{ else }}#ffffff{{ end }};">
+            <td style="padding: 12px 10px; font-weight: bold; color: {{ if $isCanceled }}#cc0000; text-decoration: line-through;{{ else }}#111111{{ end }}; vertical-align: top;">{{ .display_date }}</td>
+            
+            <td style="padding: 12px 10px; color: #111111; vertical-align: top;">
+              {{ if $isCanceled }}
+                <span style="background-color: #d32f2f; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: bold; margin-right: 6px; display: inline-block; vertical-align: middle;">❌ CANCELED</span>
+                <strong style="text-decoration: line-through; color: #777777; vertical-align: middle;">{{ .name }}</strong>
+              {{ else }}
+                <strong>{{ .name }}</strong>
+              {{ end }}
+              
+              {{ if .time }}
+                <div style="font-size: 12px; color: {{ if $isCanceled }}#999999; text-decoration: line-through;{{ else }}#e65100{{ end }}; font-weight: bold; margin-top: 3px;">
+                  🕒 {{ .time }}
+                </div>
+              {{ end }}
+            </td>
+            
+            <td style="padding: 12px 10px; color: #555555; line-height: 1.4; vertical-align: top;">
+              {{ if $isCanceled }}
+                <div style="color: #aa0000; font-weight: 500; font-style: italic;">This event has been called off. Notice posted via web desk.</div>
+              {{ else }}
+                {{ if and .location (not (findRE "(?i)(air|remote|online|repeater|net|zoom)" .location)) }}
+                  <div style="margin-bottom: 6px;">
+                    📍 <strong>In-Person:</strong> {{ .location }}
+                    <br>
+                    <a href="https://www.google.com/maps/search/?api=1&query={{ urlquery .location }}" target="_blank" rel="noopener" style="color: #1565c0; text-decoration: underline; font-size: 12px; display: inline-block; margin-top: 2px;">
+                      🗺️ View on Google Maps
+                    </a>
+                  </div>
+                {{ else if .location }}
+                  <div style="margin-bottom: 6px;">📻 <strong>On-Air/Details:</strong> {{ .location }}</div>
+                {{ end }}
+
+                {{ if .zoom_url }}
+                  {{ if (eq $.Site.Data.calendar.show_zoom_globally true) }}
+                    <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed #dddddd;">
+                      💻 <a href="{{ .zoom_url }}" target="_blank" rel="noopener" style="color: #2e7d32; font-weight: bold; text-decoration: underline;">
+                        Join Zoom Video Meeting
+                      </a>
+                    </div>
+                  {{ else }}
+                    <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed #dddddd; font-size: 12px; color: #718096; font-style: italic;">
+                      🔒 Remote Access link will be activated the morning of the meeting.
+                    </div>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </td>
           </tr>
         {{ end }}
       {{ end }}
@@ -52,9 +98,17 @@
       {{ if gt (len $pastEvents) 0 }}
         {{ range first 3 (sort $pastEvents "date" "desc") }}
         <tr style="border-bottom: 1px solid #eeeeee; background-color: #f9f9f9;">
-          <td style="padding: 10px; color: #666666; text-decoration: line-through;">{{ .display_date }}</td>
-          <td style="padding: 10px; color: #444444;">{{ .name }}</td>
-          <td style="padding: 10px; color: #777777; font-style: italic;">{{ .location }}</td>
+          <td style="padding: 10px; color: #666666; text-decoration: line-through; vertical-align: top;">{{ .display_date }}</td>
+          <td style="padding: 10px; color: #444444; vertical-align: top;">
+            {{ .name }}
+            {{ if .time }}
+              <div style="font-size: 11px; color: #888888; margin-top: 2px;">🕒 {{ .time }}</div>
+            {{ end }}
+          </td>
+          <td style="padding: 10px; color: #777777; font-style: italic; vertical-align: top;">
+            {{ .location }}
+            {{ if .zoom_url }} <br><span style="font-size: 11px; color: #999999;">(Zoom Option Was Available)</span> {{ end }}
+          </td>
         </tr>
         {{ end }}
       {{ else }}
