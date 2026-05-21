@@ -8,10 +8,16 @@
     <loc>http://192.168.68.109:1313/notice/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://192.168.68.109:1313/calendar/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/skywarn/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-20/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/forsale/</loc>

@@ -1,0 +1,44 @@
+{{ $bulletins := (where .Site.RegularPages "Section" "bulletins").ByDate.Reverse }}
+
+{{ if gt (len $bulletins) 0 }}
+  {{ range first 1 $bulletins }}
+    <div style="background-color: #f4fcf7; border: 2px solid #2e7d32; border-radius: 6px; padding: 20px; margin-bottom: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+      <div style="display: inline-block; background-color: #2e7d32; color: white; font-size: 11px; font-weight: bold; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">
+        🆕 Current Week's Bulletin
+      </div>
+      <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #111111;">{{ .Title }}</h3>
+      <div style="font-size: 12px; color: #666666; margin-bottom: 15px;">📅 Published Coordinate: {{ .Date.Format "January 2, 2006" }}</div>
+      <p style="margin: 0 0 15px 0; font-size: 14px; color: #333333; line-height: 1.5;">
+        {{ .Summary | truncate 220 }}
+      </p>
+      <a href="{{ .RelPermalink }}" style="display: inline-block; background-color: #2e7d32; color: white; padding: 8px 14px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        Read Full Announcement Page →
+      </a>
+    </div>
+  {{ end }}
+
+  <h3 style="font-size: 16px; color: #555555; margin-bottom: 15px; border-bottom: 1px solid #dddddd; padding-bottom: 5px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em;">📜 Historical Archives Vault</h3>
+  
+  {{ if gt (len $bulletins) 1 }}
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      {{ range after 1 $bulletins }}
+        <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; gap: 15px; transition: background 0.15s ease;" onmouseover="this.style.backgroundColor='#f9f9f9'" onmouseout="this.style.backgroundColor='#ffffff'">
+          <div>
+            <strong style="font-size: 14px; color: #222222;">{{ .Title }}</strong>
+            <span style="font-size: 12px; color: #777777; margin-left: 10px;">({{ .Date.Format "Jan 2, 2006" }})</span>
+          </div>
+          <a href="{{ .RelPermalink }}" style="font-size: 13px; color: #1565c0; font-weight: bold; text-decoration: none; white-space: nowrap;">
+            📄 View File
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p style="font-size: 13px; color: #888888; font-style: italic;">Older structural logs will cleanly populate this frame as weekly timelines progress.</p>
+  {{ end }}
+
+{{ else }}
+  <div style="text-align: center; padding: 30px; border: 1px dashed #cccccc; color: #777777; font-style: italic; border-radius: 6px;">
+    No bulletins currently logged into the content tree.
+  </div>
+{{ end }}
