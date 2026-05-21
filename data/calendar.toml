@@ -114,6 +114,7 @@ display_date = "April 25"
 name = "🏎️ Cape Fear Cruisers Car Club Show"
 location = "Southport, NC"
 time = ""
+link_url = "https://capefearcruisers.com/2026-r%26r-red-white-blue"
 zoom_url = ""
 canceled = false
 
@@ -123,6 +124,7 @@ display_date = "May 15-17"
 name = "📆 Dayton Hamvention"
 location = "Xenia, OH"
 time = ""
+link_url = "https://hamvention.org/"
 zoom_url = ""
 canceled = false
 
@@ -157,8 +159,9 @@ canceled = false
 date = "2026-07-04"
 display_date = "July 4"
 name = "🎆 4th of July Parade"
-location = "Local Parade Route"
+location = "Southport NC 28461"
 time = "9:00 AM"
+link_url = "https://nc4thofjuly.com/"
 zoom_url = ""
 canceled = false
 
@@ -195,20 +198,22 @@ display_date = "October 17-18"
 name = "🏕️ JOTA (Scouts Jamboree on the Air)"
 location = "Dutchman's Creek County Park"
 time = ""
+link_url = "https://www.jotajoti.info/jota"
 zoom_url = ""
 canceled = false
 
 [[event]]
-date = "2026-10-24"
-display_date = "October 24"
+date = "2026-10-31"
+display_date = "October 31"
 name = "🏎️ Cape Fear Cruisers Car Club Show"
 location = "Southport, NC"
 time = ""
+link_url = "https://capefearcruisers.com/2026-classiccarsrockroll"
 zoom_url = ""
 canceled = false
 
 [[event]]
-date = "2026-11-15"
+date = "2026-11-07"
 display_date = "November 7"
 name = "JARSfest"
 location = "The Farm at 95 in Selma NC"
