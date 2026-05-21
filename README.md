@@ -1,13 +1,6 @@
-Here is the fully updated and streamlined **`README.md`** file for your project repository.
-
-It has been tailored to focus exactly on what your administrators and club officers need to manage day-to-day operations—specifically reflecting our new secure `zoom_meeting` boolean toggles, the custom multi-file `bulletins/` publishing architecture, and your clean, standalone `bulletin-archive.md` page routing.
-
-Open **`README.md`** in VS Code and replace its entire contents with this copy-and-paste ready manual:
-
-```markdown
 # 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
-Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** paired with the customized **Ananke Theme** to compile an ultra-fast, modern, database-free web application hosted entirely via **GitHub Pages**.
+Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
 
 ---
 
@@ -19,70 +12,145 @@ To test modifications locally or deploy updates directly to the live server, ope
 ```bash
 hugo server --bind 0.0.0.0 --baseURL [http://192.168.68.109](http://192.168.68.109) --port 1313 -D
 
-```
+    Local Sandbox URL: Open Firefox and navigate to http://localhost:1313/
 
-* **Local Sandbox URL:** Open Firefox and navigate to `http://localhost:1313/`
-* **Local Network IP Scaling:** View real-time layout rendering across mobile devices or tablets on your garage network via `http://192.168.68.109:1313/`.
-* **Live-Reload Automation:** Any text content or data sheet modification saved inside VS Code will instantly recompile in milliseconds and automatically update your open browser window.
+    Local Network IP Scaling: View real-time layout rendering across mobile devices or tablets on your garage network via http://192.168.68.109:1313/.
 
-### 2. Lock in a Change Milestone & Push Live
+    Live-Reload Automation: Any text content or data sheet modification saved inside VS Code will instantly recompile in milliseconds and automatically update your open browser window.
 
-```bash
+2. Lock in a Change Milestone & Push Live
+Bash
+
 git add .
 git commit -m "docs(bulletins): publish weekly bulletin for current timeline"
 git push origin main
 
-```
+    Pushing changes to the master main branch immediately alerts your automated GitHub Actions server compiler. The remote production pipeline will rebuild the entire platform and deploy your updates to the web within 30 seconds automatically.
 
-* Pushing changes to the master `main` branch immediately alerts your automated GitHub Actions server compiler. The remote production pipeline will rebuild the entire platform and deploy your updates to the web within 30 seconds automatically.
+🏗️ Web Framework Directory Topography
 
----
+This tree documents the exact core structure of the live site framework. Files outside this map handle base compiling modules and should not be altered during routine administration:
+Plaintext
 
-## 📂 Data Sheets Reference Guide (`/data/`)
+/home/mark/bsarc-site/
+├── data/                           # 📂 MASTER STRUCTURAL TEXT SHEETS (MAIN WORKSPACE)
+│   ├── calendar.toml               # Chronological club activities & exam logs sheet
+│   ├── forsale.toml                # Active ham radio swapfest marketplace entries
+│   ├── homepage.toml               # Front dashboard text strings and net frequency lists
+│   ├── members.toml                # Complete verified active club member registry table
+│   ├── notice.toml                 # Tactical emergency alert banners config matrix
+│   └── roster.toml                 # Elected corporate board roles and committee chairs
+├── content/                        # 📄 PUBLIC WEBSITE EDITABLE CORE PAGES
+│   ├── _index.md                   # Home screen metadata initialization routing anchors
+│   ├── ares.md                     # Amateur Radio Emergency Service overview node
+│   ├── arrl.md                     # American Radio Relay League affiliate profiles
+│   ├── board.md                    # Officers & Volunteers list container layout
+│   ├── bulletin-archive.md         # The main listing database page for past dispatches
+│   ├── bulletins/                  # 🗞️ RAW WEEKLY DISPATCH MARKDOWN QUEUE
+│   │   ├── bulletin-2026-01-05.md  # Individual weekly bulletin file source entry nodes
+│   │   └── [ ... remains chronological ... ]
+│   ├── calendar.md                 # Subpage layout container serving the Master Itinerary
+│   ├── fcc-renewal.md              # Reference instructions guide for licensing renewals
+│   ├── forsale.md                  # Equipment swapfest market marketplace hub route
+│   ├── gallery.md                  # Media layout grid container for event pictures
+│   ├── links.md                    # Extracted reference links collection catalog
+│   ├── notice.md                   # Active Incident tactical timeline log page
+│   ├── qsl-info.md                 # DX collection bureaus and confirmation routes
+│   ├── repeaters.md                # Hardware coordinate lists for regional hf/vhf systems
+│   ├── roster.md                   # Alpha directory membership roster table container
+│   ├── skywarn.md                  # Severe weather spotter training notification link
+│   ├── uunaa.md                    # Club history archive logs parameters sheet
+│   └── welcome-kit.md              # Onboarding handbook kit guide line for new hams
+├── layouts/                        # 🎨 PRODUCTION PRESENTATION OVERRIDE BLUEPRINTS
+│   ├── index.html                  # Base template entry route initialization point
+│   ├── _default/                   
+│   │   ├── dashboard.html          # Main double-column index frame architecture layout
+│   │   ├── single.html             # Base structural template loop styling single articles
+│   │   └── _markup/                
+│   │       └── render-link.html    # Specialized script mapping relative subpage URLs
+│   └── shortcodes/                 # Presentation snippets triggered inside markdown pages
+│       ├── bulletin_vault.html     # Compiles your stylized bulletin history archive blocks
+│       ├── calendar_updated.html   # Sandbox parsing file for calendar processing tests
+│       ├── club_calendar.html      # Automated 3-month homepage rolling upcoming window
+│       ├── club_roster.html        # Loops elected board profiles and appointed task grids
+│       ├── gallery_grid.html       # Auto-compiles horizontal multi-image layout matrix
+│       ├── incident_log.html       # Chronological emergency tactical timeline logger element
+│       ├── master_calendar.html    # Automated active future grids & past archive details drawer
+│       ├── member_directory.html   # Logic loops compiling membership columns alphabetically
+│       ├── repeater_table.html     # Compiles active infrastructure frequency logs metrics
+│       ├── swap_listings.html      # Marketplace equipment listing card block template loop
+│       └── toc.html                # Auto-generates interactive floating Tables of Contents
+└── static/                         # 🖼️ PERMANENT UNCHANGING WEB GRAPHIC MEDIA VAULTS
+    ├── images/                     # Club vectors, icons, badges, and seasonal banners
+    │   ├── ares_logo.svg
+    │   ├── arrl_logo.webp
+    │   ├── bsarc_repeater_logo.webp
+    │   ├── club_banner.webp
+    │   ├── club_logo.webp
+    │   ├── skywarn.svg
+    │   └── www_icon.png
+    ├── media/                      # Chronological event folders serving gallery matrices
+    │   ├── 2008/oak-island-2008/
+    │   ├── 2023/old-baldy-2023/
+    │   ├── 2024/field-day-2024/
+    │   └── 2025/cp-2025/
+    └── pdf/                        # Legal charter bylaws and fillable application forms
+        ├── amateur_test_sessions.pdf
+        ├── ares_member_registration.pdf
+        ├── arrl_band_plan.pdf
+        ├── bsarc_articles_of_formation.pdf
+        ├── bsarc_by_laws.pdf
+        ├── bsarc_membership_application.pdf
+        ├── bsarc_sro.pdf
+        └── weekly_bulletin.pdf
 
-To guarantee seamless succession transitions for upcoming club officers and volunteers, the website's templates have been completely decoupled from the data blocks. **Administrators do not need to understand HTML grid spacing, tables, or CSS layouts to update core content.** Simply modify the structured text keys inside the files within the `data/` folder:
+📂 Data Sheets Reference Guide (/data/)
 
-### 🏠 1. Homepage Registry (`data/homepage.toml`)
+Modify the structured text configuration parameters inside the files within the data/ folder to quickly safely manipulate public data layout fields:
+🏠 1. Homepage Registry (data/homepage.toml)
 
 Controls text blocks, schedules, and active information cards displayed across the front screen grid rows.
 
-* `[banner]` -> Modifies paths for seasonal background pictures and alternate text labels.
-* `[welcome]` -> Houses your primary landing greetings headline text body.
-* `[[nets]]` -> Updates the active rows inside your main screen "Club Net Schedules" data table layout.
+    [banner] -> Modifies paths for seasonal background pictures and alternate text labels.
 
-### 📅 2. Event Itinerary Almanac (`data/calendar.toml`)
+    [welcome] -> Houses your primary landing greetings headline text body.
+
+    [[nets]] -> Updates the active rows inside your main screen "Club Net Schedules" data table layout.
+
+📅 2. Event Itinerary Almanac (data/calendar.toml)
 
 Manages your club activity calendar, VE testing milestones, hamfests, and community field deployments.
 
-* **Strict Date Formatting (`date = "YYYY-MM-DD"`):** This layout variable field must remain fully standardized (e.g., `"2026-06-27"`). The site uses this parameter string to automate date-sorting logic math behind the scenes.
-* **Automated Calendar Archiving:** Events scheduled for today or the future will cleanly group themselves by month under bold text headings at the top of the calendar. The millisecond an event date passes, the shortcode engine automatically shifts it into a clean, collapsible accordion history drawer at the bottom of the page to eliminate scroller clutter.
-* **🔒 Secure Zoom Meeting Toggle (`zoom_meeting = true/false`):** To safeguard your remote conferencing windows from automated bots or web-scraping utilities, set this key parameter to `true` (lowercase, no quotation marks) on any meeting block. The website code will intercept the flag and print a professional, unclickable lock icon notice instructing members to check their private club email bulletin for the hidden meeting link.
+    Strict Date Formatting (date = "YYYY-MM-DD"): This layout variable field must remain fully standardized (e.g., "2026-06-27"). The site uses this parameter string to automate date-sorting logic math behind the scenes.
 
-### 🔄 3. Swapfest Marketplace Dashboard (`data/forsale.toml`)
+    Automated Calendar Archiving: Events scheduled for today or the future will cleanly group themselves by month under bold text headings at the top of the calendar. The millisecond an event date passes, the shortcode engine automatically shifts it into a clean, collapsible accordion history drawer at the bottom of the page to eliminate scroller clutter.
+
+    🔒 Secure Zoom Meeting Toggle (zoom_meeting = true/false): To safeguard your remote conferencing windows from automated bots or web-scraping utilities, set this key parameter to true (lowercase, no quotation marks) on any meeting block. The website code will intercept the flag and print a professional, unclickable lock icon notice instructing members to check their private club email bulletin for the hidden meeting link.
+
+🔄 3. Swapfest Marketplace Dashboard (data/forsale.toml)
 
 Manages the equipment marketplace cards.
 
-* `sold = true` -> Fades out the item listing card background, strikes a line across titles, strips off email paths, and attaches a bold red **❌ SOLD** flag automatically.
-* `free = true` -> Overrides cash pricing brackets and introduces a purple highlight banner block reading **🎁 FREE TO GOOD HOME**.
+    sold = true -> Fades out the item listing card background, strikes a line across titles, strips off email paths, and attaches a bold red ❌ SOLD flag automatically.
 
-### 🚨 4. Tactical Emergency Notices (`data/notice.toml`)
+    free = true -> Overrides cash pricing brackets and introduces a purple highlight banner block reading 🎁 FREE TO GOOD HOME.
+
+🚨 4. Tactical Emergency Notices (data/notice.toml)
 
 Allows individual appointed Emergency Coordinators (ECs) or PIO operators to issue broadcast advisories right at the top of the main content column.
 
-* `active = true` -> Drops a thick, beautiful alert message block right at the top of the main homepage. Set to `false` to clear the notice away.
-* `color = "danger"` -> Swaps styles instantly based on severity fields: `"danger"` (crimson red block), `"warning"` (amber yellow block), or `"info"` (ocean blue block).
+    active = true -> Drops a thick, beautiful alert message block right at the top of the main homepage. Set to false to clear the notice away.
 
----
+    color = "danger" -> Swaps styles instantly based on severity fields: "danger" (crimson red block), "warning" (amber yellow block), or "info" (ocean blue block).
 
-## 🗞️ Automated Weekly Bulletins Pipeline (`/content/bulletins/`)
+🗞️ Automated Weekly Bulletins Pipeline (/content/bulletins/)
 
-Weekly updates compiled by the Club Secretary are handled through an **automated multi-file content queue execution framework** rather than updating a single massive PDF link document:
+Weekly updates compiled by the Club Secretary are handled through an automated multi-file content queue execution framework:
+1. Creating a New Dispatch
 
-### 1. Creating a New Dispatch
+To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your content/bulletins/ folder path using the date naming convention (e.g., bulletin-2026-05-21.md). Paste this exact front matter block at the absolute top:
+Markdown
 
-To broadcast a brand-new weekly update, simply create a fresh, individual Markdown source file directly inside your **`content/bulletins/`** folder path using the date naming convention (e.g., `bulletin-2026-05-21.md`). Paste this exact front matter block at the absolute top:
-
-```markdown
 ---
 title: "Weekly Bulletin: Write Your Core Focus Headline Here"
 date: 2026-05-21
@@ -91,40 +159,20 @@ draft: false
 
 ### 📡 Active Dispatch Updates Go Here...
 
-```
-
-### 2. How the Automated Sorting Framework Operates
+2. How the Automated Sorting Framework Operates
 
 The system completely handles site logistics dynamically based on your Front Matter parameters:
 
-* **The Homepage Spotlight:** The system loops through your bulletins directory, isolates the file with the newest calendar date stamp parameter, and prints its summary block live inside the homepage sidebar **🗞️ Secretary's Desk** panel module window automatically.
-* **The Historical Vault Landing Hub:** The moment a newer bulletin file is uploaded, older dispatches are automatically transitioned down into your running master listing database subpage at `/bulletin-archive/`. They group themselves inside a custom chronological index block marked with highly visible **📅 Week of [Date]** indicator badges without an admin ever having to update links manually!
+    The Homepage Spotlight: The system loops through your bulletins directory, isolates the file with the newest calendar date stamp parameter, and prints its summary block live inside the homepage sidebar 🗞️ Secretary's Desk panel module window automatically.
 
----
+    The Historical Vault Landing Hub: The moment a newer bulletin file is uploaded, older dispatches are automatically transitioned down into your running master listing database subpage at /bulletin-archive/. They group themselves inside a custom chronological index block marked with highly visible 📅 Week of [Date] indicator badges without an admin ever having to update links manually!
 
-## 📝 Operators Syntax Rules Checklist
+📝 Operators Syntax Rules Checklist
 
-1. **Always Seal String Paths:** Every textual input entry value MUST be nested safely inside double quotation marks (`"Value"`).
-2. **Booleans stay Lowercase:** Logistical true/false logic parameter tags must remain fully lowercase and completely free of quotes (`true` or `false`).
-3. **Sanitize Arrays:** Bullet points inside data specification loops (`specs = [ "Line 1", "Line 2" ]`) must be fully comma-separated to keep the parser engine from throwing syntax exceptions.
+    Always Seal String Paths: Every textual input entry value MUST be nested safely inside double quotation marks ("Value").
 
----
+    Booleans stay Lowercase: Logistical true/false logic parameter tags must remain fully lowercase and completely free of quotes (true or false).
 
-*Brunswick Shores Amateur Radio Club — Securing Reliable Communications for Southeastern North Carolina Since 2026.*
+    Sanitize Arrays: Bullet points inside data specification loops (specs = [ "Line 1", "Line 2" ]) must be fully comma-separated to keep the parser engine from throwing syntax exceptions.
 
-```
-
----
-
-### 🚀 Lock it Into Your Git Logs
-
-Save this new blueprint manual. Open up your terminal command line and execute the sync commands to push the updated project manual safely to the GitHub servers:
-
-```bash
-git add README.md
-git commit -m "docs(readme): update system manual to track secure zoom toggles and bulletins architecture"
-git push origin main
-
-```
-
-Your documentation is now completely aligned with the premium website platform you have engineered!
+Brunswick Shores Amateur Radio Club — Securing Reliable Communications for Southeastern North Carolina Since 2026.
