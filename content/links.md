@@ -5,6 +5,8 @@ draft: false
 layout: "single"
 ---
 
+<img src="/images/www_icon.png" alt="WWW Icon" style="float: right; margin: 0 0 20px 20px; max-width: 150px; height: auto; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));">
+
 # Amateur Radio Web Directory
 
 A comprehensive collection of essential amateur radio tools, federal databases, equipment modifications, and surrounding regional club portals. Local interest portals and emergency services links are highlighted below.
