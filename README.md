@@ -1,3 +1,4 @@
+![BSARC Club Logo](static/images/club_logo.webp)
 ## 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
 Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
