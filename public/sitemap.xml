@@ -5,9 +5,6 @@
     <loc>http://192.168.68.109:1313/gallery/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.68.109:1313/bulletins/</loc>
-    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.68.109:1313/notice/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -19,6 +16,9 @@
   </url><url>
     <loc>http://192.168.68.109:1313/forsale/</loc>
     <lastmod>2026-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/</loc>
+    <lastmod>2026-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/qsl-info/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
@@ -58,6 +58,9 @@
   </url><url>
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-04/</loc>
     <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-04-27/</loc>
+    <lastmod>2026-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/categories/</loc>
   </url><url>
