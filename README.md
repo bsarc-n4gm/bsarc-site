@@ -171,7 +171,6 @@ Controls elected Board positions and appointed task chairs independently from th
         ├── bsarc_sro.pdf
         └── weekly_bulletin.pdf
 
-
 📝 Operators Syntax Rules Checklist
 
     Always Seal String Paths: Every textual input entry value MUST be nested safely inside double quotation marks ("Value").
