@@ -1,6 +1,8 @@
 <p align="center">
   <img src="static/images/club_logo.webp" alt="BSARC Logo" width="200">
 </p>
+
+
 ## 📻 Brunswick Shores Amateur Radio Club (BSARC) - Web Platform Manual
 
 Welcome to the official station log and technical operating manual for the **BSARC Website Source Framework** (`n4gm.org`). This platform utilizes the **Hugo Static Site Generator** hosted entirely via **GitHub Pages** for ultra-fast, modern, database-free web operations.
@@ -89,7 +91,7 @@ Plaintext
 📂 Data Sheets Reference Guide (/data/)
 
 ---
-To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the data/ folder:
+To guarantee seamless succession transitions for upcoming club officers and volunteers, the layout templates have been decoupled entirely from raw content. You do not need to understand HTML grid spacing, tables, or CSS layout code to update the website. Simply modify the structured text configuration parameters inside the files within the `data/` folder:
 
 ### 🏠 2. Homepage Registry (`data/homepage.toml`)
 
@@ -210,7 +212,7 @@ draft: false
 ---
 ```
 
-   * Metadata Fields: title sets the bold index heading, date runs the automated chronological sorting timeline math, and setting draft = false unlocks the asset for the live compilation engine.
+   * Metadata Fields: `title` sets the bold index heading, `date` runs the automated chronological sorting timeline math, and setting `draft = false` unlocks the asset for the live compilation engine.
 
 📋 Component Layout Blocks Structure:
 
@@ -228,9 +230,9 @@ To maintain typographic and layout consistency across the archive repository, ut
 
 The Hugo site compiler reads the front matter variables of the bulletins queue directory on the fly to completely automate web distribution pathways without manual administrative intervention:
 
-   1. The Homepage Spotlight Desk Module: The system loops through the content/bulletins/ folder, isolates the file containing the newest chronological date parameter, automatically grabs its headline title and top text snippet ({{ .Summary }}), and displays it right inside the homepage sidebar 🗞️ Secretary's Desk dashboard block automatically.
+   1. The Homepage Spotlight Desk Module: The system loops through the `content/bulletins/` folder, isolates the file containing the newest chronological date parameter, automatically grabs its headline title and top text snippet (`{{ .Summary }}`), and displays it right inside the homepage sidebar 🗞️ Secretary's Desk dashboard block automatically.
 
-   2. The Historical Vault Archive (content/bulletin-archive.md): The centerpiece archive hub page calls your custom presentation snippet shortcode {{< bulletin_vault >}}. This shortcode runs a backend template loop sorting through all older dispatches, grouping them cleanly by month/year, and stamping them with high-visibility 📅 Week of [Date] chronological indicator badges to form a zero-maintenance, searchable index loop.
+   2. The Historical Vault Archive (`content/bulletin-archive.md`): The centerpiece archive hub page calls your custom presentation snippet shortcode `{{< bulletin_vault >}}`. This shortcode runs a backend template loop sorting through all older dispatches, grouping them cleanly by month/year, and stamping them with high-visibility 📅 Week of [Date] chronological indicator badges to form a zero-maintenance, searchable index loop.
 
 
 ### 👥 7. Membership Database (`data/members.toml`)
@@ -259,7 +261,7 @@ ORDER BY LastName, FirstName;
 ```
 5. Click Run (the red exclamation mark ❗️ symbol on the top ribbon).
 
-6. Access will generate a single column titled TomlOutput. Click the column header to select all entries, hit Ctrl + C to copy, open up data/members.toml in VS Code, clear out any old rows, and hit Ctrl + V to paste the complete structured file perfectly!
+6. Access will generate a single column titled `TomlOutput`. Click the column header to select all entries, hit `Ctrl` + `C` to copy, open up `data/members.toml` in VS Code, clear out any old rows, and hit `Ctrl` + `V` to paste the complete structured file perfectly!
 
 📦 Manual Individual Entry Addition (Alternative):
 
