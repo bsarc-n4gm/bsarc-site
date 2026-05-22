@@ -47,8 +47,9 @@ jobs:
             --gc \
             --minify
 
+      # 🟢 Rolled this step up to version 4 to enforce absolute Node.js 20 engine runtime compatibility
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
