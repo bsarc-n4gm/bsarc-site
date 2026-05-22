@@ -3,10 +3,17 @@
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; flex-wrap: nowrap;">
         <div style="display: flex; gap: 16px; flex-wrap: nowrap; align-items: center;">
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap; transition: color 0.15s ease-in-out;">{{ .Name }}</a>
+            <a href="{{ .URL | relURL }}" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap; transition: color 0.15s ease-in-out;">{{ .Name }}</a>
             {{ end }}
         </div>
     </div>
+</div>
+
+{{ $homeData := site.Data.homepage }}
+<div class="header-banner-box">
+    <img src="{{ $homeData.banner.image | relURL }}" 
+         alt="{{ $homeData.banner.alt }}" 
+         style="width: 100%; height: auto; display: block; max-height: 280px; object-fit: cover;">
 </div>
 
 <article class="flex-l flex-wrap justify-between mw8 center ph3" style="margin-top: 50px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">

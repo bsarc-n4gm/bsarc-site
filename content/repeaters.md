@@ -1,6 +1,7 @@
 ---
 title: "Repeaters"
 date: 2026-05-17
+layout: "single"
 draft: false
 ---
 

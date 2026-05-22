@@ -1,8 +1,6 @@
 ---
 title: "Emergency Communications"
 date: 2026-05-21
-menu: "main"
-weight: 25
 layout: "single"
 ---
 

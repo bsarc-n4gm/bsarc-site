@@ -15,7 +15,7 @@
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;">
         <div style="display: flex; gap: 25px;">
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; transition: color 0.15s ease-in-out;">{{ .Name }}</a>
+            <a href="{{ .URL | relURL }}" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; transition: color 0.15s ease-in-out;">{{ .Name }}</a>
             {{ end }}
         </div>
     </div>
