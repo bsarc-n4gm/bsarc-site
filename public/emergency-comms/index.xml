@@ -22,5 +22,12 @@
       <guid>http://192.168.68.109:1313/emergency-comms/auxcomm/</guid>
       <description>&lt;img src=&#34;http://192.168.68.109:1313/images/club_logo.webp&#34; alt=&#34;BSARC Club Logo&#34; style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.15));&#34;&gt;&#xA;&lt;h1 id=&#34;brunswick-county-government-auxcomm-infrastructure&#34;&gt;Brunswick County Government AUXCOMM Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;The Auxiliary Communications (AUXCOMM) unit is a formally recognized public safety component integrated directly into the &lt;strong&gt;Brunswick County Emergency Management Agency&lt;/strong&gt; under the regulatory guidance of CISA and the Department of Homeland Security (DHS).&lt;/p&gt;&#xA;&lt;p&gt;Unlike private organizational programs, AUXCOMM hams are formally registered auxiliary government volunteers mobilized under state directives to execute direct communications support inside local municipal assets—including Emergency Operations Centers (EOCs), mobile public safety command trailers, and municipal 911 dispatch centers during official county disaster declarations.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Skywarn Severe Weather Operations</title>
+      <link>http://192.168.68.109:1313/emergency-comms/skywarn/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/emergency-comms/skywarn/</guid>
+      <description>&lt;img src=&#34;http://192.168.68.109:1313/images/skywarn.svg&#34; alt=&#34;Skywarn Logo&#34; style=&#34;display: block; margin: 0 auto; max-width: 200px; height: auto;&#34;&gt;&#xA;&lt;p&gt;The Brunswick Shores Amateur Radio Club works in close synchronization with the National Weather Service (NWS) to provide critical ground-truth verification when severe or tropical weather systems threaten our region.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-operational-procedures--infrastructure&#34;&gt;📡 Operational Procedures &amp;amp; Infrastructure&lt;/h3&gt;&#xA;&lt;p&gt;When hazardous conditions arise, the Brunswick County Skywarn Emergency Coordinators (ECs) will activate our localized spotter network. Spotters on the ground gather vital meteorological information and transmit reports directly to the ECs.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
