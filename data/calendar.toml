@@ -195,6 +195,28 @@ zoom_meeting = true
 canceled = false
 
 [[event]]
+date = "2026-08-11"
+display_date = "August 11"
+name = "📆 Monthly Club Meeting - Calabash EMS"
+location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
+time = "6:00 PM"
+link_url = ""
+flyer_path = ""
+zoom_meeting = true
+canceled = false
+
+[[event]]
+date = "2026-09-16"
+display_date = "September 16"
+name = "📆 Monthly Club Meeting - BEMC"
+location = "BEMC HQ, 795 Ocean Hwy, Supply, NC 28462"
+time = "6:00 PM"
+link_url = ""
+flyer_path = ""
+zoom_meeting = true
+canceled = false
+
+[[event]]
 date = "2026-10-03"
 display_date = "October 3"
 name = "📚 VE Test Session"
