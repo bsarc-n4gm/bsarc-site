@@ -272,6 +272,17 @@ zoom_meeting = false
 canceled = false
 
 [[event]]
+date = "2026-11-11"
+display_date = "November 11"
+name = "📆 Monthly Club Meeting - BEMC"
+location = "BEMC HQ, 795 Ocean Hwy, Supply, NC 28462"
+time = "6:00 PM"
+link_url = ""
+flyer_path = ""
+zoom_meeting = true
+canceled = false
+
+[[event]]
 date = "2026-12-09"
 display_date = "December 9"
 name = "🎄 Annual Club Christmas Party"
