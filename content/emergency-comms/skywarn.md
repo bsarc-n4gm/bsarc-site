@@ -2,6 +2,7 @@
 title: "Skywarn Severe Weather Operations"
 date: 2026-05-20
 draft: false
+layout: "single"
 ---
 
 <img src="/images/skywarn.svg" alt="Skywarn Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
