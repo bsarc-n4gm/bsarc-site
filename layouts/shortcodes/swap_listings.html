@@ -1,16 +1,55 @@
-{{ $data := site.Data.forsale }}
+{{ $forsale := site.Data.forsale }}
+{{ $inventory := site.Data.equipment }}
+{{ $mgrEmail := $inventory.config.manager_email | default "admin@bsarc.org" }}
+
+<div style="background-color: #f4f6f8; border-left: 5px solid #0d47a1; padding: 20px; margin-bottom: 30px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border-radius: 0 4px 4px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+    <div>
+        <h4 style="margin: 0 0 5px 0; color: #0d47a1; font-size: 16px; font-weight: bold;">📋 Looking for Club Loaner Gear?</h4>
+        <p style="margin: 0; color: #555555; font-size: 13px;">Authorized members can explore our full master physical holdings repository vault online.</p>
+    </div>
+    <a href="/inventory/" style="display: inline-block; padding: 10px 18px; font-size: 13px; background-color: #0d47a1; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 4px rgba(13,71,161,0.2); transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#0a3980'" onmouseout="this.style.backgroundColor='#0d47a1'">
+        View Club Inventory Matrix →
+    </a>
+</div>
 
 <div style="background-color: #fcf8e3; border: 1px solid #faebcc; padding: 15px; margin-bottom: 30px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; border-radius: 4px; color: #8a6d3b; line-height: 1.5;">
     <strong>📢 Marketplace Policy:</strong> These listings are provided as a courtesy to the local ham community. Brunswick Shores Amateur Radio Club handles no financial transactions. Please respond directly to the individual seller or buyer listed inside each item card.
 </div>
+
 <div style="text-align: right; font-family: sans-serif; font-size: 12px; color: #777777; margin-bottom: 15px; font-style: italic;">
     🗓️ Inventory Current as of: {{ safeHTML (now.Format "January 2, 2006") }}
 </div>
-{{ if $data.wanted }}
+
+{{ $clubSurplus := where $inventory.items "status" "For Sale" }}
+{{ if $clubSurplus }}
+<h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; color: #b85c00; border-bottom: 2px solid #b85c00; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold;">🏢 Club Surplus Equipment</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    {{ range $clubSurplus }}
+    <div style="background: #fffdf9; border: 1px solid #fbeed5; border-left: 5px solid #b85c00; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #fdf8e2; padding-bottom: 10px; margin-bottom: 12px; gap: 15px;">
+                <h3 style="margin: 0; color: #111111; font-size: 16px; font-weight: bold;">📻 {{ .name }}</h3>
+                <span style="background-color: #b85c00; color: #ffffff; padding: 4px 10px; font-size: 14px; font-weight: bold; border-radius: 20px; white-space: nowrap;">{{ .price | default "Inquire" }}</span>
+            </div>
+            <p style="font-size: 13px; color: #444444; margin: 0 0 10px 0;"><strong>Manufacturer:</strong> {{ .manufacturer }}</p>
+            <p style="font-size: 13px; color: #444444; margin: 0 0 10px 0;"><strong>Model:</strong> {{ .model }}</p>
+            <p style="font-size: 12px; color: #777777; font-style: italic; margin: 0 0 15px 0;">Owned by BSARC. Proceeds directly benefit club repeater funds.</p>
+        </div>
+        <div style="background-color: #fcf8e3; border-radius: 6px; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; border-top: 1px solid #faebcc;">
+            <span style="color: #8a6d3b;">📍 Loc: <strong>{{ .location }}</strong></span>
+            <a href="mailto:{{ $mgrEmail }}?subject=Surplus Inquiry: {{ .manufacturer }} {{ .model }}" style="display: inline-block; padding: 5px 12px; font-size: 12px; background-color: #b85c00; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold;">Buy Asset ✉️</a>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ if $forsale.wanted }}
 <h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold;">🔍 Equipment Wanted</h2>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-    {{ range $data.wanted }}
+    {{ range $forsale.wanted }}
     <div style="background-color: #e3f2fd; border: 1px solid #bbdefb; border-radius: 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: space-between;">
         <div>
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 10px;">
@@ -21,26 +60,23 @@
         </div>
         <div style="font-size: 12px; color: #555555; border-top: 1px dashed #bbdefb; padding-top: 8px; display: flex; justify-content: space-between; align-items: center;">
             <span>👤 <strong>{{ .buyer_name }}</strong> ({{ .buyer_call }})</span>
-            <a href="mailto:{{ .buyer_email }}" style="color: #0d47a1; font-weight: bold; text-decoration: none;">Reply ✉️</a>
+            <a href="mailto:{{ .buyer_email }}?subject=Wanted Gear Response: {{ .item }}" style="color: #0d47a1; font-weight: bold; text-decoration: none;">Reply ✉️</a>
         </div>
     </div>
     {{ end }}
 </div>
-    {{ else }}
-    <h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold;">🔍 Equipment Wanted</h2>
-    <div style="background-color: #f7f9fa; border: 1px dashed #cccccc; border-radius: 6px; padding: 20px; text-align: center; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #666666; margin-bottom: 40px;">
-        📋 No active equipment requests currently on file. Looking for a specific rig, tuner, or antenna asset? Contact the Club Secretary to post your request here!
-    </div>
+{{ else }}
+<h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold;">🔍 Equipment Wanted</h2>
+<div style="background-color: #f7f9fa; border: 1px dashed #cccccc; border-radius: 6px; padding: 20px; text-align: center; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #666666; margin-bottom: 40px;">
+    📋 No active equipment requests currently on file. Looking for a specific rig, tuner, or antenna asset? Contact the Club Secretary to post your request here!
+</div>
 {{ end }}
-
 
 <h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; color: #1b5e20; border-bottom: 2px solid #1b5e20; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold;">💰 Available Equipment</h2>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-    {{ range $data.items }}
-    
+    {{ range $forsale.items }}
     <div style="background: #ffffff; border: 1px solid {{ if .sold }}#dcdcdc{{ else if .free }}#d1c4e9{{ else }}#e0e0e0{{ end }}; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; {{ if .sold }}opacity: 0.55; background-color: #fafafa;{{ else if .free }}background-color: #fcfaff; border-left: 5px solid #4a148c;{{ end }}">
-        
         <div>
             <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 12px; gap: 15px;">
                 <h3 style="margin: 0; color: {{ if .sold }}#777777{{ else if .free }}#4a148c{{ else }}#111111{{ end }}; font-size: 16px; font-weight: bold; {{ if .sold }}text-decoration: line-through;{{ end }}">📻 {{ .name }}</h3>
@@ -56,7 +92,9 @@
             
             <ul style="margin: 0 0 20px 0; padding-left: 20px; color: {{ if .sold }}#888888{{ else }}#444444{{ end }}; font-size: 13px; line-height: 1.5;">
                 {{ range .specs }}
+                {{ if . }}
                 <li style="margin-bottom: 5px;">{{ . }}</li>
+                {{ end }}
                 {{ end }}
             </ul>
         </div>
@@ -74,16 +112,12 @@
                 {{ if .sold }}
                     <span style="color: #c62828; font-weight: bold;">🚫 Listing Closed</span>
                 {{ else }}
-                    <a href="mailto:{{ .seller_email }}" 
-                    style="display: inline-block; padding: 5px 12px; font-size: 12px; background-color: #1565c0; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background-color 0.15s ease;"
-                    onmouseover="this.style.backgroundColor='#0d47a1'" 
-                    onmouseout="this.style.backgroundColor='#1565c0'">
+                    <a href="mailto:{{ .seller_email }}?subject=Marketplace Inquiry: {{ .name }}" style="display: inline-block; padding: 5px 12px; font-size: 12px; background-color: #1565c0; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#0d47a1'" onmouseout="this.style.backgroundColor='#1565c0'">
                     ✉️ Contact Seller
                     </a>
                 {{ end }}
             </div>
         </div>
-        
     </div>
     {{ end }}
 </div>

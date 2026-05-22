@@ -1,0 +1,140 @@
+# ====================================================================
+# BSARC CLUB ASSET & MASTER EQUIPMENT INVENTORY
+# ====================================================================
+# STATUS LOGIC RULES:
+#   - Use "Available" for items in the locker/closet ready for loan.
+#   - Use "Checked Out" if a member has borrowed the asset.
+#   - Use "Donated" or "In Use" for permanent repeater/station gear.
+#   - Use "For Sale" to automatically trigger the Marketplace section.
+# ====================================================================
+
+[config]
+manager_email = "equipment-mgr@bsarc.org"  # Change this to update the whole site instantly!
+
+[[items]]
+name = "Radio Voter 8 PORT"
+manufacturer = "Ericsson GE"
+model = "N/A"
+serial = "N/A"
+location = "KM4EMR"
+qty = 1
+status = "Donated"
+
+[[items]]
+name = "Radio"
+manufacturer = "Ericsson GE"
+model = "ARM03"
+serial = "1409523"
+location = "KM4EMR"
+qty = 1
+status = "Donated"
+
+[[items]]
+name = "Power Supply"
+manufacturer = "Astron"
+model = "RS-20M"
+serial = "9703080"
+location = "KM4EMR"
+qty = 1
+status = "Donated"
+
+[[items]]
+name = "Duplexer"
+manufacturer = "Celwave"
+model = "N/A"
+serial = "N/A"
+location = "KM4EMR"
+qty = 1
+status = "Donated"
+
+[[items]]
+name = "Cavity"
+manufacturer = "TX RX Systems"
+model = "N/A"
+serial = "N/A"
+location = "KM4EMR"
+qty = 1
+status = "Donated"
+
+[[items]]
+name = "Antenna 2.4GHZ"
+manufacturer = "Ubiquiti"
+model = "Air Max AMO2G10"
+serial = "N/A"
+location = "KM4EMR"
+qty = 3
+status = "In Use"
+
+[[items]]
+name = "Antenna Sector 2.4GHZ"
+manufacturer = "Ubiquiti"
+model = "AM2G15-120"
+serial = "N/A"
+location = "KM4EMR"
+qty = 1
+status = "In Use"
+
+[[items]]
+name = "Bullet 2.4GHZ"
+manufacturer = "Ubiquiti"
+model = "M2HP"
+serial = "N/A"
+location = "KM4EMR"
+qty = 3
+status = "In Use"
+
+[[items]]
+name = "Rocket M2"
+manufacturer = "Ubiquiti"
+model = "N/A"
+serial = "N/A"
+location = "KM4EMR"
+qty = 1
+status = "In Use"
+
+[[items]]
+name = "Oscilloscope"
+manufacturer = "Crei"
+model = "255"
+serial = "N/A"
+location = "Bench"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Power Supply"
+manufacturer = "Powerwerx"
+model = "SS-30DV"
+serial = "24AA000037F"
+location = "Shelf 2-4"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Router"
+manufacturer = "Ubiquiti"
+model = "Air Router"
+serial = "N/A"
+location = "closet"
+qty = 5
+status = "Available"
+
+[[items]]
+name = "Computer"
+manufacturer = "Lenovo"
+model = "ThinkCentre M715Q"
+serial = "MJ06F1Y"
+location = "closet"
+qty = 1
+status = "For Sale"
+price = "$75"  # Added price field for surplus items
+
+[[items]]
+name = "Radio"
+manufacturer = "Yaesu"
+model = "FT-710"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "For Sale"
+price = "$650" # Added price field for surplus items
