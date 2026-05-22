@@ -2,8 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://192.168.68.109:1313/emergency-comms/</loc>
+    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://192.168.68.109:1313/gallery/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/ares/</loc>
+    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/auxcomm/</loc>
+    <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/bulletin-archive/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
@@ -28,9 +37,6 @@
   </url><url>
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-05-18/</loc>
     <lastmod>2026-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.68.109:1313/ares/</loc>
-    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/arrl/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
@@ -64,6 +70,54 @@
   </url><url>
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-04-27/</loc>
     <lastmod>2026-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-04-20/</loc>
+    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-04-13/</loc>
+    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-04-06/</loc>
+    <lastmod>2026-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-03-30/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-03-23/</loc>
+    <lastmod>2026-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-03-16/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-03-09/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-03-02/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-02-23/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-02-16/</loc>
+    <lastmod>2026-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-02-09/</loc>
+    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-02-02/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-01-26/</loc>
+    <lastmod>2026-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-01-19/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-01-12/</loc>
+    <lastmod>2026-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-01-05/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.68.109:1313/categories/</loc>
   </url><url>

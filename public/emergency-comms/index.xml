@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emergency Communications on Brunswick Shores Amateur Radio Club</title>
+    <link>http://192.168.68.109:1313/emergency-comms/</link>
+    <description>Recent content in Emergency Communications on Brunswick Shores Amateur Radio Club</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.68.109:1313/emergency-comms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amateur Radio Emergency Service (ARES)</title>
+      <link>http://192.168.68.109:1313/emergency-comms/ares/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/emergency-comms/ares/</guid>
+      <description>&lt;img src=&#34;http://192.168.68.109:1313/images/ares_logo.svg&#34; alt=&#34;ARES Logo Shield&#34; style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;&lt;h1 id=&#34;brunswick-county-arrl-ares-program&#34;&gt;Brunswick County ARRL ARES Program&lt;/h1&gt;&#xA;&lt;p&gt;The Amateur Radio Emergency Service (ARES) consists of licensed radio amateurs who have voluntarily registered their qualifications and equipment for auxiliary communications duties under the national ARRL leadership matrix.&lt;/p&gt;&#xA;&lt;p&gt;Every licensed amateur, regardless of membership in the ARRL or any other local organization, is eligible to join. Our primary mission is securing emergency communications support loops for non-governmental welfare and humanitarian field units (such as the American Red Cross and local shelters) during community emergencies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auxiliary Communications (AUXCOMM)</title>
+      <link>http://192.168.68.109:1313/emergency-comms/auxcomm/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/emergency-comms/auxcomm/</guid>
+      <description>&lt;img src=&#34;http://192.168.68.109:1313/images/club_logo.webp&#34; alt=&#34;BSARC Club Logo&#34; style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.15));&#34;&gt;&#xA;&lt;h1 id=&#34;brunswick-county-government-auxcomm-infrastructure&#34;&gt;Brunswick County Government AUXCOMM Infrastructure&lt;/h1&gt;&#xA;&lt;p&gt;The Auxiliary Communications (AUXCOMM) unit is a formally recognized public safety component integrated directly into the &lt;strong&gt;Brunswick County Emergency Management Agency&lt;/strong&gt; under the regulatory guidance of CISA and the Department of Homeland Security (DHS).&lt;/p&gt;&#xA;&lt;p&gt;Unlike private organizational programs, AUXCOMM hams are formally registered auxiliary government volunteers mobilized under state directives to execute direct communications support inside local municipal assets—including Emergency Operations Centers (EOCs), mobile public safety command trailers, and municipal 911 dispatch centers during official county disaster declarations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
