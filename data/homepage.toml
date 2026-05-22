@@ -19,8 +19,8 @@
 # ====================================================================
 [banner]
 
-image = "/images/club_banner_spring.webp"
-#image = "/images/club_banner_summer.webp"
+#image = "/images/club_banner_spring.webp"
+image = "/images/club_banner_summer.webp"
 #image = "/images/club_banner_fall.webp"
 #image = "/images/club_banner_winter.webp"
 alt = "Brunswick Shores ARC Banner"
