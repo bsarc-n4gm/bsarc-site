@@ -1,15 +1,39 @@
 # ====================================================================
-# BSARC CLUB ASSET & MASTER EQUIPMENT INVENTORY
+# BSARC MASTER CLUB ASSET & INVENTORY DATA SHEET
 # ====================================================================
-# STATUS LOGIC RULES:
-#   - Use "Available" for items in the locker/closet ready for loan.
-#   - Use "Checked Out" if a member has borrowed the asset.
-#   - Use "Donated" or "In Use" for permanent repeater/station gear.
-#   - Use "For Sale" to automatically trigger the Marketplace section.
+# INSTRUCTIONS FOR CLUB EDITORS AND OFFICERS:
+# 
+# 💡 Formatting Rules Checklist:
+#    1. Always Seal Text Values: Text columns MUST be nested inside 
+#       double quotation marks: "Value Text"
+#    2. Plain Numbers Only: Numerical counts (qty = 1) do NOT use quotes.
+#    3. Missing Properties: If serial or model entries are unknown, 
+#       record them as placeholders: "N/A"
+# 
+# 📝 Status & Workflow Reference Guide:
+#    - "Available"    -> Asset is ready in the closet for loan checkouts.
+#                        Generates an automated [Borrow 🏷️] link.
+#    - "For Sale"     -> Asset is cleared as club surplus for liquidation.
+#                        Requires a valid 'price = "$X"' parameter block.
+#                        Generates an automated [Purchase 💰] section.
+#    - "Checked Out"  -> Asset is currently on loan to an active member.
+#    - "In Use"       -> Asset is permanently deployed (e.g., at a repeater site).
+#    - "Donated"      -> Decommissioned or permanently given away.
 # ====================================================================
 
 [config]
-manager_email = "equipment-mgr@bsarc.org"  # Change this to update the whole site instantly!
+manager_email = "equipment-mgr@bsarc.org"
+
+# ====================================================================
+# 📦 ASSET RECORD LOG ENTRIES
+# ====================================================================
+
+# ====================================================================
+# BSARC CLUB ASSET & MASTER EQUIPMENT INVENTORY
+# ====================================================================
+
+[config]
+manager_email = "equipment-mgr@bsarc.org"
 
 [[items]]
 name = "Radio Voter 8 PORT"
@@ -117,6 +141,170 @@ model = "Air Router"
 serial = "N/A"
 location = "closet"
 qty = 5
+status = "Available"
+
+[[items]]
+name = "Computer"
+manufacturer = "Lenovo"
+model = "ThinkCentre M715Q"
+serial = "MJ06F1Y"
+location = "closet"
+qty = 1
+status = "For Sale"
+price = "$75"
+
+[[items]]
+name = "Radio"
+manufacturer = "Yaesu"
+model = "FT-710"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "For Sale"
+price = "$650"
+
+[[items]]
+name = "Toughswitch 5 Port PoE"
+manufacturer = "Ubiquiti"
+model = "ES-5XP-AU"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Nanostation M5"
+manufacturer = "Ubiquiti"
+model = "NSM5"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Powerbeam M5"
+manufacturer = "Ubiquiti"
+model = "PBE-M5-400"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Adaptor Single Mode Fiber to Ethernet"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Coax Jumper RG-8X 3ft"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 4
+status = "Available"
+
+[[items]]
+name = "Coax Jumper RG-8X 6ft"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Adaptor Box containing PL259, N-Type, BNC, SMA connectors"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Crimper Kit with assorted terminals"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Antenna Dual Band Mag Mount"
+manufacturer = "MFJ"
+model = "MFJ-1729"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "SWR/Wattmeter HF/VHF"
+manufacturer = "Daiwa"
+model = "CN-901"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Dummy Load 300W Air-Cooled"
+manufacturer = "MFJ"
+model = "MFJ-260C"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Soldering Iron Station"
+manufacturer = "Hakka"
+model = "FX-888D"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Extension Cord Heavy Duty 25ft"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 2
+status = "Available"
+
+[[items]]
+name = "Power Strip 6-Outlet with Surge Protection"
+manufacturer = "Belkin"
+model = "N/A"
+serial = "N/A"
+location = "closet"
+qty = 3
+status = "Available"
+
+[[items]]
+name = "Analyzer HF/VHF/UHF Antenna"
+manufacturer = "RigExpert"
+model = "AA-600"
+serial = "N/A"
+location = "closet"
+qty = 1
+status = "Available"
+
+[[items]]
+name = "Power Supply 12V 30A Switching"
+manufacturer = "Alinco"
+model = "DM-330MV"
+serial = "10423"
+location = "closet"
+qty = 1
 status = "Available"
 
 [[items]]
