@@ -29,11 +29,17 @@
       {{ range $inventory.items }}
       <tr>
         <td><strong>{{ .name }}</strong></td>
+        
         <td>{{ .manufacturer }}</td>
-        <td><code>{{ .model }}</code></td>
-        <td style="font-family: monospace; font-size: 11px; color: #555;">{{ .serial }}</td>
+        
+        <td>{{ .model }}</td>
+        
+        <td style="font-size: 13px; color: #555;">{{ .serial }}</td>
+        
         <td>📍 {{ .location }}</td>
+        
         <td style="text-align: center; font-weight: bold;">{{ .qty }}</td>
+        
         <td style="vertical-align: middle;">
           <div style="overflow: hidden;">
             {{ $status := .status }}
@@ -55,7 +61,6 @@
               <span class="status-badge" style="background-color: #f5f5f5; color: #424242;">📋 {{ $status }}</span>
             {{ end }}
           </div>
-          
           {{ if .note }}
             <span class="item-note">📝 {{ .note }}</span>
           {{ end }}
