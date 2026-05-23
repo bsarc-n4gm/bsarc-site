@@ -149,63 +149,63 @@ Events today or in the future group themselves under bold text chapter headers c
 ### 📻 4. Equipment Rooms & Marketplace Hub
 
 This module manages the physical holdings, member trade listings, and club asset liquidations. It ties two separate database logs together under a unified interface: member gear updates in data/forsale.toml and official club holdings in data/equipment.toml.
-#### 💰 PART A: Member Swapfest Marketplace (data/forsale.toml)
+## 💰 PART A: Member Swapfest Marketplace (`data/forsale.toml`)
 
 Manages personal buy/sell/trade listings for regional hams. The template dynamically parses your text rules to morph the layout of individual equipment cards.
 #### 💡 Strict Formatting Rules:
 
-    String Wrapped Values: All descriptive text, names, callsigns, prices, and notes MUST be wrapped in double quotation marks ("text").
+   * String Wrapped Values: All descriptive text, names, callsigns, prices, and notes MUST be wrapped in double quotation marks (`"text"`).
 
-    Booleans stay Lowercase: Toggles must be written strictly in lowercase without quotation marks (true or false).
+   * Booleans stay Lowercase: Toggles must be written strictly in lowercase without quotation marks (`true` or `false`).
 
-    Sanitize specification Arrays (specs = [...]): Feature bullet points must be grouped inside bracket arrays, and every line string must be separated by a comma. Leaving off a trailing comma will immediately crash the Hugo build engine during a deployment run.
+   * Sanitize specification Arrays (`specs = [...]`): Feature bullet points must be grouped inside bracket arrays, and every line string must be separated by a comma. Leaving off a trailing comma will immediately crash the Hugo build engine during a deployment run.
 
 ## 📝 How to Update a Member Item Status:
 
-   #### 💰 Standard Cash Price Item: Set sold = false and free = false. Input the target dollar value inside the path: price = "$500".
+   * 💰 Standard Cash Price Item: Set `sold = false` and `free = false`. Input the target dollar value inside the path: `price = "$500"`.
 
-   #### 🎁 Free / Gift Item: Set sold = false and free = true. Clear out the price line to empty quotes (price = ""). The site will automatically overlay a purple banner reading 🎁 FREE.
+   * 🎁 Free / Gift Item: Set `sold = false` and `free = true`. Clear out the price line to empty quotes (`price = ""`). The site will automatically overlay a purple banner reading 🎁 FREE.
 
-    ❌ Closed / Sold Item: Set sold = true and free = false. Leave the original price string intact as an historical reference. The layout engine automatically fades out the item card, slashes a strike-through line across titles, appends a red ❌ SOLD badge, and strips out the contact hyperlink to protect members from post-sale spam.
+   * ❌ Closed / Sold Item: Set `sold = true` and `free = false`. Leave the original price string intact as an historical reference. The layout engine automatically fades out the item card, slashes a strike-through line across titles, appends a red ❌ SOLD badge, and strips out the contact hyperlink to protect members from post-sale spam.
 
-## 📋 PART B: Master Club Asset & Inventory Room (data/equipment.toml)
+## 📋 PART B: Master Club Asset & Inventory Room (`data/equipment.toml`)
 
 Manages the physical equipment vault, active member loan pools, permanent repeater deployments, and club liquidations using an interactive, searchable DataTables grid on the website.
-🚀 Zero-Code Excel Manager Workflow:
+## 🚀 Zero-Code Excel Manager Workflow:
 
 To protect the site layout from formatting or text quotation errors, editors do not need to alter this data file using text editors.
 
-    Open the master repository inventory sheet: equipment_vault.xlsm.
+   1. Open the master repository inventory sheet: `equipment_vault.xlsm`.
 
-    Update rows, locations, status types, or operational notes within the standard rows.
+   2. Update rows, locations, status types, or operational notes within the standard rows.
 
-    Click the physical macro action button: 🚀 Generate Web Inventory File.
+   3. Click the physical macro action button: `🚀 Generate Web Inventory File`.
 
-    Bypassing Excel clipboards, the system automatically sanitizes strings, reformats calendar serial values, and prompts the user to save a clean text layout file (equipment.toml).
+   4. Bypassing Excel clipboards, the system automatically sanitizes strings, reformats calendar serial values, and prompts the user to save a clean text layout file (`equipment.toml`).
 
-    Upload or drag this file directly into the repository's data/ folder on GitHub to push updates live.
+   5. Upload or drag this file directly into the repository's `data/` folder on GitHub to push updates live.
 
 ## 📝 Standardized Asset Status & Button Actions Reference Guide:
 
-The interactive web database monitors the status string value of each asset block to dynamically establish reservation blocks and context-aware member communication shortcuts:
+The interactive web database monitors the `status` string value of each asset block to dynamically establish reservation blocks and context-aware member communication shortcuts:
 
-    status = "Available" -> The asset is ready for deployment inside the locker closet. Generates an automated blue [Borrow 🏷️] button. Clicking this triggers a member's local email engine to compose a pre-formatted loan request directly to the active Equipment Manager.
+   * `status = "Available"` -> The asset is ready for deployment inside the locker closet. Generates an automated blue [Borrow 🏷️] button. Clicking this triggers a member's local email engine to compose a pre-formatted loan request directly to the active Equipment Manager.
 
-    status = "Reserved" -> Locked for a member booking or specific upcoming event. Requires a companion calendar field value format line: reserved_date = "MM/DD/YY". The layout engine blocks public checkouts, swaps active link buttons for a locked [Hold Active 🔒] label, and appends a text warning badge to the grid: 🗓️ Reserved until MM/DD/YY.
+   * `status = "Reserved"` -> Locked for a member booking or specific upcoming event. Requires a companion calendar field value format line: reserved_date = "MM/DD/YY". The layout engine blocks public checkouts, swaps active link buttons for a locked [Hold Active 🔒] label, and appends a text warning badge to the grid: 🗓️ Reserved until MM/DD/YY.
 
-    status = "Official Use Only" -> The gear is permanently reserved for Field Day, emergency communication deployments, or specific club ops. Blocks borrowing actions and lists a clean grey [Club Events 🎪] identifier note.
+   * `status = "Official Use Only"` -> The gear is permanently reserved for Field Day, emergency communication deployments, or specific club ops. Blocks borrowing actions and lists a clean grey [Club Events 🎪] identifier note.
 
-    status = "For Sale" -> Cleared by the board as club surplus gear for liquidation. Requires a target valuation pricing field block line: price = "$X". The database layer immediately handles two automated actions:
+   * `status = "For Sale"` -> Cleared by the board as club surplus gear for liquidation. Requires a target valuation pricing field block line: price = "$X". The database layer immediately handles two automated actions:
 
-        It generates an orange [Purchase 💰] action route linking directly to the surplus checkout desk.
+       1. It generates an orange [Purchase 💰] action route linking directly to the surplus checkout desk.
 
-        It mirrors the asset card layout automatically to the top section of the public marketplace page under an authoritative header callout: 🏢 Club Surplus Equipment.
+       2. It mirrors the asset card layout automatically to the top section of the public marketplace page under an authoritative header callout: 🏢 Club Surplus Equipment.
 
-    status = "Checked Out" -> Gear is currently out on loan to a member. Blocks borrow text buttons.
+   * `status = "Checked Out"` -> Gear is currently out on loan to a member. Blocks borrow text buttons.
 
-    status = "In Use" -> Asset is actively deployed at a remote repeater facility or digital gateway node.
+   * `status = "In Use"` -> Asset is actively deployed at a remote repeater facility or digital gateway node.
 
-    status = "Donated" -> Asset has been successfully sold off, gifted, or permanently decommissioned.
+   * `status = "Donated"` -> Asset has been successfully sold off, gifted, or permanently decommissioned.
 
 ### 🚨 5. Tactical Emergency Notices & Incident Logs (`data/notice.toml`)
 
