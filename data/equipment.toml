@@ -3,22 +3,21 @@
 # ====================================================================
 # INSTRUCTIONS FOR CLUB EDITORS AND OFFICERS:
 # 
-# 💡 Formatting Rules Checklist:
+# ?? Formatting Rules Checklist:
 #    1. Always Seal Text Values: Text columns MUST be nested inside 
 #       double quotation marks: "Value Text"
 #    2. Plain Numbers Only: Numerical counts (qty = 1) do NOT use quotes.
 #    3. Missing Properties: If unknown, use placeholders: "N/A"
 #    4. Dynamic Location Mapping: Use this field to track where an item is stored.
-#    5. Operational Notes: Use the 'note = "..."' field to add specific event details 
-#       like event targets, check-out holders, or special conditions.
+#    5. Operational Notes: Use the 'note = "..."' field to add specific event details.
 # 
-# 📝 Status & Workflow Reference Guide:
-#    - "Available"         -> Ready for loan checkouts. [Borrow 🏷️] link active.
-#    - "Reserved"          -> Locked for an upcoming event or member use.
+# ?? Status & Workflow Reference Guide:
+#    - "Available"         -> Ready for loan checkouts. [Borrow ???] link active.
+#    - "Reserved"          -> Locked for a member booking or upcoming event.
 #                             Requires a through-date field entry: reserved_date = "MM/DD/YY"
 #    - "Official Use Only" -> Reserved for Field Day or club operations. Blocks borrowing.
-#    - "For Sale"          -> Cleared as club surplus. Requires: price = "$X"
-#    - "Checked Out"       -> Currently out on loan to a member.
+#    - "For Sale"          -> Cleared as club surplus. Requires price entry string: price = "$X"
+#    - "Checked Out"       -> Currently out on loan to an active member.
 #    - "In Use"            -> Permanently deployed (e.g., at repeater sites).
 #    - "Donated"           -> Decommissioned or permanently given away.
 # ====================================================================
@@ -27,20 +26,21 @@
 manager_email = "equipment-mgr@bsarc.org"
 
 # ====================================================================
-# 📦 ASSET RECORD LOG ENTRIES
+# ?? ASSET RECORD LOG ENTRIES
 # ====================================================================
 
 [[items]]
 name = "Radio Voter 8 PORT"
 manufacturer = "Ericsson GE"
-model = ""
-serial = ""
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Ericsson GE"
@@ -49,9 +49,10 @@ serial = "1409523"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Ericsson GE"
@@ -60,9 +61,10 @@ serial = "1409586"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Ericsson GE"
@@ -71,9 +73,10 @@ serial = "1409584"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Ericsson GE"
@@ -82,9 +85,10 @@ serial = "1409522"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Ericsson GE"
@@ -93,1040 +97,1134 @@ serial = "1407396"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Projector Screen"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio/Dish"
 manufacturer = "Ubiqity"
-model = ""
-serial = ""
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Solar Pannel 45W"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 4
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Solar Inverter"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "RJ45 Cable 20'"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 2
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "RG8 Cable 10'"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Army Mast 14 Sections"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Surveyer Triopd"
 manufacturer = "Used with Army Mast"
-model = ""
-serial = ""
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Reperter UHF 40W"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "07/04/26"
 note = "Reserved for 4th of July parade South Port"
+
 [[items]]
 name = "Duplexer UHF"
-manufacturer = ""
+manufacturer = "N/A"
 model = "WP-678-R2"
 serial = "33596"
 location = "KM4EMR"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "07/04/26"
 note = "Reserved for 4th of July parade South Port"
+
 [[items]]
 name = "Power Supply 10A"
-manufacturer = ""
+manufacturer = "N/A"
 model = "SEC1212"
 serial = "03051-4E02-00785"
 location = "KM4EMR"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "07/04/26"
 note = "Reserved for 4th of July parade South Port"
+
 [[items]]
 name = "Rack Rails"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 3
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Para Cord"
 manufacturer = "1 Box"
-model = ""
-serial = ""
+model = "N/A"
+serial = "N/A"
 location = "KM4EMR"
 qty = 1
 status = "Events"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Antenna 2.4GHZ"
 manufacturer = "Ubuiqty"
 model = "Air Max AMO2G10"
-serial = ""
+serial = "N/A"
 location = "KM4EMR"
 qty = 3
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio 2.4GHZ"
 manufacturer = "Ubuiqty"
 model = "M2"
-serial = ""
+serial = "N/A"
 location = "KM4EMR"
 qty = 2
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio Mobel VHF"
 manufacturer = "Veretex"
-model = ""
-serial = ""
-location = "Calabash"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 11
 status = "Donated"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio HF"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 2
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Power Supply"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Coax On Reels"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Pass Filters 80-10M"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Computers 4"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Monitor Cables"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Serial Cables to Radios"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Head Sets"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Mic Adsapters"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Footwitches"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 2
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Antenna dipole 40-10m"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Antenna dipole 80m"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Network Switch"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Network Cables"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Safety Cones"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "White Boards"
-manufacturer = ""
-model = ""
-serial = ""
-location = "Calabash"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS"
 qty = 2
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Laptop"
-manufacturer = ""
-model = ""
-serial = ""
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
 location = "George KI4KK"
 qty = 2
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "06/29/26"
 note = "Reserved for field day Calabash"
+
 [[items]]
 name = "Oscilloscope"
 manufacturer = "Crei"
 model = "255"
-serial = ""
-location = "Bench"
+serial = "N/A"
+location = "Calabash EMS - Bench"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Science Fair"
-manufacturer = ""
+manufacturer = "N/A"
 model = "200 and 1"
-serial = ""
-location = "Bench"
+serial = "N/A"
+location = "Calabash EMS - Bench"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Mag Mount Ant"
 manufacturer = "Maxrad"
-model = ""
-serial = ""
-location = "shelf 2-1"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "6M HF Ant mobil"
-manufacturer = ""
-model = ""
-serial = ""
-location = "shelf 2-1"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "10M HF Ant mobil"
-manufacturer = ""
-model = ""
-serial = ""
-location = "shelf 2-1"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "75M HF short Ant mobil"
-manufacturer = ""
-model = ""
-serial = ""
-location = "shelf 2-1"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Ant"
 manufacturer = "Lakeview 2pcs"
 model = "9140"
-serial = ""
-location = "shelf 2-1"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Ant"
 manufacturer = "Firestick"
 model = "NGP"
-serial = ""
-location = "shelf 2-1"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Ant"
 manufacturer = "Firestick"
-model = ""
-serial = ""
-location = "shelf 2-1"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-1"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply adj/switch"
 manufacturer = "MFJ"
 model = "4225MV"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "SWR & Power Meter"
 manufacturer = "Diamond"
 model = "SX-200"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Cable-autotune/Icom"
 manufacturer = "MFJ"
 model = "5114I"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply-switching"
 manufacturer = "Astron"
 model = "SS-10"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply"
 manufacturer = "Micronta"
 model = "278S"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "HT / charger"
 manufacturer = "Kenwood"
 model = "TK-2180 VHF"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Tuner"
 manufacturer = "MFJ"
 model = "MFJ-945E"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Tuner"
 manufacturer = "MFJ Deluxe versa t II"
 model = "MFJ-949E"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Coax (2) w/ant sw"
 manufacturer = "RG-56/RG-58"
-model = ""
-serial = ""
-location = "shelf 2-2"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Coax -long wire"
 manufacturer = "Belden"
 model = "M17/163"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Coax - Viper 800"
-manufacturer = ""
+manufacturer = "N/A"
 model = "RG-58U"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Coax - Town"
-manufacturer = ""
+manufacturer = "N/A"
 model = "RG-8X"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Coax - 991"
-manufacturer = ""
+manufacturer = "N/A"
 model = "RG-8X"
-serial = ""
-location = "shelf 2-2"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-2"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Laptop"
 manufacturer = "Toshiba- Satellite"
 model = "L875D-S7332"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Mouse"
 manufacturer = "Logitech"
 model = "Label-Toshiba"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Thumb Drive"
 manufacturer = "Logitech"
 model = "Label-Toshiba"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply - Laptop"
 manufacturer = "Toshiba"
 model = "PA3714U"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "TOC VHF Gokit in case"
 manufacturer = "Kenwood"
 model = "#54"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply"
 manufacturer = "Astron(Cal BU/EOC)"
 model = "RS35A"
 serial = "25A Continuous"
-location = "shelf 2-4"
+location = "Calabash EMS - Shelf 2-4"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio (cables)"
 manufacturer = "Yaesu"
 model = "FT100D"
 serial = "HF/VHF/UHF"
-location = "shelf 2-4"
+location = "Calabash EMS - Shelf 2-4"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Calabash EOC Radio Box"
 manufacturer = "8-Radios/pwr supply"
 model = "mic/ant"
-serial = ""
-location = "shelf 2-4"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-4"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Keyboard"
 manufacturer = "HP"
 model = "505060-371"
-serial = ""
-location = "shelf 2-3"
+serial = "N/A"
+location = "Calabash EMS - Shelf 2-3"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Grid Dip Meter"
 manufacturer = "James Millen 90651"
 model = "H519"
-serial = ""
-location = "Bench"
+serial = "N/A"
+location = "Calabash EMS - Bench"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Multi Meter Analog"
 manufacturer = "Radio Shack"
 model = "22602"
-serial = ""
-location = "Bench"
+serial = "N/A"
+location = "Calabash EMS - Bench"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Capacitor tester"
 manufacturer = "Cornell-Dubilier"
 model = "CDA"
 serial = "11928"
-location = "Bench"
+location = "Calabash EMS - Bench"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "UBNT"
 model = "Air Router"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 5
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "D-Link"
 model = "DAP 1522"
 serial = "P1RG1A9002417"
-location = "closet"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "Netgear"
 model = "WNDR3400"
 serial = "3CM1357EA7082"
-location = "closet"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "Netgear"
 model = "WNR2000"
 serial = "1X0505520CA40"
-location = "closet"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "D-Link"
 model = "EIR-655"
 serial = "F36F4A003604"
-location = "closet"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "switch"
 manufacturer = "Trend Net"
 model = "TE-100-80G"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "connectors"
 manufacturer = "UBNT"
 model = "TC-GND"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 7
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Ethernet surge protector"
 manufacturer = "UBNT"
 model = "ETH-SP"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 8
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Gateway (wifi)"
 manufacturer = "UBNT"
-model = ""
-serial = ""
-location = "closet"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 3
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "POE Adaptor"
 manufacturer = "UBNT"
-model = ""
-serial = ""
-location = "closet"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 13
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio/Ant"
 manufacturer = "UBNT"
 model = "Nanostation M2"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 4
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Ant"
 manufacturer = "UBNT"
 model = "Airgrid 5"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 2
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "IP phone"
 manufacturer = "Grandstream"
 model = "GXP2170"
-serial = ""
-location = "closet"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Rack"
-manufacturer = ""
-model = ""
-serial = ""
-location = "closet"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "6' Folding Table"
-manufacturer = ""
-model = ""
-serial = ""
-location = "closet"
+manufacturer = "N/A"
+model = "N/A"
+serial = "N/A"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "RJ45 (5e)"
 manufacturer = "ethernet cable"
 model = "Box"
-serial = ""
-location = ""
+serial = "N/A"
+location = "N/A"
 qty = 2
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Multi Coupler"
 manufacturer = "sinclar"
 model = "VHF for repeater"
 serial = "ser# 9934847-1-1 RM21204N*2"
-location = "closet"
+location = "Calabash EMS - Closet"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Headset"
 manufacturer = "JVC"
-model = ""
-serial = ""
-location = ""
+model = "N/A"
+serial = "N/A"
+location = "N/A"
 qty = 1
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Headset"
 manufacturer = "Yamaha"
-model = ""
-serial = ""
-location = ""
+model = "N/A"
+serial = "N/A"
+location = "N/A"
 qty = 3
 status = "Available"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Monitor"
 manufacturer = "Dell"
-model = ""
+model = "N/A"
 serial = "CN-0ku311-6418083612MM"
-location = ""
+location = "N/A"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Router"
 manufacturer = "Netgear"
 model = "Mod-wndr3700v2"
 serial = "ser-2j31155n022b4"
-location = ""
+location = "N/A"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Computer"
 manufacturer = "Lenovo/thinkcentre"
 model = "M715Q"
 serial = "ser-MJ07CQYE"
-location = ""
+location = "N/A"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Computer"
 manufacturer = "Lenovo/thinkcentre"
 model = "M715Q"
 serial = "ser- MJ05R7WC"
-location = ""
+location = "N/A"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Computer"
 manufacturer = "Lenovo/thinkcentre"
 model = "M715Q"
 serial = "ser- MJ061F1Y"
-location = ""
+location = "N/A"
 qty = 1
 status = "Official Use Only"
-price = ""
+price = "N/A"
 reserved_date = ""
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Radio"
 manufacturer = "Yaesu"
 model = "FT- 710"
 serial = "5E390167"
-location = ""
+location = "N/A"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "12/13/25"
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply"
 manufacturer = "Powerwerx"
 model = "ss-30DV"
 serial = "24AA000037F"
-location = ""
+location = "N/A"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "12/13/25"
-note = ""
+note = "N/A"
+
 [[items]]
 name = "Power Supply"
 manufacturer = "Powerwerx"
 model = "ss-30DV"
 serial = "24AA000038F"
-location = ""
+location = "N/A"
 qty = 1
 status = "Reserved"
-price = ""
+price = "N/A"
 reserved_date = "12/13/25"
-note = ""
+note = "N/A"
