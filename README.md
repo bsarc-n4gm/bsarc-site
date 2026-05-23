@@ -171,19 +171,21 @@ Manages personal buy/sell/trade listings for regional hams. The template dynamic
 ## 📋 PART B: Master Club Asset & Inventory Room (`data/equipment.toml`)
 
 Manages the physical equipment vault, active member loan pools, permanent repeater deployments, and club liquidations using an interactive, searchable DataTables grid on the website.
-## 🚀 Zero-Code Excel Manager Workflow:
 
-To protect the site layout from formatting or text quotation errors, editors do not need to alter this data file using text editors.
+#### 🚀 Zero-Code Excel Manager Workflow:
+To protect the website layout from formatting or text quotation errors, **editors do not need to alter the TOML data file using text editors**. 
 
-   1. Open the master repository inventory sheet: `equipment_vault.xlsm`.
-
-   2. Update rows, locations, status types, or operational notes within the standard rows.
-
-   3. Click the physical macro action button: `🚀 Generate Web Inventory File`.
-
-   4. Bypassing Excel clipboards, the system automatically sanitizes strings, reformats calendar serial values, and prompts the user to save a clean text layout file (`equipment.toml`).
-
-   5. Upload or drag this file directly into the repository's `data/` folder on GitHub to push updates live.
+1. Pull the latest repository updates down to your workbench local terminal using `git pull origin main`.
+2. Open the master repository inventory utility spreadsheet located inside the project tree at: `/.admin/equipment_vault.xlsm`.
+3. Update rows, structural tracking parameters, location metrics, status types, or operational event notes inside the standard table rows.
+4. Click the prominent custom physical macro action button: `🚀 Generate Web Inventory File`.
+5. Bypassing volatile clipboard syntax traps, the system automatically sanitizes strings, reformats background calendar serial tokens, and prompts you to export a perfect file named exactly `equipment.toml`.
+6. Save your modified Excel spreadsheet tracker cell values directly inside the `/.admin/` directory.
+7. Stage and commit both files simultaneously using your workspace terminal console so that the background tracker and live site stay in perfect lockstep:
+   ```bash
+   git add .admin/equipment_vault.xlsm data/equipment.toml
+   git commit -m "chore(inventory): synchronize master excel metrics sheet and compile production toml data structures"
+   git push origin main
 
 ## 📝 Standardized Asset Status & Button Actions Reference Guide:
 
