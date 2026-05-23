@@ -876,8 +876,8 @@ model = "H519"
 serial = "N/A"
 location = "Calabash EMS - Bench"
 qty = 1
-status = "Available"
-price = "N/A"
+status = "For Sale"
+price = "$40"
 reserved_date = ""
 note = "N/A"
 
