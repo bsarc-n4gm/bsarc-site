@@ -28,13 +28,6 @@ manager_email = "equipment-mgr@bsarc.org"
 # 📦 ASSET RECORD LOG ENTRIES
 # ====================================================================
 
-# ====================================================================
-# BSARC CLUB ASSET & MASTER EQUIPMENT INVENTORY
-# ====================================================================
-
-[config]
-manager_email = "equipment-mgr@bsarc.org"
-
 [[items]]
 name = "Radio Voter 8 PORT"
 manufacturer = "Ericsson GE"
