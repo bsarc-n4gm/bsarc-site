@@ -146,29 +146,66 @@ The shortcode template evaluates your parameters line-by-line to render optimize
 #### 📁 Chronological Pipeline Archiving:
 Events today or in the future group themselves under bold text chapter headers corresponding to the month and year of operation. The exact millisecond an event date passes, the shortcode layout engine automatically strips the card layout, compiles it down into a simplified table row entry, and relocates it inside a collapsible accordion history drawer at the bottom of the page to eliminate scrolling clutter indefinitely.
 
-### 🔄 4. Swapfest Marketplace Dashboard (`data/forsale.toml`)
+### 📻 4. Equipment Rooms & Marketplace Hub
 
-Manages the interactive club equipment marketplace rosters, dividing listings automatically into active gear requests and equipment availability cards. Copied entries must explicitly containerize every layout key to prevent database parsing crashes.
+This module manages the physical holdings, member trade listings, and club asset liquidations. It ties two separate database logs together under a unified interface: member gear updates in data/forsale.toml and official club holdings in data/equipment.toml.
+#### 💰 PART A: Member Swapfest Marketplace (data/forsale.toml)
 
+Manages personal buy/sell/trade listings for regional hams. The template dynamically parses your text rules to morph the layout of individual equipment cards.
 #### 💡 Strict Formatting Rules:
-* **String Wrapped Values:** All descriptive text, names, callsigns, prices, and notes MUST be wrapped in double quotation marks (`"text"`).
-* **Booleans stay Lowercase:** Status logic toggles must be written strictly in lowercase without quotation marks (`true` or `false`).
-* **Sanitize specification Arrays (`specs = [...]`):** Technical feature bullet points must be grouped inside bracket arrays, and **every line string must be separated by a comma**. Leaving off a trailing comma will immediately crash the Hugo compiler engine during a deployment action run.
 
-#### 📝 How to Update an Item Status:
-The shortcode template evaluates your boolean combinations on the fly to dynamically morph the visual appearance and functionality of each item card:
+    String Wrapped Values: All descriptive text, names, callsigns, prices, and notes MUST be wrapped in double quotation marks ("text").
 
-* **💰 Standard Cash Price Item:** Set `sold = false` and `free = false`. Input the target dollar value inside the cash path (e.g., `price = "$500"`).
-* **🎁 Free / Gift Item:** Set `sold = false` and `free = true`. Clear out the price line to empty quotes (`price = ""`). The site engine will automatically bypass cash formatting and overlay a distinct purple banner reading **🎁 FREE TO GOOD HOME**.
-* **❌ Closed / Sold Item:** Set `sold = true` and `free = false`. Leave the original price string intact as an historical reference link. The layout engine automatically fades out the item card, slashes a strike-through line across titles, appends an explicit red **❌ SOLD** indicator badge, and **strips out the seller's email hyperlink** to protect your members from spam after a transaction closes.
+    Booleans stay Lowercase: Toggles must be written strictly in lowercase without quotation marks (true or false).
 
-#### 📦 Individual Table Sections Reference:
+    Sanitize specification Arrays (specs = [...]): Feature bullet points must be grouped inside bracket arrays, and every line string must be separated by a comma. Leaving off a trailing comma will immediately crash the Hugo build engine during a deployment run.
 
-* **🔍 Section 1: Equipment Wanted (`[[wanted]]`):** Tracks hardware requests by active club buyers.
-  * *Keys required per block:* `item`, `details`, `buyer_name`, `buyer_call`, and `buyer_email`. 
-  * *Removal Policy:* When a buyer locates their requested rig, delete its complete array block from `[[wanted]]` down to the buyer's email line.
-* **📦 Section 2: Available Equipment (`[[items]]`):** Populates the multi-column marketplace dashboard with active inventory cards.
-  * *Keys required per block:* `name`, `price`, `sold`, `free`, `seller_name`, `seller_call`, `seller_email`, `seller_note`, and `specs = []`. To list extra hardware assets, copy a complete block from `[[items]]` through the closing spec array bracket `]` and drop it directly at the bottom of the data sheet.
+## 📝 How to Update a Member Item Status:
+
+   #### 💰 Standard Cash Price Item: Set sold = false and free = false. Input the target dollar value inside the path: price = "$500".
+
+   #### 🎁 Free / Gift Item: Set sold = false and free = true. Clear out the price line to empty quotes (price = ""). The site will automatically overlay a purple banner reading 🎁 FREE.
+
+    ❌ Closed / Sold Item: Set sold = true and free = false. Leave the original price string intact as an historical reference. The layout engine automatically fades out the item card, slashes a strike-through line across titles, appends a red ❌ SOLD badge, and strips out the contact hyperlink to protect members from post-sale spam.
+
+## 📋 PART B: Master Club Asset & Inventory Room (data/equipment.toml)
+
+Manages the physical equipment vault, active member loan pools, permanent repeater deployments, and club liquidations using an interactive, searchable DataTables grid on the website.
+🚀 Zero-Code Excel Manager Workflow:
+
+To protect the site layout from formatting or text quotation errors, editors do not need to alter this data file using text editors.
+
+    Open the master repository inventory sheet: equipment_vault.xlsm.
+
+    Update rows, locations, status types, or operational notes within the standard rows.
+
+    Click the physical macro action button: 🚀 Generate Web Inventory File.
+
+    Bypassing Excel clipboards, the system automatically sanitizes strings, reformats calendar serial values, and prompts the user to save a clean text layout file (equipment.toml).
+
+    Upload or drag this file directly into the repository's data/ folder on GitHub to push updates live.
+
+## 📝 Standardized Asset Status & Button Actions Reference Guide:
+
+The interactive web database monitors the status string value of each asset block to dynamically establish reservation blocks and context-aware member communication shortcuts:
+
+    status = "Available" -> The asset is ready for deployment inside the locker closet. Generates an automated blue [Borrow 🏷️] button. Clicking this triggers a member's local email engine to compose a pre-formatted loan request directly to the active Equipment Manager.
+
+    status = "Reserved" -> Locked for a member booking or specific upcoming event. Requires a companion calendar field value format line: reserved_date = "MM/DD/YY". The layout engine blocks public checkouts, swaps active link buttons for a locked [Hold Active 🔒] label, and appends a text warning badge to the grid: 🗓️ Reserved until MM/DD/YY.
+
+    status = "Official Use Only" -> The gear is permanently reserved for Field Day, emergency communication deployments, or specific club ops. Blocks borrowing actions and lists a clean grey [Club Events 🎪] identifier note.
+
+    status = "For Sale" -> Cleared by the board as club surplus gear for liquidation. Requires a target valuation pricing field block line: price = "$X". The database layer immediately handles two automated actions:
+
+        It generates an orange [Purchase 💰] action route linking directly to the surplus checkout desk.
+
+        It mirrors the asset card layout automatically to the top section of the public marketplace page under an authoritative header callout: 🏢 Club Surplus Equipment.
+
+    status = "Checked Out" -> Gear is currently out on loan to a member. Blocks borrow text buttons.
+
+    status = "In Use" -> Asset is actively deployed at a remote repeater facility or digital gateway node.
+
+    status = "Donated" -> Asset has been successfully sold off, gifted, or permanently decommissioned.
 
 ### 🚨 5. Tactical Emergency Notices & Incident Logs (`data/notice.toml`)
 
