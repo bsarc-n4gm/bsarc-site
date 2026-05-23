@@ -13,6 +13,31 @@
 </style>
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-bottom: 30px;">
+  {{ $items := $inventory.items }}
+  {{ $totalQty := 0 }}
+  {{ $availCount := 0 }}
+  {{ $saleCount := 0 }}
+
+  {{ range $items }}
+    {{ $totalQty = add $totalQty .qty }}
+    {{ if eq .status "Available" }}{{ $availCount = add $availCount 1 }}{{ end }}
+    {{ if eq .status "For Sale" }}{{ $saleCount = add $saleCount 1 }}{{ end }}
+  {{ end }}
+
+  <div style="display: flex; gap: 15px; margin-bottom: 25px; font-family: sans-serif;">
+    <div style="flex: 1; background: #f8f9fa; border: 1px solid #e3e6e8; border-radius: 6px; padding: 12px; text-align: center;">
+      <span style="display: block; font-size: 11px; text-transform: uppercase; color: #777; font-weight: bold;">Total Registered Holdings</span>
+      <strong style="font-size: 20px; color: #111;">{{ $totalQty }} Items</strong>
+    </div>
+    <div style="flex: 1; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 6px; padding: 12px; text-align: center;">
+      <span style="display: block; font-size: 11px; text-transform: uppercase; color: #2e7d32; font-weight: bold;">Available Loan Pool</span>
+      <strong style="font-size: 20px; color: #2e7d32;">{{ $availCount }} Models</strong>
+    </div>
+    <div style="flex: 1; background: #fff3e0; border: 1px solid #ffe0b2; border-radius: 6px; padding: 12px; text-align: center;">
+      <span style="display: block; font-size: 11px; text-transform: uppercase; color: #ef6c00; font-weight: bold;">Active Liquidations</span>
+      <strong style="font-size: 20px; color: #ef6c00;">{{ $saleCount }} Surplus</strong>
+    </div>
+  </div>
   <table id="clubInventoryTable" class="table table-striped table-bordered inventory-card-table" style="width:100%">
     <thead>
       <tr>
@@ -45,14 +70,14 @@
             {{ $status := .status }}
             {{ if eq $status "Available" }}
               <span class="status-badge" style="background-color: #e8f5e9; color: #2e7d32;">✅ Available</span>
-              <a href="mailto:{{ $mgrEmail }}?subject=Equipment Checkout Request: {{ .manufacturer }} {{ .model }}" class="action-btn">Borrow 🏷️</a>
+              <a href="mailto:{{ $mgrEmail }}?subject=BSARC Loan Request: {{ .manufacturer }} {{ .model }} (S/N: {{ .serial }})&body=Hi Equipment Manager,%0D%0A%0D%0AI would like to check out the {{ .name }} ({{ .manufacturer }} {{ .model }}) for club/operational use. Please let me know when it is available for pickup.%0D%0A%0D%0A73," class="action-btn">Borrow 🏷️</a>
             {{ else if eq $status "Reserved" }}
               <span class="status-badge" style="background-color: #fff9db; color: #f59f00;">🗓️ Reserved {{ if .reserved_date }}until {{ .reserved_date }}{{ end }}</span>
             {{ else if eq $status "Official Use Only" }}
               <span class="status-badge" style="background-color: #e0f7fa; color: #006064;">🏛️ Official Use Only</span>
             {{ else if eq $status "For Sale" }}
               <span class="status-badge" style="background-color: #fff3e0; color: #ef6c00;">💰 For Sale ({{ .price }})</span>
-              <a href="mailto:{{ $mgrEmail }}?subject=Surplus Asset Purchase Inquiry: {{ .manufacturer }} {{ .model }}" class="action-btn" style="background-color: #ef6c00;">Purchase 💰</a>
+              <a href="mailto:{{ $mgrEmail }}?subject=BSARC Surplus Purchase: {{ .manufacturer }} {{ .model }}&body=Hi Equipment Manager,%0D%0A%0D%0AI am interested in purchasing the surplus {{ .name }} listed for {{ .price }}. Please let me know how to arrange payment and collection.%0D%0A%0D%0A73," class="action-btn" style="background-color: #ef6c00;">Purchase 💰</a>
             {{ else if eq $status "Checked Out" }}
               <span class="status-badge" style="background-color: #ffebee; color: #c62828;">🔒 Checked Out</span>
             {{ else if eq $status "In Use" }}
@@ -74,18 +99,20 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
 <script>
   $(document).ready(function() {
-    $('#clubInventoryTable').DataTable({
-      "pageLength": 25,
-      "lengthMenu": [10, 25, 50, 100],
-      "ordering": true,
-      "order": [[0, "asc"]],
-      "language": {
-        "search": "🔍 Quick Filter:",
-        "lengthMenu": "Display _MENU_ items"
-      }
-    });
+  $('#clubInventoryTable').DataTable({
+    "pageLength": 25,
+    "lengthMenu": [10, 25, 50, 100],
+    "ordering": true,
+    "order": [[0, "asc"]],
+    "responsive": true, // Automatically manages mobile resizing layouts smoothly
+    "language": {
+      "search": "🔍 Quick Filter:",
+      "lengthMenu": "Display _MENU_ items"
+    }
   });
+});
 </script>
