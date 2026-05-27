@@ -6,8 +6,15 @@
     <description>Recent content in Emergency Communications on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://192.168.68.109:1313/emergency-comms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EmComm Winlink Operations</title>
+      <link>http://192.168.68.109:1313/emergency-comms/winlink/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/emergency-comms/winlink/</guid>
+      <description>&lt;h3 id=&#34;-net-preamble--overview&#34;&gt;📡 Net Preamble &amp;amp; Overview&lt;/h3&gt;&#xA;&lt;h4 id=&#34;what-is-this-winlink-net&#34;&gt;What is this Winlink Net?&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This specialized training net allows our &lt;strong&gt;ARES / AuxComm&lt;/strong&gt; volunteers to become highly familiar with Winlink data terminal configurations through regular, practical deployment.&lt;/li&gt;&#xA;&lt;li&gt;It systematically trains our personnel on how Winlink can be utilized to route high-priority messages, ICS forms, and logistics manifests to assist regional agencies during an actual emergency, whether natural or man-made.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;how-does-the-net-operate&#34;&gt;How Does the Net Operate?&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Frequency &amp;amp; Cadence:&lt;/strong&gt; Every two weeks, a brand-new training scenario or specialized exercise is assigned to our emergency communications roster.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Distribution:&lt;/strong&gt; We distribute a technical PDF instruction layout detailing the parameters needed to successfully resolve the challenge. This packet goes out via email networks and our operational GroupMe pipeline.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Evaluation:&lt;/strong&gt; The appointed Net Control Station (NCS) evaluates each volunteer&amp;rsquo;s submitted payload data message and routes back personalized performance feedback via a standard Winlink reply.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mapping Tracker:&lt;/strong&gt; The NCS records compliance metrics in the operations spreadsheet and generates a visual distribution grid map at the end of the strict exercise window to track situational coverage.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;who-can-participate-in-this-net&#34;&gt;Who Can Participate in This Net?&lt;/h4&gt;&#xA;&lt;p&gt;Originally, this training framework was exclusively tailored for local Brunswick County ARES/AuxComm units. However, because we host our historic exercise logs on the public BSARC portal, &lt;strong&gt;any licensed Amateur Radio Operator is welcome to participate!&lt;/strong&gt; Review the active instructions within the PDF sheets listed below, complete the field requirements, and route your final data packet to the designated Winlink NCS callsign specified inside that specific assignment packet.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Amateur Radio Emergency Service (ARES)</title>
       <link>http://192.168.68.109:1313/emergency-comms/ares/</link>
