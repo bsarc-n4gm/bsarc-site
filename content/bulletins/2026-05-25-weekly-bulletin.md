@@ -4,6 +4,8 @@ date: 2026-05-25
 draft: false
 ---
 
+<img src="/images/club_logo.webp" alt="BSARC Club Logo" style="float: right; margin: 0 0 20px 20px; max-width: 150px; height: auto; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));">
+
 Welcome to the weekly newsletter for the Brunswick Shores Amateur Radio Club (BSARC). Please review this week's scheduled radio nets, social gatherings, technical upgrades, and upcoming club checkpoints below!
 
 ---
