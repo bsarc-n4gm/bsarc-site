@@ -3,11 +3,12 @@ title: "EmComm Winlink Operations"
 date: 2026-05-27
 draft: false
 description: "Training resources, guidelines, and exercise histories for the Brunswick County Emergency Communications Winlink Net."
+layout: "single"
 ---
 
-#Brunswick County EmComm Winlink Net
+---
 
-### 📡 Net Preamble & Overview
+## 📡 Net Preamble & Overview
 
 #### What is this Winlink Net?
 * This specialized training net allows our **ARES / AuxComm** volunteers to become highly familiar with Winlink data terminal configurations through regular, practical deployment. 
