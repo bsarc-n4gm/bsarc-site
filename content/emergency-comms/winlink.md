@@ -5,6 +5,7 @@ draft: false
 description: "Training resources, guidelines, and exercise histories for the Brunswick County Emergency Communications Winlink Net."
 ---
 
+
 ### 📡 Net Preamble & Overview
 
 #### What is this Winlink Net?
@@ -24,8 +25,6 @@ Originally, this training framework was exclusively tailored for local Brunswick
 
 ### 📋 Winlink Training Exercise Repository
 
-The table below catalogs our historical training files. When a new exercise is assigned, the documents will be made available directly below.
+The table below automatically catalogs our historical training files. When a new exercise markdown file is added to the system directory, it will instantly generate a new indexed entry below.
 
-| Exercise Date | Training Scenario & Objective | Documentation Link |
-| :--- | :--- | :--- |
-| **06/01/2026** | Exercise 2026-12: ICS-213 Message Routing Over Peer-to-Peer (P2P) | [Download Instructions (PDF) &rarr;](/pdf/winlink/winlink-exercise-2026-06-01.pdf) |
+{{< winlink_table >}}

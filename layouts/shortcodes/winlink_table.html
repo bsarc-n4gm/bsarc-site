@@ -1,0 +1,20 @@
+<table class="winlink-repository-table">
+  <thead>
+    <tr>
+      <th style="text-align: left;">Exercise Date</th>
+      <th style="text-align: left;">Training Scenario & Objective</th>
+      <th style="text-align: left;">Documentation Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range (where .Site.RegularPages "Section" "emergency-comms").ByDate }}
+      {{ if in .File.Path "winlink" }}
+        <tr>
+          <td><strong>{{ .Date.Format "01/02/2006" }}</strong></td>
+          <td>{{ .Title }}</td>
+          <td><a href="{{ .Permalink }}">View Exercise Instructions &rarr;</a></td>
+        </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>

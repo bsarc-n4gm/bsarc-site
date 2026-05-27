@@ -128,6 +128,12 @@
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-01-05/</loc>
     <lastmod>2026-01-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-003/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-002/</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://192.168.68.109:1313/categories/</loc>
   </url><url>
     <loc>http://192.168.68.109:1313/tags/</loc>
