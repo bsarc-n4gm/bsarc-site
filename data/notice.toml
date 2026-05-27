@@ -10,12 +10,12 @@
 # ====================================================================
 
 active = true      # Toggles homepage alert banner. Options: true, false
-color = "danger"   # Banner theme profile color. Options: "danger" (red), "warning" (yellow), "info" (blue)
-heading = "⚠️ Skywarn Activation Alert"
-message = "A tropical storm warning has been issued for Brunswick County. The club net is on standby status on the 147.315 repeater. Listen out for active emergency traffic updates."
+color = "info"   # Banner theme profile color. Options: "danger" (red), "warning" (yellow), "info" (blue)
+heading = "🌪️ Skywarn Weather Spotter Class"
+message = "June 8, 2026, at 2:00 PM. This is a free, in-person training class conducted at the Odell Williamson Auditorium in Bolivia, NC."
 
 # Link Button Settings:
-link_button_active = true                 # Set to true to show a button linking to the detailed incident log page
+link_button_active = false                 # Set to true to show a button linking to the detailed incident log page
 link_button_text = "🔗 View Live Incident Log" # The text displayed inside the homepage button
 
 # --- LIVE LOG TIMELINE UPDATES ---
