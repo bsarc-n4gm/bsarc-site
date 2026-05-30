@@ -485,7 +485,8 @@ Markdown
 
 ### 🏢 Document Headers (Hierarchy)
 Always use space after the `#` symbols. Do not use `#` (H1) inside content files, as Hugo generates that automatically from the `title` tag.
-```text
+
+
 ## This is a Major Section Header (H2)
 ### This is a Sub-section Header (H3)
 #### This is a Deep Sub-header or Item Title (H4)
@@ -493,38 +494,59 @@ Always use space after the `#` symbols. Do not use `#` (H1) inside content files
 🔤 Emphasis & Typography
 Plaintext
 
-To make text **Bold**, wrap it in double asterisks: **Bold Text**
-To make text *Italic*, wrap it in single asterisks: *Italic Text*
-To highlight technical info like a frequency or file, use backticks: `147.315 MHz`
+To make text **Bold**, wrap it in double asterisks: `**Bold Text**`
+To make text *Italic*, wrap it in single asterisks: `*Italic Text*`
+To highlight technical info like a frequency or file, use backticks: `147.315 MHz` "`"
 
 📋 Lists & Layout Elements
-Plaintext
-
+```
 Unordered Bullet Lists (Use an asterisk followed by a space):
 * Item One
 * Item Two
-
+```
+Unordered Bullet Lists (Use an asterisk followed by a space):
+* Item One
+* Item Two
+```
 Numbered Ordered Lists:
 1. First Step
 2. Second Step
-
+```
+Numbered Ordered Lists:
+1. First Step
+2. Second Step
+```
+Horizontal Divider Lines (Great for separating unique days or logs):
+---
+```
 Horizontal Divider Lines (Great for separating unique days or logs):
 ---
 
-🔗 Web Links & Email Addresses
-Plaintext
 
+🔗 Web Links & Email Addresses
+```
+To hyperlink text: [Text to Click](https://the-url-link.com)
+Example: [View ARRL Hub](http://www.arrl.org)
+
+To create a clickable email link: [Display Name](mailto:email@address.com)
+Example: [Email Bob (K1MJJ)](mailto:K1MJJ.Ham@gmail.com)
+```
 To hyperlink text: [Text to Click](https://the-url-link.com)
 Example: [View ARRL Hub](http://www.arrl.org)
 
 To create a clickable email link: [Display Name](mailto:email@address.com)
 Example: [Email Bob (K1MJJ)](mailto:K1MJJ.Ham@gmail.com)
 
+
 📊 Clean Table Blueprint (Rosters, Nets & Calendars)
 
 Align columns using a colon : in the divider row. :--- is left-aligned, ---: is right-aligned, and :---: is centered.
-Plaintext
-
+```
+| Date | Call Sign | Operator Name | Mode / Status |
+| :--- | :---: | :--- | :--- |
+| **06/01/2026** | K4IR | John Phillips | VHF Net Control |
+| **06/08/2026** | KI4KK | George Fryer | Standby |
+```
 | Date | Call Sign | Operator Name | Mode / Status |
 | :--- | :---: | :--- | :--- |
 | **06/01/2026** | K4IR | John Phillips | VHF Net Control |
@@ -535,23 +557,23 @@ Plaintext
 To paste a block of text exactly as written (like an email snippet or coordinate template) without markdown altering it, wrap the block in a code fence using three backticks before and after the text block:
 Plaintext
 
-```text
+"```"
 EXERCISE DATA STRING
 Callsign: KA4EVR
 Method: Telnet
 QTH: Bolivia, NC
-```\
+"```"
 
 🏛️ The Golden Rule: Hugo Front Matter Header
 
 Every single file placed inside content/ MUST begin with this metadata window, or Hugo will fail to compile the web node:
-Plaintext
-
+```
 ---
 title: "Weekly Club Bulletin — Week of May 25, 2026"
 date: 2026-05-25
 draft: false
 ---
+```
 
 (Ensure draft is set to false, or the page will remain completely invisible on the live deployment server!)
 
