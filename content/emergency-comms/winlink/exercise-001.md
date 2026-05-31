@@ -5,7 +5,7 @@ draft: false
 description: "Foundational training session for completing standardized Winlink check-in forms and managing emergency scenario telemetry data."
 ---
 
-📬 [← Return to Winlink Operations Dashboard](../winlink)
+📬 [← Return to Winlink Operations Dashboard](emergency-comms/winlink/)
 
 ---
 
