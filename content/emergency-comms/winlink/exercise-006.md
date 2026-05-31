@@ -41,7 +41,7 @@ To successfully fulfill the operational checklist for this net session, you must
 2. **Execute the Form Scenario:** Follow the step-by-step instructions inside the PDF document to complete the exercise.
 3. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
 
-📥 **[Download Complete Exercise #004 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-004.pdf)**
+📥 **[Download Complete Exercise #006 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-006.pdf)**
 
 ---
 
