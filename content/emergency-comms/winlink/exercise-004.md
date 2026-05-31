@@ -1,34 +1,36 @@
 ---
-title: "Winlink Exercise #004: Introduction to the EmComm Net"
+title: "Winlink Exercise #004: Using ICS-213 form to send vital informtion to the EOC"
 date: 2025-10-20
 draft: false
-description: "Foundational training session for completing standardized Winlink check-in forms and managing emergency scenario telemetry data."
+description: "Find the GPS coordinates to the three nearest hospitals to Brunswick County with helicopter landing zones.."
 ---
 
 📬 [← Return to Winlink Operations Dashboard](emergency-comms/winlink/)
 
 ---
 
-### 🏛️ Brunswick County EmComm Winlink Net — Session #001
+### 🏛️ Brunswick County EmComm Winlink Net — Session #004
 
-* **Net Session Start:** Monday, September 8th at 12:01 A.M.
-* **Net Session End:** Saturday, September 20th at 11:59 P.M.
+* **Net Session Start:** Monday, October 10th at 12:01 A.M.
+* **Net Session End:** Saturday, November 1st at 11:59 P.M.
 * **Designated Net Control Station (NCS):** Send your completed Winlink package parameters directly to **`K1MJJ`** (or `K1MJJ@winlink.org`).
 
 <div style="background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 4px; font-family: sans-serif;">
-  <strong style="color: #1b5e20;">📡 Foundational Baseline Net:</strong> 
+  <strong style="color: #1b5e20;">📡 Emcomm Winlink Net:</strong> 
   <span style="color: #2e7d32; display: block; margin-top: 5px; font-size: 14px;">
-    This is our inaugural training session designed to verify baseline software configurations, clear localized template errors, and confirm proper station connectivity parameters across the county operations roster.
+    This is our fourth Winlink exercise. This exercise will have us use the ICS 213 form.
   </span>
 </div>
 
 ---
 
 ### 🎯 Training Objectives
-* Launch and execute browser-driven internal Winlink templates (`Winlink Check-in.txt`).
-* Manage emergency dispatch scenario telemetry records, tracking shelter statistics, municipal power reliability, and internet connectivity.
-* Use geographic mapping tools (Google Maps or dedicated online coordinate finders) to determine precise Decimal Degrees (DD) station coordinates.
-* Successfully transmit structured data packages through fast client network gateways.
+* Launch the website https://www.lzcontrol.com.
+* Gather the information you need from the website
+* Launch and execute browser-driven internal Winlink templates (`ICS213 General Message.txt`).
+* Input the information you gathered from the website in the comment section of the ICS213 form.
+* Check your work.
+* Successfully transmit your work to the Winlink NCS.
 
 ---
 
@@ -36,9 +38,9 @@ description: "Foundational training session for completing standardized Winlink 
 
 To successfully fulfill the operational checklist for this net session, you must execute your deployment using the detailed briefing parameters provided by the Net Control Station. 
 
-1. **Download and Review Instructions:** Open the official exercise guide document using the link provided directly below. 
-2. **Execute the Form Scenario:** Follow the step-by-step logic inside the briefing file to complete the header fields, coordinate lookups, and situational comments block.
-3. **Transmit Message:** Route your final outbound transmission over your chosen communication pathway to **`K1MJJ`**.
+1. **Download and Review Instructions:** Open the official exercise PDF document using the link provided directly below. 
+2. **Execute the Form Scenario:** Follow the step-by-step instructions inside the PDF document to complete the exercise.
+3. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
 
 📥 **[Download Complete Exercise #004 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-004.pdf)**
 
