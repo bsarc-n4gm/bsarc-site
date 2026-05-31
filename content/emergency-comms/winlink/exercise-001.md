@@ -11,8 +11,8 @@ description: "Foundational training session for completing standardized Winlink 
 
 ### 🏛️ Brunswick County EmComm Winlink Net — Session #001
 
-* **Net Session Start:** Monday, September 8th at 12:01 AM
-* **Net Session End:** Saturday, September 20th at 11:59 PM
+* **Net Session Start:** Monday, September 8th at 12:01 A.M.
+* **Net Session End:** Saturday, September 20th at 11:59 P.M.
 * **Designated Net Control Station (NCS):** Send your completed Winlink package parameters directly to **`K1MJJ`** (or `K1MJJ@winlink.org`).
 
 <div style="background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 4px; font-family: sans-serif;">
