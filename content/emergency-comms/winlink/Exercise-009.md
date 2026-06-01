@@ -31,9 +31,11 @@ To successfully fulfill the operational checklist for this net session, you must
 
 1. **Download and Review Instructions:** Open the official exercise PDF document using the link provided directly below. 
 2. **Execute the Form Scenario:** Follow the step-by-step instructions inside the PDF document to complete the exercise.
-3. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
+3. **Download and Review Instructions:** If you need to review how to use an ICS 214a and how to create an ICS 309 via Winlink then open the link provided below.
+4. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
 
 📥 **[Download Complete Exercise #009 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-009.pdf)**
+* 🗜️ **Supporting Exercise Materials:** **[Download Exercise #009 Supporting Pack (ZIP Archive) &rarr;](/pdf/winlink/exercise-009 supporting information.zip)
 
 ---
 
