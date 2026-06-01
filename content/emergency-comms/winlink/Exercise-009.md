@@ -35,8 +35,6 @@ To successfully fulfill the operational checklist for this net session, you must
 4. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
 
 📥 **[Download Complete Exercise #009 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-009.pdf)**
-* 🗜️ **Supporting Exercise Materials:** **[Download Exercise #009 Supporting Pack (ZIP Archive) &rarr;](/pdf/winlink/exercise-009 supporting information.zip)
-
 ---
 
 ### 🙋 Technical Assistance & Inquiries
