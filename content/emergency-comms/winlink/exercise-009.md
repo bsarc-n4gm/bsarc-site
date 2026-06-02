@@ -1,5 +1,5 @@
 ---
-title: "Winlink Exercise #009: Examine and use the Winlink Catalog and attach a photo to a Winlink message "
+title: "Winlink Exercise #009: Use a Winlink Quick Message to send your monthly ICS 214a and ICS 309 forms "
 date: 2026-01-27
 draft: false
 description: "Send a Winlink Quick Message with an ICS 214a and an ICS 309 attached to the message.."
