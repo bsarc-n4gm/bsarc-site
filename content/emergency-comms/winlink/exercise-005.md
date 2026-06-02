@@ -32,10 +32,12 @@ To successfully fulfill the operational checklist for this net session, you must
 
 1. **Download and Review Instructions:** Open the official exercise PDF document using the link provided directly below. 
 2. **Execute the Form Scenario:** Follow the step-by-step instructions inside the PDF document to complete the exercise.
-3. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
+3. **Download and Review Instructions:** Open the supporting documents within the Zip folder from the provided link below to assist you in completing the exercise.
+4. **Transmit Message:** Send your Winlink message over your chosen Winlink session to **`K1MJJ`**.
 
 📥 **[Download Complete Exercise #005 Briefing Guide (PDF) &rarr;](/pdf/winlink/exercise-005.pdf)**
-
+🗜️ **Supporting Exercise Materials:** [Download Exercise #005 Supporting Pack (ZIP Archive) &rarr;](/pdf/winlink/exercise-005-supporting-files.zip)
+*Note: The supporting zip file contains two documents ne illustrates how to create a Winlink personal folder and the other document illustrates how to create an ICS 309 using Winlink*
 ---
 
 ### 🙋 Technical Assistance & Inquiries
