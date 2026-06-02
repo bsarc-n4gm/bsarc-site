@@ -21,7 +21,7 @@ description: "This exercise will provide a scenario for you with information you
 * Launch and execute browser-driven internal Winlink templates (ICS 213.txt)..
 * Follow the instructions in Exercise 002 to create the message you will send in the ICS 213 message.
 * Check your work.
-* Successfully send the Winlink message with the satellite photo to the Winlink NCS.
+* Successfully send the Winlink message to the Winlink NCS.
 
 ---
 
