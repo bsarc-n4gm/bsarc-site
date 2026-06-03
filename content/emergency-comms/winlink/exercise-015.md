@@ -1,5 +1,5 @@
 ---
-title: "Winlink Exercise #015: This exercise will deal with the ICS 205 Incident Radio Communications Plan"
+title: "Winlink Exercise #015: This exercise will introduce the ICS 205 Incident Radio Communications Plan"
 date: 2026-04-30
 draft: false
 description: "The ICS 205 is usually written by an Emergency Coordinator (EC) for an event but you as a Volunteer should be able to read and comprehend what this form is all about."
