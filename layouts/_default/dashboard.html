@@ -62,15 +62,59 @@
             </div>
         {{ end }}
 
-        <div style="text-align: center; margin-bottom: 20px;">
-            <img src="/images/club_logo.webp" alt="BSARC Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        {{ if $homeData.featured_event.active }}
+        <div style="display: flex; gap: 25px; flex-wrap: wrap; margin-bottom: 35px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.04); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            
+            <div style="flex: 1; min-width: 280px; max-width: 380px;">
+                <a href="{{ $homeData.featured_event.image | relURL }}" target="_blank" title="Click to view full size and print poster" style="display: block; text-decoration: none;">
+                    <img src="{{ $homeData.featured_event.image | relURL }}" 
+                         alt="{{ $homeData.featured_event.alt }}" 
+                         style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: block; margin: 0 auto; transition: transform 0.15s ease-in-out;"
+                         onmouseover="this.style.transform='scale(1.02)'" 
+                         onmouseout="this.style.transform='scale(1)'">
+                </a>
+            </div>
+
+            <div style="flex: 1.2; min-width: 300px; line-height: 1.5;">
+                <span style="background-color: #e53935; color: white; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; display: inline-block; margin-bottom: 8px;">Featured Event</span>
+                <h2 style="margin: 0 0 4px 0; color: #111111; font-size: 24px; font-weight: bold;">{{ $homeData.featured_event.title }}</h2>
+                <h3 style="margin: 0 0 12px 0; color: #1565c0; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;">{{ $homeData.featured_event.tagline }}</h3>
+                <p style="color: #4a5568; font-size: 14px; margin: 0 0 15px 0; line-height: 1.5;">{{ $homeData.featured_event.description }}</p>
+                
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 13px; color: #333333;">
+                    <tr style="background-color: #f8fafc; border-bottom: 1px solid #edf2f7;">
+                        <td style="padding: 8px; font-weight: bold; width: 22%;">📅 Date</td>
+                        <td style="padding: 8px;">{{ $homeData.featured_event.date_time }}</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #edf2f7;">
+                        <td style="padding: 8px; font-weight: bold;">📍 Location</td>
+                        <td style="padding: 8px;"><strong>{{ $homeData.featured_event.location }}</strong> — {{ $homeData.featured_event.address }}</td>
+                    </tr>
+                    <tr style="background-color: #f8fafc; border-bottom: 1px solid #edf2f7;">
+                        <td style="padding: 8px; font-weight: bold;">🌐 GPS</td>
+                        <td style="padding: 8px; font-family: monospace; color: #4a5568;">{{ $homeData.featured_event.gps }}</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #edf2f7;">
+                        <td style="padding: 8px; font-weight: bold;">🎟️ Access</td>
+                        <td style="padding: 8px; font-weight: bold; color: #2e7d32;">{{ $homeData.featured_event.admission }}</td>
+                    </tr>
+                </table>
+
+                <h4 style="margin: 0 0 6px 0; color: #111111; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em;">On-Site Operations:</h4>
+                <ul style="margin: 0; padding-left: 18px; font-size: 13px; color: #4a5568;">
+                    {{ range $homeData.featured_event.attractions }}
+                    <li style="margin-bottom: 4px;">{{ .item }}</li>
+                    {{ end }}
+                </ul>
+            </div>
         </div>
-        
+        {{ end }}
+             
         <div class="nested-copy-line-height">
-            <h1 style="font-size: 28px; margin: 0 0 10px 0; color: #111111; font-weight: bold;">{{ .Site.Data.homepage.welcome.heading }}</h1>
-            <h3 style="font-size: 18px; margin: 0 0 20px 0; color: #555555; font-weight: normal;">{{ .Site.Data.homepage.welcome.subheading }}</h3>
+            <h1 style="font-size: 28px; margin: 0 0 10px 0; color: #111111; font-weight: bold;">{{ $homeData.welcome.heading }}</h1>
+            <h3 style="font-size: 18px; margin: 0 0 20px 0; color: #555555; font-weight: normal;">{{ $homeData.welcome.subheading }}</h3>
             <hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
-            <p style="font-size: 15px; line-height: 1.6; color: #333333; margin-bottom: 30px;">{{ .Site.Data.homepage.welcome.text }}</p>
+            <p style="font-size: 15px; line-height: 1.6; color: #333333; margin-bottom: 30px;">{{ $homeData.welcome.text }}</p>
 
             <h2 style="font-size: 20px; color: #111111; margin: 30px 0 15px 0; border-bottom: 1px solid #dddddd; padding-bottom: 5px; font-weight: bold;">Club Net Schedules</h2>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 30px;">
@@ -82,7 +126,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{ range .Site.Data.homepage.nets }}
+                    {{ range $homeData.nets }}
                     <tr style="border-bottom: 1px solid #eeeeee;">
                         <td style="padding: 10px;"><strong>{{ .name }}</strong></td>
                         <td style="padding: 10px;">{{ .freq }}</td>
@@ -94,7 +138,7 @@
 
             <h2 style="font-size: 20px; color: #111111; margin: 30px 0 15px 0; border-bottom: 1px solid #dddddd; padding-bottom: 5px; font-weight: bold;">Meeting Schedules</h2>
             <h3 style="font-size: 16px; color: #333333; margin: 20px 0 10px 0; font-weight: bold;">Monthly Club Meetings</h3>
-            <p style="font-size: 14px; line-height: 1.5; color: #444444; margin-bottom: 15px;">{{ .Site.Data.homepage.meetings.monthly.text }}</p>
+            <p style="font-size: 14px; line-height: 1.5; color: #444444; margin-bottom: 15px;">{{ $homeData.meetings.monthly.text }}</p>
             
             <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 25px;">
                 <thead>
@@ -105,7 +149,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{ range .Site.Data.homepage.meetings.locations }}
+                    {{ range $homeData.meetings.locations }}
                     <tr style="border-bottom: 1px solid #eeeeee;">
                         <td style="padding: 10px;"><strong>{{ .months }}</strong></td>
                         <td style="padding: 10px;">{{ .name }}</td>
@@ -116,7 +160,7 @@
             </table>
 
             <h3 style="font-size: 16px; color: #333333; margin: 20px 0 10px 0; font-weight: bold;">Weekly Breakfast Meeting</h3>
-            <p style="font-size: 14px; line-height: 1.5; color: #444444; margin-bottom: 30px;">{{ .Site.Data.homepage.meetings.breakfast.text }}</p>
+            <p style="font-size: 14px; line-height: 1.5; color: #444444; margin-bottom: 30px;">{{ $homeData.meetings.breakfast.text }}</p>
 
             {{ .Content }}
 
@@ -140,6 +184,10 @@
 
     <td style="width: 30%; border-left: 1px solid #eeeeee; padding-left: 30px; min-width: 280px; background: transparent; box-sizing: border-box;">
 
+        <div style="text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px dashed #e2e8f0;">
+            <img src="/images/club_logo.webp" alt="BSARC Logo" style="display: block; margin: 0 auto; max-width: 180px; height: auto;">
+        </div>
+        
         <div style="margin-bottom: 35px; background-color: #f4fbf4; padding: 18px; border-radius: 8px; border: 1px solid #c8e6c9; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
             <h3 style="font-size: 15px; font-weight: bold; margin: 0 0 10px 0; border-bottom: 2px solid #2e7d32; padding-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; color: #2e7d32;">Membership & Dues</h3>
             <p style="font-size: 13px; color: #444444; line-height: 1.5; margin-bottom: 15px;">

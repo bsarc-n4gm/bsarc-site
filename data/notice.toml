@@ -9,7 +9,7 @@
 #      [[updates]] block, paste it at the bottom, and change the text fields.
 # ====================================================================
 
-active = true      # Toggles homepage alert banner. Options: true, false
+active = false      # Toggles homepage alert banner. Options: true, false
 color = "info"   # Banner theme profile color. Options: "danger" (red), "warning" (yellow), "info" (blue)
 heading = "📡 ARRL Summer Field Day 2026"
 message = "June 27–28, 2026. Join BSARC at Calabash Town Park for our annual emergency communications exercise! Setup begins Friday, June 26th. Open to the public, featuring live HF stations, a VE testing session (Saturday at 9:30 AM), and fresh food right off the grill. Come make some contacts and support the club!"

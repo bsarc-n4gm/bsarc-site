@@ -94,3 +94,30 @@ offset = "+5.0 MHz"
 tone = "118.8 Hz"
 location = "Calabash, NC"
 notes = "Local Area Coverage"
+
+# ====================================================================
+# 🚨 FEATURED HIGHLIGHT EVENT (e.g., ARRL FIELD DAY)
+# ====================================================================
+# Set active to true to display this prominent alert block at the top of the dash.
+# Set active to false once the event passes to hide it cleanly.
+[featured_event]
+active = true
+title = "ARRL Field Day 2026"
+tagline = "When Modern Technology Fails, Ham Radio Works!"
+image = "/images/bsarc_field_day_2026.webp"
+alt = "BSARC ARRL Field Day 2026 Poster"
+description = "Join the Brunswick Shores Amateur Radio Club for our biggest annual operation of the year. Field Day is part emergency communications exercise, part public open house, and 100% educational fun."
+date_time = "Saturday, June 27 & Sunday, June 28, 2026"
+location = "Calabash Community Park"
+address = "868 Persimmon Rd SW, Calabash, NC 28467"
+gps = "33.89389, -78.56712"
+admission = "FREE & Open to the Public!"
+
+[[featured_event.attractions]]
+item = "Live Operating Stations: Watch global HF operations powered entirely by emergency backup systems."
+
+[[featured_event.attractions]]
+item = "Public GOTA Station: 'Get On The Air!' No license required—we will coach you through making your very first radio contact."
+
+[[featured_event.attractions]]
+item = "Learn the Craft: Live demonstrations of Morse Code (CW) and modern, keyboard-to-keyboard Digital Modes."
