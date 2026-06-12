@@ -32,6 +32,13 @@
               🗞️ ← Return to Weekly Bulletin Master Archive List
           </a>
       </div>
+
+      {{ else if and (eq .Section "new-to-ham-radio") (ne .BundleType "branch") }}
+      <div style="margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+          <a href="{{ "new-to-ham-radio/" | relURL }}" style="display: inline-flex; align-items: center; gap: 6px; color: #1565c0; text-decoration: none; font-size: 14px; font-weight: bold; transition: color 0.1s ease-in-out;" onmouseover="this.style.color='#0d47a1';" onmouseout="this.style.color='#1565c0';">
+              🚨 ← Return to New to Ham Radio? Overview
+          </a>
+      </div>
       
       {{ end }}
 
