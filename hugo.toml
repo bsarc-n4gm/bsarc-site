@@ -41,8 +41,8 @@ theme = 'ananke'
   weight = 50
 
 [[menu.main]]
-  name = "New Member Guide"
-  url = "/welcome-kit/"
+  name = "New to Ham Radio?"
+  url = "/new-to-ham-radio/"
   weight = 60
 
 [markup]
