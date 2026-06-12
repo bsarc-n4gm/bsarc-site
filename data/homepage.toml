@@ -56,8 +56,8 @@ freq = "147.315 MHz (Simplex / Repeater)"
 time = "Daily Echo"
 
 [[nets]]
-name = "80M NET"
-freq = "80M"
+name = "80M HF SSB NET (Experimental)"
+freq = "3.725 MHz"
 time = "Every 3rd Wednesday @ 8:00 PM"
 
 
