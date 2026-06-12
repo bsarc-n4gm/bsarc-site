@@ -1,3 +1,9 @@
+---
+title: "New to Ham Radio?"
+date: 2026-06-11
+draft: false
+---
+
 # New to Amateur Radio? Welcome!
 
 Amateur Radio (or "Ham Radio") isn't just about talking on local repeaters. Today, it is a high-tech, cutting-edge hobby that sits at the intersection of computer science, emergency resilience, and outdoor adventure. 
