@@ -23,6 +23,6 @@ When hurricanes strike the Carolinas, power grids fail, and cell towers go dark,
 ### 🎯 Ready to Get Started?
 Becoming a licensed operator is easier than you think. You don't need to know Morse code anymore, and the entry-level Technician exam is entirely multiple-choice.
 
-1. **Explore Our Resources:** Check out our **[New Member Guide](../welcome-kit)** to see how our club operates.
+1. **Explore Our Resources:** Check out our Check out our **[New Member Guide]({{< relref "welcome-kit.md" >}})** to see how our club operates.
 2. **Come to a Meeting:** Guests are always welcome! Check our homepage for our next alternating meeting at the Calabash EMS Building or BEMS Headquarters.
 3. **Get Licensed:** We offer local testing right here in the community.
