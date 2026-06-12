@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>New to Ham Radio? on Brunswick Shores Amateur Radio Club</title>
-    <link>http://192.168.68.109:1313/new-to-ham-radio/</link>
-    <description>Recent content in New to Ham Radio? on Brunswick Shores Amateur Radio Club</description>
+    <title>New-to-Ham-Radios on Brunswick Shores Amateur Radio Club</title>
+    <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/</link>
+    <description>Recent content in New-to-Ham-Radios on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fox Hunting / ARDF</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🦊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;fox-hunting--amateur-radio-direction-finding-ardf&#34;&gt;Fox Hunting &amp;amp; Amateur Radio Direction Finding (ARDF)&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the ultimate live-action radio hide-and-seek. &amp;ldquo;Fox Hunting&amp;rdquo; (internationally known as Amateur Radio Direction Finding, or ARDF) is a competitive sport that combines map-reading, orienteering, and radio engineering.&lt;/p&gt;&#xA;&lt;p&gt;The game is simple: a low-power, automated miniature transmitter (the &amp;ldquo;Fox&amp;rdquo;) is hidden somewhere inside a local park or community woodland, broadcasting short, periodic signals. Operators weaponized with directional handheld antennas and signal attenuators track the hidden signal, triangulate its position, and hunt it down on foot against the clock.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FT8 &amp; Digital Data Modes</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  📊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;ft8-js8call--weak-signal-digital-communications&#34;&gt;FT8, JS8Call, &amp;amp; Weak-Signal Digital Communications&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the weak-signal data revolution. Modern amateur radio doesn&amp;rsquo;t rely solely on clear voice conditions to link operators across the globe. By linking an HF transceiver to a computer soundcard, specialized software can process precise digital tones buried far beneath the static atmospheric noise floor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parks on the Air (POTA)</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🏕️&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;parks-on-the-air-pota--portable-operations&#34;&gt;Parks on the Air (POTA) &amp;amp; Portable Operations&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to amateur radio&amp;rsquo;s fastest-growing outdoor adventure sport. Parks on the Air (POTA) bridges portable radio operations with natural spaces. Instead of operating from a permanent home shack, &amp;ldquo;Activators&amp;rdquo; pack up lightweight, battery-powered transceivers, hike out into state or national parks, and deploy temporary antennas to make global contacts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SDR &amp; RF Hacking</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  💻&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.&lt;/p&gt;</description>
     </item>
   </channel>
