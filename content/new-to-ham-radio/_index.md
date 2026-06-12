@@ -1,7 +1,6 @@
 ---
 title: "New to Ham Radio?"
 date: 2026-06-12
-layout: "single"
 ---
 
 # Discover Modern Amateur Radio Technologys
