@@ -41,7 +41,11 @@
       </div>
       {{ end }}
 
-      {{ .Content }}
+      {{ if .Content }}
+          {{ .Content }}
+      {{ else }}
+          {{ .Page.Content }}
+      {{ end }}
       
       <div style="margin-top: 60px; padding-top: 15px; border-top: 1px solid #eeeeee; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #777777; text-align: center;">
         This page last revised: {{ .Date.Format "1/2/2006" }}
