@@ -55,6 +55,11 @@ name = "Local Ragchew"
 freq = "147.315 MHz (Simplex / Repeater)"
 time = "Daily Echo"
 
+[[nets]]
+name = "80M NET"
+freq = "80M"
+time = "Every 3rd Wednesday @ 8:00 PM"
+
 
 # ====================================================================
 # 🏛️ CLUB MEETING LOCATION DETAILS
@@ -74,7 +79,7 @@ name = "BEMC Headquarters"
 address = "795 Ocean Hwy, Supply, NC 28462"
 
 [meetings.breakfast]
-text = "A group of local hams meets every Wednesday morning at 8:15 AM at the Tee Time Cafe in Shallotte (126 Holden Beach Road). Club business is often informally discussed, and all are welcome!"
+text = "A group of local hams meets every Wednesday morning at 8:00 AM at the Tee Time Cafe in Shallotte (126 Holden Beach Road). Club business is often informally discussed, and all are welcome!"
 
 
 # ====================================================================
@@ -89,11 +94,19 @@ location = "Supply, NC"
 notes = "Primary Club Repeater / Net Home (EchoLink: N4GM-R)"
 
 [[repeaters]]
-frequency = "444.300 MHz"
+frequency = "444.750 MHz"
 offset = "+5.0 MHz"
 tone = "118.8 Hz"
 location = "Calabash, NC"
 notes = "Local Area Coverage"
+
+[[repeaters]]
+frequency = "145.370 MHz"
+offset = "-0.6 MHz"
+tone = "88.5 Hz"
+location = "Bolivia, NC"
+notes = "Local Area Coverage (FM and Fusion)"
+
 
 # ====================================================================
 # 🚨 FEATURED HIGHLIGHT EVENT (e.g., ARRL FIELD DAY)
