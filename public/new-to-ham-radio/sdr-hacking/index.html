@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>SDR &amp; RF Hacking | Brunswick Shores Amateur Radio Club</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="
+  💻
+
+Software Defined Radio (SDR) &amp; RF Spectrum Hacking
+Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.">
+    <meta name="generator" content="Hugo 0.161.1">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="https://bsarc-n4gm.github.io/bsarc-site/ananke/css/main.min.e49551ec3dd5db380046984050b23398e8cb0abfd895cebd7b8e51a1ad7a7fad.css" >
+
+
+
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/">
+    
+
+    
+    
+    <meta property="og:url" content="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/">
+  <meta property="og:site_name" content="Brunswick Shores Amateur Radio Club">
+  <meta property="og:title" content="SDR & RF Hacking">
+  <meta property="og:description" content="💻 Software Defined Radio (SDR) &amp; RF Spectrum Hacking Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="new-to-ham-radio">
+    <meta property="article:published_time" content="2026-06-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-12T00:00:00+00:00">
+
+  <meta itemprop="name" content="SDR & RF Hacking">
+  <meta itemprop="description" content="💻 Software Defined Radio (SDR) &amp; RF Spectrum Hacking Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.">
+  <meta itemprop="datePublished" content="2026-06-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-06-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="459">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SDR & RF Hacking">
+  <meta name="twitter:description" content="💻 Software Defined Radio (SDR) &amp; RF Spectrum Hacking Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-sdr-hacking">
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="https://bsarc-n4gm.github.io/bsarc-site/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Brunswick Shores Amateur Radio Club
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/emergency-comms/" title="Emergency Comms page">
+              Emergency Comms
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/repeaters/" title="Repeaters page">
+              Repeaters
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/gallery/" title="Activities &amp; Media page">
+              Activities &amp; Media
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/board/" title="Officers page">
+              Officers
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/arrl/" title="ARRL Program page">
+              ARRL Program
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/" title="New to Ham Radio page">
+              New to Ham Radio
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          SDR &amp; RF Hacking
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<div style="background-color: #111111; width: 100%; padding: 12px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; flex-wrap: nowrap;">
+        <div style="display: flex; gap: 25px; flex-wrap: nowrap; align-items: center;">
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">Home</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/emergency-comms/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">Emergency Comms</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/repeaters/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">Repeaters</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/gallery/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">Activities &amp; Media</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/board/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">Officers</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/arrl/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">ARRL Program</a>
+            
+            <a href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; transition: color 0.15s ease-in-out;">New to Ham Radio</a>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="header-banner-box">
+    <img src="https://bsarc-n4gm.github.io/bsarc-site/images/club_banner_summer.webp" 
+         alt="Brunswick Shores ARC Banner" 
+         style="width: 100%; height: auto; display: block; max-height: 280px; object-fit: cover;">
+</div>
+
+<article class="flex-l flex-wrap justify-between mw8 center ph3" style="margin-top: 30px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray w-100">
+      
+      
+      <div style="margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+          <a href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/" style="display: inline-flex; align-items: center; gap: 6px; color: #00838f; text-decoration: none; font-size: 14px; font-weight: bold; transition: color 0.1s ease-in-out;" onmouseover="this.style.color='#006064';" onmouseout="this.style.color='#00838f';">
+              🚀 ← Return to New to Ham Radio? Operations Portal
+          </a>
+      </div>
+      
+
+      <div style="float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
+  💻
+</div>
+<h1 id="software-defined-radio-sdr--rf-spectrum-hacking">Software Defined Radio (SDR) &amp; RF Spectrum Hacking</h1>
+<p>Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.</p>
+<p>For computer programmers, cybersecurity professionals, and tech hobbyists, SDR is the ultimate bridge between hardware and software. It allows you to legally and safely listen to, visualize, and reverse-engineer signals passing through the local RF environment.</p>
+<hr>
+<h2 id="-active-club-projects--research-labs">🛠️ Active Club Projects &amp; Research Labs</h2>
+<p>Our technical development group is actively exploring modern SDR platforms for both recreational hobbies and cybersecurity research.</p>
+<ul>
+<li><strong>Featured Coordinator:</strong> [Position Open — Actively Seeking Input/Peter&rsquo;s Profile]</li>
+<li>👉 Connect via Email: <strong><a href="mailto:#"
+  
+  >
+  Submit Ideas or Projects
+</a>
+</strong></li>
+</ul>
+<h3 id="-current-exploration-areas">🛸 Current Exploration Areas</h3>
+<ul>
+<li><strong>Aviation Tracking (ADS-B):</strong> Setting up local receiver nodes using dump1090 software to legally track commercial aircraft positions, altitudes, and headings in real-time across the Carolinas.</li>
+<li><strong>Weather Satellite Imaging:</strong> Capturing live, raw weather imaging downlinks directly from NOAA and Meteor polar-orbiting satellites as they pass over the East Coast, decoding them directly into desktop weather maps.</li>
+<li><strong>Cybersecurity &amp; Signal Analysis:</strong> Utilizing tools like GQRX, SDR#, and GNU Radio to identify signal modulation schemas and analyze local wireless protocols.</li>
+</ul>
+<hr>
+<h2 id="-recommended-getting-started-guides--tools">📂 Recommended Getting Started Guides &amp; Tools</h2>
+<p>If you are new to SDR, these open-source tools and resource pathways provide the perfect sandbox environment to begin monitoring the spectrum:</p>
+<ul>
+<li>🌐 <a href="https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/"
+  
+  
+    target="_blank" rel="noopener noreferrer"
+  >
+  RTL-SDR Official Quick Start Guide
+</a>
+ — The gold standard hardware and software setup guide for beginners.</li>
+<li>💾 <a href="https://airspy.com/download/"
+  
+  
+    target="_blank" rel="noopener noreferrer"
+  >
+  Airspy SDR# (SDRSharp)
+</a>
+ — A premier, high-performance digital tuning workspace for Windows environments.</li>
+<li>🐧 <a href="https://gqrx.dk/"
+  
+  
+    target="_blank" rel="noopener noreferrer"
+  >
+  GQRX SDR Receiver App
+</a>
+ — An excellent, lightweight open-source software receiver optimized for Linux (including Zorin OS) and macOS systems.</li>
+</ul>
+<hr>
+<h2 id="-learning-tracks-for-new-tinkerers">🎓 Learning Tracks for New Tinkerers</h2>
+<p>You don&rsquo;t need a license to buy a receiver dongle, build antennas, or monitor the airwaves! Reception of open radio signals is completely legal and acts as a fantastic gateway to understanding the fundamentals of radio wave propagation, modulation, and antenna theory.</p>
+<ul>
+<li>📡 <strong>The $25 Radio Shack:</strong> A standard RTL-SDR blog V3 or V4 USB stick paired with a simple dipole antenna kit is all it takes to open up everything from AM/FM bands to public safety, marine, and aviation frequencies.</li>
+<li>🚀 <strong>GNU Radio Sandbox:</strong> For the software engineers, GNU Radio uses graphical block diagrams to build custom digital signal processing environments.</li>
+</ul>
+<h3 id="-collaborate-with-the-web-committee">🤝 Collaborate with the Web Committee</h3>
+<p>Are you currently running an automated SDR node at your house, or using WebSDR pools for security auditing? We want to showcase your shack setup right here! Connect with the web development committee to add your project logs, hardware recommendations, or custom guide links to this dashboard.</p>
+
+      
+      <div style="margin-top: 60px; padding-top: 15px; border-top: 1px solid #eeeeee; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #777777; text-align: center;">
+        This page last revised: 6/12/2026
+      </div>
+
+    </div>
+</article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://bsarc-n4gm.github.io/bsarc-site/" >
+    &copy;  Brunswick Shores Amateur Radio Club 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
