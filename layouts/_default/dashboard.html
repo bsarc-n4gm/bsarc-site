@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ $homeData := site.Data.homepage }}
+{{ $noticeData := site.Data.notice }}
+
 <script>
     (function() {
         var defaultHeader = document.querySelector('header') || document.querySelector('[role="banner"]');
@@ -21,7 +24,6 @@
     </div>
 </div>
 
-{{ $homeData := site.Data.homepage }}
 <div class="header-banner-box">
     <img src="{{ $homeData.banner.image | relURL }}" 
          alt="{{ $homeData.banner.alt }}" 
@@ -33,7 +35,6 @@
     
     <td style="width: 70%; padding-right: 40px; border: none; background: transparent; box-sizing: border-box;">
         
-        {{ $noticeData := site.Data.notice }}
         {{ if $noticeData.active }}
             {{ $bg := "#e3f2fd" }}{{ $border := "#bbdefb" }}{{ $text := "#0d47a1" }}{{ $btnBg := "#1565c0" }}{{ $btnHover := "#0d47a1" }}
             
@@ -70,8 +71,8 @@
                     <img src="{{ $homeData.featured_event.image | relURL }}" 
                          alt="{{ $homeData.featured_event.alt }}" 
                          style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: block; margin: 0 auto; transition: transform 0.15s ease-in-out;"
-                         onmouseover="this.style.transform='scale(1.02)'" 
-                         onmouseout="this.style.transform='scale(1)'">
+                         onmouseover="this.style.setProperty('transform', 'scale(1.02)')" 
+                         onmouseout="this.style.setProperty('transform', 'scale(1)')">
                 </a>
             </div>
 
@@ -288,17 +289,6 @@
         </div>
 
         <div style="margin-bottom: 35px;">
-            <h3 style="font-size: 14px; font-weight: bold; margin: 0 0 10px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; color: #111111;">Club Framework</h3>
-            <p style="font-size: 13px; color: #555555; line-height: 1.4; margin-bottom: 12px;">
-                Review our official UUNAA corporate compliance records, historical founding documents, and standard routine order bylaws.
-            </p>
-            <a href="/uunaa/"
-            style="display: inline-block; width: 100%; text-align: center; box-sizing: border-box; padding: 8px 12px; font-size: 13px; background-color: #111111; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; transition: background-color 0.15s ease;">
-                📜 View Legal & Bylaws Hub
-            </a>
-        </div>
-
-        <div style="margin-bottom: 35px;">
             <h3 style="font-size: 14px; font-weight: bold; margin: 0 0 10px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; color: #111111;">Member Directory</h3>
             <p style="font-size: 13px; color: #555555; line-height: 1.4; margin-bottom: 12px;">
                 Access our verified membership roster, check active member callsigns, and review current licensing status metrics.
@@ -317,6 +307,17 @@
             <a href="/fcc-renewal/"
             style="display: inline-block; width: 100%; text-align: center; box-sizing: border-box; padding: 8px 12px; font-size: 13px; background-color: #111111; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; transition: background-color 0.15s ease;">
                 📡 Launch FCC Renewal Information
+            </a>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+            <h3 style="font-size: 14px; font-weight: bold; margin: 0 0 10px 0; border-bottom: 2px solid #111111; padding-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; color: #111111;">New Member</h3>
+            <p style="font-size: 13px; color: #555555; line-height: 1.4; margin-bottom: 12px;">
+                BSARC New Member Information.
+            </p>
+            <a href="/welcome-kit/"
+            style="display: inline-block; width: 100%; text-align: center; box-sizing: border-box; padding: 8px 12px; font-size: 13px; background-color: #111111; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; transition: background-color 0.15s ease;">
+                📡 Launch New Member Information
             </a>
         </div>
 

@@ -33,12 +33,6 @@
           </a>
       </div>
 
-      {{ else if eq .File.TranslationBaseName "welcome-kit" }}
-      <div style="margin-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-          <a href="{{ "new-to-ham-radio/" | relURL }}" style="display: inline-flex; align-items: center; gap: 6px; color: #d32f2f; text-decoration: none; font-size: 14px; font-weight: bold; transition: color 0.1s ease-in-out;" onmouseover="this.style.color='#b71c1c';" onmouseout="this.style.color='#d32f2f';">
-              🚀 ← Return to New to Ham Radio?
-          </a>
-      </div>
       {{ end }}
 
       {{ .Content }}
