@@ -4,7 +4,7 @@ date: 2026-06-12
 layout: "single"
 ---
 
-# Discover Modern Amateur Radio Technology
+# Discover Modern Amateur Radio Technologys
 
 Amateur Radio (or "Ham Radio") isn't just about talking on local voice repeaters. Today, it is an expansive, high-tech hobby that sits right at the intersection of computer science, emergency resilience, outdoor recreation, and hardware hacking. 
 
