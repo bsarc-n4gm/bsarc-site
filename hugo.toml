@@ -1,6 +1,6 @@
 ############################
 #Added for git update
-baseURL = "https://bsarc-n4gm.github.io/bsarc-site/?v=1.0.1"
+baseURL = "https://bsarc-n4gm.github.io/bsarc-site/"
 canonifyURLs = true
 relativeURLs = false
 ############################
