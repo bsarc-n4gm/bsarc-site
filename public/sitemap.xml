@@ -17,6 +17,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/</loc>
+    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/new-to-ham-radio/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -133,11 +138,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.68.109:1313/fcc-renewal/</loc>
-    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.68.109:1313/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
