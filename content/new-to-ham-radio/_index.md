@@ -113,6 +113,18 @@ Once you have your bearings, it's time to choose your specialization path. Our a
     <a href="satellite-comms/" style="display: block; text-align: center; background-color: #5e35b1; color: white; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Track the Space Station →</a>
   </div>
 
+  <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+    <div>
+      <div style="width: 100%; height: 130px; margin-bottom: 15px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <img src="/images/digital-voice-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </div>
+      <h3 style="margin: 0 0 10px 0; color: #004d40; font-size: 18px; font-weight: bold; font-family: sans-serif;">Digital Voice & Internet</h3>
+      <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 80px;">Bypass strict HOA and property antenna restrictions completely. Learn how to use digital voice protocols (Fusion, DMR, D-Star) and pocket internet hotspots to hold crystal-clear worldwide contacts using a simple handheld radio.</p>
+      <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>Linking Operations:</strong> Regional Net Gateways</span>
+    </div>
+    <a href="digital-voice/" style="display: block; text-align: center; background-color: #004d40; color: white; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Explore Digital Voice →</a>
+  </div>
+
 </div>
 
 ---

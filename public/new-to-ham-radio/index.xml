@@ -16,6 +16,13 @@
       <description>&lt;h1 id=&#34;tracking-and-working-amateur-radio-satellites&#34;&gt;Tracking and Working Amateur Radio Satellites&lt;/h1&gt;&#xA;&lt;p&gt;Working amateur radio satellites and chasing the International Space Station (ISS) is one of the most thrilling aspects of modern ham radio. Using nothing more than a handheld dual-band transceiver (VHF/UHF) and a small, hand-held directional antenna, you can bridge voice and data contacts over hundreds of miles via orbital spacecraft passing directly over Brunswick County.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-international-space-station-ariss-frequencies&#34;&gt;🛰️ The International Space Station (ARISS) Frequencies&lt;/h2&gt;&#xA;&lt;p&gt;The International Space Station maintains an active amateur radio station onboard operated by astronauts through the ARISS program (Amateur Radio on the International Space Station). The crew uses these specific frequencies for voice repeaters, automatic digital packets, and scheduled school STEM outreach events.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Digital Voice Modes &amp; Internet Gateways</title>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</guid>
+      <description>&lt;h1 id=&#34;overcoming-antenna-restrictions-with-digital-voice&#34;&gt;Overcoming Antenna Restrictions with Digital Voice&lt;/h1&gt;&#xA;&lt;p&gt;Live in an apartment, an HOA-restricted neighborhood, or traveling out of town? You do not need a massive wire antenna array strung up across oak trees to talk around the globe. Modern digital modes allow you to link a simple, low-power handheld radio (HT) or a pocket-sized internet hotspot to global networks using the power of internet linking.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-big-three-digital-voice-ecosystems&#34;&gt;🌐 The Big Three: Digital Voice Ecosystems&lt;/h2&gt;&#xA;&lt;p&gt;Digital Voice (DV) modes convert your voice into digital data packets right at the radio microphone. If your local line-of-sight repeater is connected to the internet, or if you use a personal desktop hotspot, your packets are instantly routed to specific &amp;ldquo;rooms&amp;rdquo; or &amp;ldquo;talkgroups&amp;rdquo; anywhere in the world.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Fox Hunting / ARDF</title>
       <link>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
