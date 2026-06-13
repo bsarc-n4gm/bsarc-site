@@ -5,22 +5,60 @@ draft: false
 layout: "single"
 ---
 
-# Discover Modern Amateur Radio Technologys
+# Discover Modern Amateur Radio Technologies
 
 Amateur Radio (or "Ham Radio") isn't just about talking on local voice repeaters. Today, it is an expansive, high-tech hobby that sits right at the intersection of computer science, emergency resilience, outdoor recreation, and hardware hacking. 
 
-Whether you are a software developer, a cybersecurity professional, a maker, or an outdoor enthusiast, there is a technical niche here for you. Explore our active club operations below:
+Whether you are a software developer, a cybersecurity professional, a maker, or an outdoor enthusiast, there is a technical niche here for you. Explore how to get your wings and join our active operations below.
 
 ---
+
+## 🪶 Get Your Wings: The Core Foundations
+
+Before diving into advanced orbital tracking or digital data modes, every operator starts with the essentials. These three core steps will clear the air, eliminate mic fright, and get you licensed fast.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; font-family: sans-serif;">
+
+  <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #2e7d32;">
+    <div>
+      <h4 style="margin: 0 0 8px 0; color: #2e7d32; font-size: 16px; font-weight: bold;">1. Choose Your License</h4>
+      <p style="font-size: 12.5px; color: #475569; margin: 0 0 12px 0; line-height: 1.4;">The entry-level <strong>Technician License</strong> unlocks all VHF/UHF frequencies, giving you full access to local repeaters, emergency nets, and space satellites. Best part? No Morse code testing required since 2007!</p>
+    </div>
+    <a href="https://hamstudy.org" target="_blank" style="font-size: 12px; font-weight: bold; color: #2e7d32; text-decoration: none;">Free Practice Exams & Tools →</a>
+  </div>
+
+  <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #d84315;">
+    <div>
+      <h4 style="margin: 0 0 8px 0; color: #d84315; font-size: 16px; font-weight: bold;">2. Master the Radio Lingo</h4>
+      <p style="font-size: 12.5px; color: #475569; margin: 0 0 12px 0; line-height: 1.4;">Cure "mic fright" instantly by demystifying simple operating protocols. Learn the International Phonetic Alphabet, essential Q-signals (like QTH and QSL), and basic etiquette for making standard contacts confidently.</p>
+    </div>
+    <span style="font-size: 12px; font-weight: bold; color: #94a3b8; cursor: default;">Club Etiquette Guide In Progress</span>
+  </div>
+
+  <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #0284c7;">
+    <div>
+      <h4 style="margin: 0 0 8px 0; color: #0284c7; font-size: 16px; font-weight: bold;">3. The $50 Starter Shack</h4>
+      <p style="font-size: 12.5px; color: #475569; margin: 0 0 12px 0; line-height: 1.4;">You don't need a multi-thousand dollar base station to get started. A simple $25–$35 handheld radio paired with a homemade, DIY tape-measure directional antenna is enough to let you track and talk over major regional arrays.</p>
+    </div>
+    <span style="font-size: 12px; font-weight: bold; color: #94a3b8; cursor: default;">Hardware Build Guide Coming</span>
+  </div>
+
+</div>
+
+---
+
+## 🚀 Choose Your Adventure: Club Technical Tracks
+
+Once you have your bearings, it's time to choose your specialization path. Our active club units manage five high-tech operational tracks throughout Brunswick County:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin: 30px 0; font-family: sans-serif;">
 
   <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <div style="width: 100%; height: 130px; margin-bottom: 15px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <img src="/images/sdr-hacking-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="/images/sdr-hacking-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
       </div>
-      <h3 style="margin: 0 0 10px 0; color: #0d47a1; font-size: 18px;">SDR & RF Hacking</h3>
+      <h3 style="margin: 0 0 10px 0; color: #0d47a1; font-size: 18px; font-weight: bold;">SDR & RF Hacking</h3>
       <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5;">Connect a simple $25 Software Defined Radio USB dongle to a computer to analyze the invisible spectrum. Explore radio waves to decode live aircraft telemetry (ADS-B), track weather satellites, or legally monitor local digital traffic.</p>
       <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>Featured Coordinator:</strong> [Position Open / Seeking Input]</span>
     </div>
@@ -30,7 +68,7 @@ Whether you are a software developer, a cybersecurity professional, a maker, or 
   <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <div style="width: 100%; height: 130px; margin-bottom: 15px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <img src="/images/ft8.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="/images/ft8-digital-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
       </div>
       <h3 style="margin: 0 0 10px 0; color: #2e7d32; font-size: 18px; font-weight: bold;">FT8 & Weak-Signal Data</h3>
       <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5;">Welcome to the data revolution. Using desktop software tools like WSJT-X synced to an HF transceiver, hams can automatically complete global contacts using digital tones buried far below the atmospheric noise floor.</p>
@@ -79,7 +117,7 @@ Whether you are a software developer, a cybersecurity professional, a maker, or 
 
 ---
 
-### 🚀 Ready to Take Your First Steps?
+### 🏁 Ready to Take Your Next Steps?
 If you're eager to get on the air, build your own equipment, or participate in local emergency service exercises, we've laid out everything you need right here:
 
 * **Step 1: Check Out Our Welcome Guide:** Read through our official **[New Member Welcome Kit](../welcome-kit/)** to see how our regional infrastructure runs and how to apply.
