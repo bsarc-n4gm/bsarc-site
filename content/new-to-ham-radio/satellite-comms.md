@@ -1,5 +1,7 @@
 ---
 title: "Amateur Radio Satellites & ISS Communications"
+description: "Learn how to track low-Earth orbit amateur radio satellites and contact the International Space Station directly from Brunswick County."
+keywords: ["amateur radio satellites", "ISS tracking", "ARISS frequencies", "BSARC", "ham radio North Carolina"]
 date: 2026-06-13
 draft: false
 layout: "single"

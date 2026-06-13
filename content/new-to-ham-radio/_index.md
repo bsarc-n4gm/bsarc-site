@@ -1,8 +1,10 @@
 ---
 title: "New to Ham Radio?"
-date: 2026-06-11
+description: "Explore modern amateur radio tech tracks with BSARC, including SDR hacking, weak-signal digital data, POTA, and satellite tracking."
+keywords: ["new to ham radio", "radio tech", "SDR hacking", "POTA NC", "BSARC portal"]
+date: 2026-06-13
 draft: false
-layout: "single"
+layout: "single" 
 ---
 
 # Discover Modern Amateur Radio Technologies

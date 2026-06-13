@@ -1,5 +1,5 @@
 ############################
-#Added for git update
+# Added for git update
 baseURL = "https://bsarc-n4gm.github.io/bsarc-site/"
 canonifyURLs = true
 relativeURLs = false
@@ -8,6 +8,16 @@ relativeURLs = false
 languageCode = 'en-us'
 title = "Brunswick Shores Amateur Radio Club"
 theme = 'ananke'
+
+############################
+# Global SEO & Search Optimization
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+############################
 
 [params]
   show_recent_posts = false
