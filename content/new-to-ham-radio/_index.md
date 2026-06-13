@@ -26,7 +26,7 @@ Before diving into advanced orbital tracking or digital data modes, every operat
       <h4 style="margin: 0 0 8px 0; color: #2e7d32; font-size: 16px; font-weight: bold; font-family: sans-serif;">1. Choose Your License</h4>
       <p style="font-size: 12.5px; color: #475569; margin: 0 0 12px 0; line-height: 1.4;">The entry-level <strong>Technician License</strong> unlocks all VHF/UHF frequencies, giving you full access to local repeaters, emergency nets, and space satellites. Best part? No Morse code testing required since 2007!</p>
     </div>
-    <a href="https://hamstudy.org" target="_blank" style="font-size: 12px; font-weight: bold; color: #2e7d32; text-decoration: none;">Free Practice Exams & Tools →</a>
+    <a href="choose-license/" style="font-size: 12px; font-weight: bold; color: #2e7d32; text-decoration: none;">Choose Your License →</a>
   </div>
 
   <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #d84315;">
