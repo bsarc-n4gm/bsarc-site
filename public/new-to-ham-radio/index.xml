@@ -6,8 +6,15 @@
     <description>Recent content in New to Ham Radio? on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amateur Radio Satellites &amp; ISS Communications</title>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</guid>
+      <description>&lt;h1 id=&#34;tracking-and-working-amateur-radio-satellites&#34;&gt;Tracking and Working Amateur Radio Satellites&lt;/h1&gt;&#xA;&lt;p&gt;Working amateur radio satellites and chasing the International Space Station (ISS) is one of the most thrilling aspects of modern ham radio. Using nothing more than a handheld dual-band transceiver (VHF/UHF) and a small, hand-held directional antenna, you can bridge voice and data contacts over hundreds of miles via orbital spacecraft passing directly over Brunswick County.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-international-space-station-ariss-frequencies&#34;&gt;🛰️ The International Space Station (ARISS) Frequencies&lt;/h2&gt;&#xA;&lt;p&gt;The International Space Station maintains an active amateur radio station onboard operated by astronauts through the ARISS program (Amateur Radio on the International Space Station). The crew uses these specific frequencies for voice repeaters, automatic digital packets, and scheduled school STEM outreach events.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fox Hunting / ARDF</title>
       <link>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</link>
