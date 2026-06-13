@@ -34,7 +34,7 @@ Before diving into advanced orbital tracking or digital data modes, every operat
       <h4 style="margin: 0 0 8px 0; color: #d84315; font-size: 16px; font-weight: bold; font-family: sans-serif;">2. Master the Radio Lingo</h4>
       <p style="font-size: 12.5px; color: #475569; margin: 0 0 12px 0; line-height: 1.4;">Cure "mic fright" instantly by demystifying simple operating protocols. Learn the International Phonetic Alphabet, essential Q-signals (like QTH and QSL), and basic etiquette for making standard contacts confidently.</p>
     </div>
-    <a href="#next-steps" style="font-size: 12px; font-weight: bold; color: #d84315; text-decoration: none;">Club Guide In Progress →</a>
+    <a href="radio-lingo/" style="font-size: 12px; font-weight: bold; color: #d84315; text-decoration: none;">Master the Lingo →</a>
   </div>
 
   <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #0284c7;">
