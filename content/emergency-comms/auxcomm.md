@@ -5,7 +5,7 @@ draft: false
 layout: "single"
 ---
 
-<img src="/images/club_logo.webp" alt="BSARC Club Logo" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 110px; height: auto; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.15));">
+<img src="/images/nc_auxcomm_logo.webp" alt="Skywarn Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
 
 # Brunswick County Government AUXCOMM Infrastructure
 

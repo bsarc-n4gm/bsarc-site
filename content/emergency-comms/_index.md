@@ -32,10 +32,10 @@ To serve our community effectively, local public safety radio operations are spl
   <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <div style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-        <img src="/images/club_logo.webp" alt="Auxcomm Badge Logo" style="width: 70px; height: 70px; object-fit: contain; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
+        <img src="/images/nc_auxcomm_logo.webp" alt="North Carolina AUXCOMM State Crest" style="width: 70px; height: 70px; object-fit: contain; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
       </div>
       <h3 style="margin: 0 0 10px 0; color: #2e7d32; font-size: 18px; font-weight: bold; font-family: sans-serif;">Auxiliary Communications (AUXCOMM)</h3>
-      <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 90px;">Sanctioned by CISA / FEMA under DHS. Formally recognized and integrated directly into the Brunswick County Emergency Management agency framework for state and local infrastructure duties.</p>
+      <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 90px;">Sanctioned by CISA / FEMA under DHS. Formally integrated into the NCEM Region 3 Emergency Management network to provide resilient primary voice and digital data backup paths for local county infrastructure.</p>
       <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>County Coordinator:</strong> Bill Sirginson (N4PEN)</span>
     </div>
     <a href="auxcomm/" style="display: block; text-align: center; background-color: #2e7d32; color: white; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Enter AUXCOMM Portal →</a>
