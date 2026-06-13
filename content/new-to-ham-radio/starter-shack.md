@@ -51,9 +51,13 @@ Instead of a portable HT, this tier bridges the gap into a higher-power external
 
 ---
 
-## 🌎 HF Worldwide Tier Lists (General & Up)
+## 🌎 HF Worldwide Tier Lists (Technician vs. General)
 
-Ready to bounce signals off the ionosphere? These packages are built for General class operators looking to explore HF phone (voice), POTA portable operations, or digital weak-signal data modes like FT8.
+Ready to bounce signals off the ionosphere? If you hold a **Technician license**, you aren't completely trapped on local VHF/UHF repeaters! The FCC grants Technicians limited HF privileges, most notably a dedicated sliver of **Single Sideband (SSB) Voice on the 10-Meter Band (`28.300 MHz to 28.500 MHz`)**. When solar cycles are peak active, a 10-meter wire antenna can easily net you contacts thousands of miles away using a budget HF rig.
+
+However, passing your **General Class upgrade** is what truly blows the doors wide open. Upgrading hands you widespread voice and digital data access across the legendary "money bands"—including 20-Meters, 40-Meters, and 80-Meters—allowing you to reliably communicate globally around the clock, regardless of fluctuating daytime solar conditions.
+
+The following gear packages are built to scale with you from that 10-meter Technician gateway up to full-scale General class DX chasing.
 
 ### 1. The $500 HF Budget Station (The "QRP & Portable Pack")
 At this price point, you are looking at lower-power (QRP) highly portable setups or finding a quality used analog radio at a local hamfest.
