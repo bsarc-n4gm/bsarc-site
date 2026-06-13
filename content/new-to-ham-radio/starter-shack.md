@@ -57,6 +57,10 @@ Ready to bounce signals off the ionosphere? If you hold a **Technician license**
 
 However, passing your **General Class upgrade** is what truly blows the doors wide open. Upgrading hands you widespread voice and digital data access across the legendary "money bands"—including 20-Meters, 40-Meters, and 80-Meters—allowing you to reliably communicate globally around the clock, regardless of fluctuating daytime solar conditions.
 
+> 🧪 **The Experimenter's Creed:** When moving into the HF bands, **never be afraid to experiment with antennas.** There is absolutely no single "perfect" design that fits every scenario. An antenna that works miracles for one operator might perform completely differently for you depending on your exact physical location, neighborhood lot restrictions, surrounding tree foliage, or nearby electrical noise interference. 
+> 
+> Trying out different wire configurations—shifting from an End-Fed Tough-Wire to an inverted-V dipole, or trying a vertical ground plane—is where real ham radio mastery happens. You don't need expensive factory-molded plastics; you just need some copper wire, a tree branch, and a willingness to test.
+
 The following gear packages are built to scale with you from that 10-meter Technician gateway up to full-scale General class DX chasing.
 
 ### 1. The $500 HF Budget Station (The "QRP & Portable Pack")

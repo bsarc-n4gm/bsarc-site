@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New to Ham Radio? on Brunswick Shores Amateur Radio Club</title>
-    <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/</link>
+    <link>http://192.168.68.109:1313/new-to-ham-radio/</link>
     <description>Recent content in New to Ham Radio? on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amateur Radio Satellites &amp; ISS Communications</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/satellite-comms/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/satellite-comms/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</guid>
       <description>&lt;h1 id=&#34;tracking-and-working-amateur-radio-satellites&#34;&gt;Tracking and Working Amateur Radio Satellites&lt;/h1&gt;&#xA;&lt;p&gt;Working amateur radio satellites and chasing the International Space Station (ISS) is one of the most thrilling aspects of modern ham radio. Using nothing more than a handheld dual-band transceiver (VHF/UHF) and a small, hand-held directional antenna, you can bridge voice and data contacts over hundreds of miles via orbital spacecraft passing directly over Brunswick County.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-international-space-station-ariss-frequencies&#34;&gt;🛰️ The International Space Station (ARISS) Frequencies&lt;/h2&gt;&#xA;&lt;p&gt;The International Space Station maintains an active amateur radio station onboard operated by astronauts through the ARISS program (Amateur Radio on the International Space Station). The crew uses these specific frequencies for voice repeaters, automatic digital packets, and scheduled school STEM outreach events.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Voice Modes &amp; Internet Gateways</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/digital-voice/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/digital-voice/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</guid>
       <description>&lt;h1 id=&#34;overcoming-antenna-restrictions-with-digital-voice&#34;&gt;Overcoming Antenna Restrictions with Digital Voice&lt;/h1&gt;&#xA;&lt;p&gt;Live in an apartment, an HOA-restricted neighborhood, or traveling out of town? You do not need a massive wire antenna array strung up across oak trees to talk around the globe. Modern digital modes allow you to link a simple, low-power handheld radio (HT) or a pocket-sized internet hotspot to global networks using the power of internet linking.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-big-three-digital-voice-ecosystems&#34;&gt;🌐 The Big Three: Digital Voice Ecosystems&lt;/h2&gt;&#xA;&lt;p&gt;Digital Voice (DV) modes convert your voice into digital data packets right at the radio microphone. If your local line-of-sight repeater is connected to the internet, or if you use a personal desktop hotspot, your packets are instantly routed to specific &amp;ldquo;rooms&amp;rdquo; or &amp;ldquo;talkgroups&amp;rdquo; anywhere in the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Master the Radio Lingo &amp; Beat Mic Fright</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/radio-lingo/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/radio-lingo/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/radio-lingo/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/radio-lingo/</guid>
       <description>&lt;h1 id=&#34;master-the-radio-lingo--beat-mic-fright&#34;&gt;Master the Radio Lingo &amp;amp; Beat Mic Fright&lt;/h1&gt;&#xA;&lt;p&gt;&amp;ldquo;Mic fright&amp;rdquo; is incredibly common, but the best cure is desensitization. Start by listening to local repeater conversations to understand the typical flow, then write out a simple script for your first call. Don&amp;rsquo;t worry about perfect jargon—plain, conversational English is perfectly acceptable.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;essential-lingo-keep-it-simple&#34;&gt;Essential Lingo (Keep It Simple)&lt;/h2&gt;&#xA;&lt;p&gt;You don&amp;rsquo;t need a massive dictionary of codes to get on the air. Most operators prefer simple, plain-language conversations, but a few basics help make transmissions clear.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Starter Shack: Budget Gear Guides from $50 to $1,000</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/starter-shack/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/starter-shack/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/starter-shack/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/starter-shack/</guid>
       <description>&lt;h1 id=&#34;the-starter-shack-budget-gear-guides-from-50-to-1000&#34;&gt;The Starter Shack: Budget Gear Guides from $50 to $1,000&lt;/h1&gt;&#xA;&lt;p&gt;One of the biggest misconceptions about amateur radio is that you need to spend thousands of dollars just to get on the air. While you certainly &lt;em&gt;can&lt;/em&gt; buy high-end base stations, you can easily build a highly capable, effective station on almost any budget.&lt;/p&gt;&#xA;&lt;p&gt;Here is a breakdown of benchmark staging packages for VHF/UHF local repeater work and entry-level HF worldwide operations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fox Hunting / ARDF</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🦊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;fox-hunting--amateur-radio-direction-finding-ardf&#34;&gt;Fox Hunting &amp;amp; Amateur Radio Direction Finding (ARDF)&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the ultimate live-action radio hide-and-seek. &amp;ldquo;Fox Hunting&amp;rdquo; (internationally known as Amateur Radio Direction Finding, or ARDF) is a competitive sport that combines map-reading, orienteering, and radio engineering.&lt;/p&gt;&#xA;&lt;p&gt;The game is simple: a low-power, automated miniature transmitter (the &amp;ldquo;Fox&amp;rdquo;) is hidden somewhere inside a local park or community woodland, broadcasting short, periodic signals. Operators weaponized with directional handheld antennas and signal attenuators track the hidden signal, triangulate its position, and hunt it down on foot against the clock.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FT8 &amp; Digital Data Modes</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  📊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;ft8-js8call--weak-signal-digital-communications&#34;&gt;FT8, JS8Call, &amp;amp; Weak-Signal Digital Communications&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the weak-signal data revolution. Modern amateur radio doesn&amp;rsquo;t rely solely on clear voice conditions to link operators across the globe. By linking an HF transceiver to a computer soundcard, specialized software can process precise digital tones buried far beneath the static atmospheric noise floor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parks on the Air (POTA)</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🏕️&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;parks-on-the-air-pota--portable-operations&#34;&gt;Parks on the Air (POTA) &amp;amp; Portable Operations&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to amateur radio&amp;rsquo;s fastest-growing outdoor adventure sport. Parks on the Air (POTA) bridges portable radio operations with natural spaces. Instead of operating from a permanent home shack, &amp;ldquo;Activators&amp;rdquo; pack up lightweight, battery-powered transceivers, hike out into state or national parks, and deploy temporary antennas to make global contacts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SDR &amp; RF Hacking</title>
-      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</link>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</guid>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  💻&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.&lt;/p&gt;</description>
     </item>
   </channel>
