@@ -1,12 +1,14 @@
 ---
-title: "FT8 & Digital Data Modes"
-date: 2026-06-12
+title: "FT8 & Digital Data Modes: Weak-Signal Communications"
+description: "Discover the world of HF weak-signal digital modes. Learn about FT8, JS8Call, VarAC, and how to track live global RF propagation using PSK Reporter."
+keywords: ["FT8 ham radio", "JS8Call protocol", "VarAC HF chat", "WSJT-X software", "PSK Reporter map", "weak signal data modes", "BSARC digital radio", "N4GM"]
+date: 2026-06-15
 draft: false
 layout: "single"
 ---
 
-<div style="float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
-  📊
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/ft8-digital-thumb.webp" alt="FT8 & Digital Modes" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 # FT8, JS8Call, & Weak-Signal Digital Communications

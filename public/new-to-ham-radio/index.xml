@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New to Ham Radio? on Brunswick Shores Amateur Radio Club</title>
-    <link>http://192.168.68.109:1313/new-to-ham-radio/</link>
+    <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/</link>
     <description>Recent content in New to Ham Radio? on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FT8 &amp; Digital Data Modes: Weak-Signal Communications</title>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/ft8-digital-modes/</guid>
+      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;https://bsarc-n4gm.github.io/bsarc-site/images/ft8-digital-thumb.webp&#34; alt=&#34;FT8 &amp; Digital Modes&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;ft8-js8call--weak-signal-digital-communications&#34;&gt;FT8, JS8Call, &amp;amp; Weak-Signal Digital Communications&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the weak-signal data revolution. Modern amateur radio doesn&amp;rsquo;t rely solely on clear voice conditions to link operators across the globe. By linking an HF transceiver to a computer soundcard, specialized software can process precise digital tones buried far beneath the static atmospheric noise floor.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introduction to DXing &amp; Contesting: Earning Your DXCC</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/contesting-guide/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/contesting-guide/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/contesting-guide/</guid>
-      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;http://192.168.68.109:1313/images/contesting-dx-thumb.webp&#34; alt=&#34;Contesting &amp; DXing: Radiosport&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;introduction-to-dxing--contesting-earning-your-dxcc&#34;&gt;Introduction to DXing &amp;amp; Contesting: Earning Your DXCC&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to &lt;strong&gt;Radiosport&lt;/strong&gt;—the competitive, fast-paced, and highly addictive side of amateur radio. When operators talk about &lt;strong&gt;DXing&lt;/strong&gt;, they are referring to chasing &amp;ldquo;Long Distance&amp;rdquo; communication, typically meaning contacts outside of your home country on the High Frequency (HF) bands. &lt;strong&gt;Contesting&lt;/strong&gt; turns this pursuit into a sport, challenging operators to log as many unique stations, states, countries, or grid squares as possible over a single weekend.&lt;/p&gt;</description>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/contesting-guide/</guid>
+      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;https://bsarc-n4gm.github.io/bsarc-site/images/contesting-dx-thumb.webp&#34; alt=&#34;Contesting &amp; DXing: Radiosport&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;introduction-to-dxing--contesting-earning-your-dxcc&#34;&gt;Introduction to DXing &amp;amp; Contesting: Earning Your DXCC&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to &lt;strong&gt;Radiosport&lt;/strong&gt;—the competitive, fast-paced, and highly addictive side of amateur radio. When operators talk about &lt;strong&gt;DXing&lt;/strong&gt;, they are referring to chasing &amp;ldquo;Long Distance&amp;rdquo; communication, typically meaning contacts outside of your home country on the High Frequency (HF) bands. &lt;strong&gt;Contesting&lt;/strong&gt; turns this pursuit into a sport, challenging operators to log as many unique stations, states, countries, or grid squares as possible over a single weekend.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to QRP: The Art of Low-Power Radio</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/qrp-guide/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/qrp-guide/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/qrp-guide/</guid>
-      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;http://192.168.68.109:1313/images/qrp-thumb.webp&#34; alt=&#34;QRP Guide&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;introduction-to-qrp-the-art-of-low-power-radio&#34;&gt;Introduction to QRP: The Art of Low-Power Radio&lt;/h1&gt;&#xA;&lt;p&gt;In the amateur radio world, &lt;strong&gt;&amp;ldquo;QRP&amp;rdquo;&lt;/strong&gt; is the universal Q-code designation for reducing your transmitter power. By general agreement, operating QRP means transmitting at &lt;strong&gt;5 Watts or less on CW (Morse Code) and digital modes, or 10 Watts or less on SSB Voice.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While it might sound crazy to newcomers to intentionally limit their signal strength, QRP has become one of the most popular, addictive, and fast-growing ecosystems in the entire hobby. It shifts the game away from raw mechanical muscle and transforms radio operations into a sport of pure skill, engineering efficiency, and portable adventure.&lt;/p&gt;</description>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/qrp-guide/</guid>
+      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;https://bsarc-n4gm.github.io/bsarc-site/images/qrp-thumb.webp&#34; alt=&#34;QRP Guide&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;introduction-to-qrp-the-art-of-low-power-radio&#34;&gt;Introduction to QRP: The Art of Low-Power Radio&lt;/h1&gt;&#xA;&lt;p&gt;In the amateur radio world, &lt;strong&gt;&amp;ldquo;QRP&amp;rdquo;&lt;/strong&gt; is the universal Q-code designation for reducing your transmitter power. By general agreement, operating QRP means transmitting at &lt;strong&gt;5 Watts or less on CW (Morse Code) and digital modes, or 10 Watts or less on SSB Voice.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While it might sound crazy to newcomers to intentionally limit their signal strength, QRP has become one of the most popular, addictive, and fast-growing ecosystems in the entire hobby. It shifts the game away from raw mechanical muscle and transforms radio operations into a sport of pure skill, engineering efficiency, and portable adventure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SDR &amp; RF Hacking: Software Defined Radio Guide</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</guid>
-      <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  💻&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in specialized benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced, real-time spectrum analyzer and digital decoder framework.&lt;/p&gt;</description>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/sdr-hacking/</guid>
+      <description>&lt;div style=&#34;text-align: center; margin-top: 20px; margin-bottom: 10px;&#34;&gt;&#xA;  &lt;img src=&#34;https://bsarc-n4gm.github.io/bsarc-site/images/sdr-hacking-thumb.webp&#34; alt=&#34;SDR &amp; RF Guide&#34; style=&#34;max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in specialized benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced, real-time spectrum analyzer and digital decoder framework.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Amateur Radio Satellites &amp; ISS Communications</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/satellite-comms/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/satellite-comms/</guid>
       <description>&lt;h1 id=&#34;tracking-and-working-amateur-radio-satellites&#34;&gt;Tracking and Working Amateur Radio Satellites&lt;/h1&gt;&#xA;&lt;p&gt;Working amateur radio satellites and chasing the International Space Station (ISS) is one of the most thrilling aspects of modern ham radio. Using nothing more than a handheld dual-band transceiver (VHF/UHF) and a small, hand-held directional antenna, you can bridge voice and data contacts over hundreds of miles via orbital spacecraft passing directly over Brunswick County.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-international-space-station-ariss-frequencies&#34;&gt;🛰️ The International Space Station (ARISS) Frequencies&lt;/h2&gt;&#xA;&lt;p&gt;The International Space Station maintains an active amateur radio station onboard operated by astronauts through the ARISS program (Amateur Radio on the International Space Station). The crew uses these specific frequencies for voice repeaters, automatic digital packets, and scheduled school STEM outreach events.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choose Your License: The Three Tiers of Amateur Radio</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/choose-license/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/choose-license/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/choose-license/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/choose-license/</guid>
       <description>&lt;h1 id=&#34;choose-your-license-the-three-tiers-of-amateur-radio&#34;&gt;Choose Your License: The Three Tiers of Amateur Radio&lt;/h1&gt;&#xA;&lt;p&gt;Getting your FCC amateur radio license is straightforward, but knowing which milestone you are aiming for helps you study with a purpose. The licensing system is divided into three progressive tiers. Each exam unlocks a massive new set of frequencies, operating modes, and global capabilities.&lt;/p&gt;&#xA;&lt;p&gt;Here is a breakdown of the three license classes, what to expect at a testing session, and the best way to ace your exam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Voice Modes &amp; Internet Gateways</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/digital-voice/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/digital-voice/</guid>
       <description>&lt;h1 id=&#34;overcoming-antenna-restrictions-with-digital-voice&#34;&gt;Overcoming Antenna Restrictions with Digital Voice&lt;/h1&gt;&#xA;&lt;p&gt;Live in an apartment, an HOA-restricted neighborhood, or traveling out of town? You do not need a massive wire antenna array strung up across oak trees to talk around the globe. Modern digital modes allow you to link a simple, low-power handheld radio (HT) or a pocket-sized internet hotspot to global networks using the power of internet linking.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-the-big-three-digital-voice-ecosystems&#34;&gt;🌐 The Big Three: Digital Voice Ecosystems&lt;/h2&gt;&#xA;&lt;p&gt;Digital Voice (DV) modes convert your voice into digital data packets right at the radio microphone. If your local line-of-sight repeater is connected to the internet, or if you use a personal desktop hotspot, your packets are instantly routed to specific &amp;ldquo;rooms&amp;rdquo; or &amp;ldquo;talkgroups&amp;rdquo; anywhere in the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Master the Radio Lingo &amp; Beat Mic Fright</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/radio-lingo/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/radio-lingo/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/radio-lingo/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/radio-lingo/</guid>
       <description>&lt;h1 id=&#34;master-the-radio-lingo--beat-mic-fright&#34;&gt;Master the Radio Lingo &amp;amp; Beat Mic Fright&lt;/h1&gt;&#xA;&lt;p&gt;&amp;ldquo;Mic fright&amp;rdquo; is incredibly common, but the best cure is desensitization. Start by listening to local repeater conversations to understand the typical flow, then write out a simple script for your first call. Don&amp;rsquo;t worry about perfect jargon—plain, conversational English is perfectly acceptable.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;essential-lingo-keep-it-simple&#34;&gt;Essential Lingo (Keep It Simple)&lt;/h2&gt;&#xA;&lt;p&gt;You don&amp;rsquo;t need a massive dictionary of codes to get on the air. Most operators prefer simple, plain-language conversations, but a few basics help make transmissions clear.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Starter Shack: Budget Gear Guides from $50 to $1,000</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/starter-shack/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/starter-shack/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/starter-shack/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/starter-shack/</guid>
       <description>&lt;h1 id=&#34;the-starter-shack-budget-gear-guides-from-50-to-1000&#34;&gt;The Starter Shack: Budget Gear Guides from $50 to $1,000&lt;/h1&gt;&#xA;&lt;p&gt;One of the biggest misconceptions about amateur radio is that you need to spend thousands of dollars just to get on the air. While you certainly &lt;em&gt;can&lt;/em&gt; buy high-end base stations, you can easily build a highly capable, effective station on almost any budget.&lt;/p&gt;&#xA;&lt;p&gt;Here is a breakdown of benchmark staging packages for VHF/UHF local repeater work and entry-level HF worldwide operations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fox Hunting / ARDF</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/fox-hunting-ardf/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/fox-hunting-ardf/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🦊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;fox-hunting--amateur-radio-direction-finding-ardf&#34;&gt;Fox Hunting &amp;amp; Amateur Radio Direction Finding (ARDF)&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the ultimate live-action radio hide-and-seek. &amp;ldquo;Fox Hunting&amp;rdquo; (internationally known as Amateur Radio Direction Finding, or ARDF) is a competitive sport that combines map-reading, orienteering, and radio engineering.&lt;/p&gt;&#xA;&lt;p&gt;The game is simple: a low-power, automated miniature transmitter (the &amp;ldquo;Fox&amp;rdquo;) is hidden somewhere inside a local park or community woodland, broadcasting short, periodic signals. Operators weaponized with directional handheld antennas and signal attenuators track the hidden signal, triangulate its position, and hunt it down on foot against the clock.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>FT8 &amp; Digital Data Modes</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</link>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/ft8-digital-modes/</guid>
-      <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  📊&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;ft8-js8call--weak-signal-digital-communications&#34;&gt;FT8, JS8Call, &amp;amp; Weak-Signal Digital Communications&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the weak-signal data revolution. Modern amateur radio doesn&amp;rsquo;t rely solely on clear voice conditions to link operators across the globe. By linking an HF transceiver to a computer soundcard, specialized software can process precise digital tones buried far beneath the static atmospheric noise floor.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Parks on the Air (POTA)</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</link>
+      <link>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</guid>
+      <guid>https://bsarc-n4gm.github.io/bsarc-site/new-to-ham-radio/pota-portable-radio/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🏕️&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;parks-on-the-air-pota--portable-operations&#34;&gt;Parks on the Air (POTA) &amp;amp; Portable Operations&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to amateur radio&amp;rsquo;s fastest-growing outdoor adventure sport. Parks on the Air (POTA) bridges portable radio operations with natural spaces. Instead of operating from a permanent home shack, &amp;ldquo;Activators&amp;rdquo; pack up lightweight, battery-powered transceivers, hike out into state or national parks, and deploy temporary antennas to make global contacts.&lt;/p&gt;</description>
     </item>
   </channel>

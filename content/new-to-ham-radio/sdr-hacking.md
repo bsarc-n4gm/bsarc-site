@@ -7,8 +7,8 @@ draft: false
 layout: "single"
 ---
 
-<div style="float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
-  💻
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/sdr-hacking-thumb.webp" alt="SDR & RF Guide" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 # Software Defined Radio (SDR) & RF Spectrum Hacking
