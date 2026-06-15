@@ -53,7 +53,7 @@
   <meta itemprop="description" content="Master Software Defined Radio (SDR) and RF spectrum hacking. Learn how to identify counterfeit clones, deploy RTL-SDR dongles, and decode digital signals.">
   <meta itemprop="datePublished" content="2026-06-15T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-06-15T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1118">
+  <meta itemprop="wordCount" content="1362">
   <meta itemprop="keywords" content="RTL-SDR blog v4,SDR hacking,counterfeit RTL-SDR,GNU Radio Zorin,ADS-B tracking,WebSDR pool,N4GM,Calabash NC">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SDR & RF Hacking: Software Defined Radio Guide">
@@ -208,10 +208,20 @@
 <li><strong>SDRplay RSPdx / RSPduo:</strong> Feature-rich receivers that include multiple antenna ports and robust built-in broadcast notch filters to completely isolate your target signals from local interference.</li>
 </ul>
 <h3 id="3-the-advanced-transceiver-tier-400">3. The Advanced Transceiver Tier (~$400+)</h3>
-<p>The top tier moves away from &ldquo;receive-only&rdquo; dongles into advanced hardware capable of both receiving and transmitting (SDR Transceivers), making them elite sandboxes for advanced cybersecurity and wireless protocol reverse-engineering.</p>
+<p>The top tier moves away from &ldquo;receive-only&rdquo; dongles into advanced hardware capable of both receiving and transmitting (SDR Transceivers), making them elite sandboxes for advanced cybersecurity, DSP engineering, and wireless protocol reverse-engineering.</p>
 <ul>
 <li><strong>HackRF One / LimeSDR:</strong> Top-tier development platforms that let software engineers build, analyze, and test custom wireless signals across massive frequency ranges.</li>
 </ul>
+<hr>
+<h2 id="-advanced-setup-using-an-sdr-as-a-panadapter">🖥️ Advanced Setup: Using an SDR as a &ldquo;Panadapter&rdquo;</h2>
+<p>Many experienced hams hook higher-end SDR units straight into their main HF desktop transceivers to act as a <strong>Panadapter</strong> (a panoramic spectrum visualizer). This allows them to use the heavy-duty filters and tactile knobs of their traditional base station while gaining a massive, real-time waterfall display on a computer monitor to hunt for weak signals across the band.</p>
+<h3 id="-the-golden-rule-of-shared-antennas">⚠️ The Golden Rule of Shared Antennas</h3>
+<p>Because both the main HF radio and the SDR receiver must share the exact same outdoor antenna system for this to work, it introduces a critical hardware danger: <strong>if you key your microphone and push 100+ watts of raw RF down the feedline, you will instantly vaporize the sensitive input chip inside your SDR.</strong></p>
+<p>To prevent this, hams install a specialized <strong>T/R (Transmit/Receive) Switch Box</strong> (such as an MFJ-1708SDR or an automatic RF-sensing relay array) between the equipment lines:</p>
+<ol>
+<li><strong>During Reception:</strong> The switch cleanly splits the incoming antenna signal, feeding it to both your HF rig and your SDR simultaneously so your computer waterfall stays fully active.</li>
+<li><strong>During Transmission:</strong> The moment you press your radio&rsquo;s <strong>Push-to-Talk (PTT)</strong> switch or the box senses outbound RF, the high-speed relay instantly disconnects the SDR&rsquo;s receiver path and routes it directly to a safe electronic ground block. This completely isolates and shields your SDR frontend from the high-power blast, allowing you to run your station barefoot or with an amplifier completely worry-free.</li>
+</ol>
 <hr>
 <h2 id="-the-antenna-reality-check-ditch-the-stock-whip">🏆 The Antenna Reality Check (Ditch the Stock Whip)</h2>
 <blockquote>

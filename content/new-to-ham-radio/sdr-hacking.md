@@ -36,8 +36,21 @@ When you are ready to move past the entry-level baseline, the mid-tier options o
 * **SDRplay RSPdx / RSPduo:** Feature-rich receivers that include multiple antenna ports and robust built-in broadcast notch filters to completely isolate your target signals from local interference.
 
 ### 3. The Advanced Transceiver Tier (~$400+)
-The top tier moves away from "receive-only" dongles into advanced hardware capable of both receiving and transmitting (SDR Transceivers), making them elite sandboxes for advanced cybersecurity and wireless protocol reverse-engineering.
+The top tier moves away from "receive-only" dongles into advanced hardware capable of both receiving and transmitting (SDR Transceivers), making them elite sandboxes for advanced cybersecurity, DSP engineering, and wireless protocol reverse-engineering.
 * **HackRF One / LimeSDR:** Top-tier development platforms that let software engineers build, analyze, and test custom wireless signals across massive frequency ranges.
+
+---
+
+## 🖥️ Advanced Setup: Using an SDR as a "Panadapter"
+
+Many experienced hams hook higher-end SDR units straight into their main HF desktop transceivers to act as a **Panadapter** (a panoramic spectrum visualizer). This allows them to use the heavy-duty filters and tactile knobs of their traditional base station while gaining a massive, real-time waterfall display on a computer monitor to hunt for weak signals across the band.
+
+### ⚠️ The Golden Rule of Shared Antennas
+Because both the main HF radio and the SDR receiver must share the exact same outdoor antenna system for this to work, it introduces a critical hardware danger: **if you key your microphone and push 100+ watts of raw RF down the feedline, you will instantly vaporize the sensitive input chip inside your SDR.**
+
+To prevent this, hams install a specialized **T/R (Transmit/Receive) Switch Box** (such as an MFJ-1708SDR or an automatic RF-sensing relay array) between the equipment lines:
+1. **During Reception:** The switch cleanly splits the incoming antenna signal, feeding it to both your HF rig and your SDR simultaneously so your computer waterfall stays fully active.
+2. **During Transmission:** The moment you press your radio's **Push-to-Talk (PTT)** switch or the box senses outbound RF, the high-speed relay instantly disconnects the SDR's receiver path and routes it directly to a safe electronic ground block. This completely isolates and shields your SDR frontend from the high-power blast, allowing you to run your station barefoot or with an amplifier completely worry-free.
 
 ---
 
