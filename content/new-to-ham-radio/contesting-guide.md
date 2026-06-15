@@ -7,6 +7,10 @@ draft: false
 layout: "single"
 ---
 
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/contesting-dx-thumb.webp" alt="Contesting & DXing: Radiosport" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
 # Introduction to DXing & Contesting: Earning Your DXCC
 
 Welcome to **Radiosport**—the competitive, fast-paced, and highly addictive side of amateur radio. When operators talk about **DXing**, they are referring to chasing "Long Distance" communication, typically meaning contacts outside of your home country on the High Frequency (HF) bands. **Contesting** turns this pursuit into a sport, challenging operators to log as many unique stations, states, countries, or grid squares as possible over a single weekend.
@@ -65,6 +69,39 @@ Many newly licensed operators get excited about their first HF contacts, jump on
 
 ---
 
+## 🏎️ The Three Flavors of Radiosport: SSB, CW, and Digital
+
+Contesting and DXing are not one-size-fits-all. When a major operating event kicks off, the tournament structure is typically divided into three distinct modal categories. Depending on your station layout, antenna constraints, and personal operating style, you can choose the track that gives you the best competitive edge:
+
+### 1. SSB (Single Sideband Voice) — The High-Energy Sprint
+SSB contesting is the loudest, most chaotic, and highest-energy form of the sport. It relies on raw voice communication.
+* **The Environment:** On a major weekend, the phone bands turn into a dense wall of sound. Operators with massive 1,500-watt amplifiers and multi-element directional beam towers often dominate specific frequencies, while smaller stations spend their time "searching and pouncing."
+* **The Skill:** Success on SSB requires a clear voice, crisp microphone technique, and an exceptional ear to pull weak callsigns out of a dense pile-up of multiple voices shouting at the same time.
+
+### 2. CW (Continuous Wave / Morse Code) — The Elite Sniper Track
+Morse Code is the ultimate traditional tool for serious DXers and contesting purists. It strips away all vocal noise and converts your signal into pure, narrow RF pulses.
+* **The Efficiency Advantage:** Because a CW signal occupies a tiny fraction of the bandwidth of an SSB voice signal (around 200 Hz compared to 2.4 kHz), hundreds of CW stations can jam into a tiny sliver of the band without interfering with one another. 
+* **Cutting Through Noise:** CW punches through terrible atmospheric static and weak solar propagation far better than voice. A 5-watt QRP CW station can easily out-perform a 100-watt voice station when chasing distant international targets. 
+
+### 3. Digital Modes (FT8 / FT4 / RTTY) — The High-Tech Equalizer
+Digital modes have completely revolutionized modern radiosport. Instead of using your ears, your transceiver hooks directly into your computer's soundcard, letting software handle the decoding seamlessly.
+* **The Weak-Signal Miracle:** Modes like **FT8 and FT4** are explicitly engineered to pull data out of signals that are completely invisible to the human ear and buried deep beneath the background noise floor. 
+* **The Perfect Equalizer:** If you live in an area with strict property restrictions, have a high local noise floor, or are running a modest wire antenna layout, digital contesting allows you to effortlessly log contacts across Europe, South America, and Asia without needing a massive desktop footprint or a giant amplifier.
+
+---
+
+## 🎯 The Beginner's Strategy for Radiosport Success
+
+When a massive international contest weekend kicks off, the bands will sound like a solid wall of noise. To secure contacts without a multi-thousand-dollar amplifier, apply these tactical rules:
+
+1. **The "Search & Pounce" Method:** Instead of sitting on a single frequency calling CQ into the void against giant "Big Gun" stations, spin the dial slowly. Listen for strong stations calling CQ Contest, wait for them to finish an exchange, and instantly drop your callsign during the brief window of silence. 
+2. **Master the Standard Exchange:** Contest operators move lightning fast. They do not want to hear about your weather or your radio model. A standard exchange usually requires only three things: **Your Callsign, a Signal Report (usually a generic '59' or '599'), and your Location State or Serial Number.** Keep it clean, fast, and precise.
+3. **Leverage the Club Station:** The absolute best way to experience high-power contest operating is to participate in our club's **ARRL Field Day** operations or special event activations. Running under the club callsign gives you access to directional beam antennas, high-performance transceivers, and experienced Elmers who will coach you through the pile-ups!
+
+> 🤝 **The BSARC DX Network:** Don't let a crowded band keep you from keying the mic! If you need help configuring your Logbook of the World (LoTW) certificate, setting up contesting logging software like N1MM, or learning how to split frequencies to chase a rare island DXpedition, come to our next meeting. We have active DXers who will gladly help you tune your wire layouts to work the world. Good hunting, and see you in the pile-ups! 73!
+
+---
+
 ## 🗺️ Spinning the Dial: Essential East Coast HF Service Nets
 
 If you want to practice your rapid-fire signal reporting, test your antenna's coverage footprint along the Atlantic seaboard, or just hear high-volume station pile-ups, you need to know where the region's active operators gather. 
@@ -81,15 +118,3 @@ Sitting right next door on **`7.251 MHz LSB`**, South CARS operates daily as a v
 
 ### 3. SCARS (South Central Radio Service / Regional Clusters)
 While operating on multiple frequencies depending on your location, regional **SCARS** groups focus on tight-knit emergency readiness, localized traffic handling, and swap nets. Monitoring these spaces teaches beginners how to operate efficiently under dense band conditions when dozens of operators are trying to check in simultaneously.
-
----
-
-## 🎯 The Beginner's Strategy for Radiosport Success
-
-When a massive international contest weekend kicks off, the bands will sound like a solid wall of noise. To secure contacts without a multi-thousand-dollar amplifier, apply these tactical rules:
-
-1. **The "Search & Pounce" Method:** Instead of sitting on a single frequency calling CQ into the void against giant "Big Gun" stations, spin the dial slowly. Listen for strong stations calling CQ Contest, wait for them to finish an exchange, and instantly drop your callsign during the brief window of silence. 
-2. **Master the Standard Exchange:** Contest operators move lightning fast. They do not want to hear about your weather or your radio model. A standard exchange usually requires only three things: **Your Callsign, a Signal Report (usually a generic '59' or '599'), and your Location State or Serial Number.** Keep it clean, fast, and precise.
-3. **Leverage the Club Station:** The absolute best way to experience high-power contest operating is to participate in our club's **ARRL Field Day** operations or special event activations. Running under the club callsign gives you access to directional beam antennas, high-performance transceivers, and experienced Elmers who will coach you through the pile-ups!
-
-> 🤝 **The BSARC DX Network:** Don't let a crowded band keep you from keying the mic! If you need help configuring your Logbook of the World (LoTW) certificate, setting up contesting logging software like N1MM, or learning how to split frequencies to chase a rare island DXpedition, come to our next meeting. We have active DXers who will gladly help you tune your wire layouts to work the world. Good hunting, and see you in the pile-ups! 73!
