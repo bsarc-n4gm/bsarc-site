@@ -1,11 +1,13 @@
 ---
-title: "Auxiliary Communications (AUXCOMM)"
+title: "Auxiliary Communications (AUXCOMM): Brunswick County"
+description: "Explore the Brunswick County AUXCOMM infrastructure. Learn about DHS CISA requirements, Emergency Operations Center (EOC) deployment, and mandatory FEMA NIMS credentials."
+keywords: ["Brunswick County AUXCOMM", "Auxiliary Communications", "Emergency Operations Center EOC", "CISA SAFECOM", "Bill Sirginson N4PEN", "John Phillips K4IR", "public safety ham radio", "N4GM"]
 date: 2026-05-21
 draft: false
 layout: "single"
 ---
 
-<img src="/images/nc_auxcomm_logo.webp" alt="Skywarn Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+<img src="/images/nc_auxcomm_logo.webp" alt="NC AUXCOMM Logo Shield" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
 
 # Brunswick County Government AUXCOMM Infrastructure
 
