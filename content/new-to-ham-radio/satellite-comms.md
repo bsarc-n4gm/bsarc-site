@@ -8,7 +8,7 @@ layout: "single"
 ---
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
-  <img src="/images/satellite-comms-thumb.webp" alt="Contesting & DXing: Radiosport" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/satellite-comms-thumb.webp" alt="Satellite Communications and IIS" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 # Tracking and Working Amateur Radio Satellites

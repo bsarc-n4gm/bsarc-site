@@ -1,12 +1,14 @@
 ---
-title: "Parks on the Air (POTA)"
+title: "Parks on the Air (POTA) & Portable Operations Guide"
+description: "Get started with Parks on the Air (POTA). Discover premier Coastal Carolina activation spots, portable LiFePO4 power setups, wire antennas, and live tracking tools."
+keywords: ["Parks on the Air", "POTA ham radio", "portable radio operations", "LiFePO4 battery pack", "end fed half wave antenna", "pota spotter board", "BSARC outdoor radio", "N4GM"]
 date: 2026-06-12
 draft: false
 layout: "single"
 ---
 
-<div style="float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
-  🏕️
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/pota-portable-thumb.webp" alt="Parks on the Air (POTA) & Portable Operations" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 # Parks on the Air (POTA) & Portable Operations
