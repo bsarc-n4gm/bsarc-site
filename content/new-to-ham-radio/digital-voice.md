@@ -1,9 +1,15 @@
 ---
-title: "Digital Voice Modes & Internet Gateways"
+title: "Digital Voice Modes & Internet Gateways: DMR, Fusion, & D-STAR"
+description: "Learn how to bypass HOA antenna restrictions using digital ham radio voice modes. Discover DMR talkgroups, Yaesu System Fusion rooms, D-STAR reflectors, and pocket hotspots."
+keywords: ["digital voice ham radio", "DMR talkgroups", "Yaesu System Fusion WIRES-X", "D-STAR reflectors", "EchoLink app", "pi-star hotspot", "BSARC digital network", "N4GM"]
 date: 2026-06-13
 draft: false
 layout: "single"
 ---
+
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/digital-voice-thumb.webp" alt="Digital Voice & Internet Gateways" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
 
 # Overcoming Antenna Restrictions with Digital Voice
 
@@ -43,12 +49,5 @@ Don't even have a radio yet but still want to stay in contact during a local wea
 
 If you are inside an apartment or assisted living space completely out of range of a physical digital repeater, you can build or buy a **Digital Hotspot** (like a ZumSpot or Pi-Star board running on a Raspberry Pi Nano).
 
+```text
 [Your Handheld Radio] ---> (Low Power RF) ---> [Your Pocket Hotspot] ---> [Your Home Wi-Fi] ---> [The Global Internet Network]
-
-This tiny device sits on your window sill, plugs into your home internet or smartphone data plan, acts as your own private local micro-repeater, and instantly loops your handheld radio streams across the world.
-
----
-
-<div style="margin-top: 40px; padding: 20px; background-color: #f8fafc; border-left: 4px solid #004d40; border-radius: 4px; font-family: sans-serif;">
-  <strong>🛠️ Want to see a Hotspot in action?</strong> Bring your handheld down to our next club meeting. Members regularly set up cross-mode digital bridges to demonstrate how to configure code plugs, select talkgroups, and get on the air regardless of where you live.
-</div>

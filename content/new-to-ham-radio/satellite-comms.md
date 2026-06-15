@@ -7,6 +7,10 @@ draft: false
 layout: "single"
 ---
 
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/satellite-comms-thumb.webp" alt="Contesting & DXing: Radiosport" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
 # Tracking and Working Amateur Radio Satellites
 
 Working amateur radio satellites and chasing the International Space Station (ISS) is one of the most thrilling aspects of modern ham radio. Using nothing more than a handheld dual-band transceiver (VHF/UHF) and a small, hand-held directional antenna, you can bridge voice and data contacts over hundreds of miles via orbital spacecraft passing directly over Brunswick County.
