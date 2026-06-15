@@ -7,6 +7,10 @@ draft: false
 layout: "single"
 ---
 
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/qrp-thumb.webp" alt="QRP Guide" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
 # Introduction to QRP: The Art of Low-Power Radio
 
 In the amateur radio world, **"QRP"** is the universal Q-code designation for reducing your transmitter power. By general agreement, operating QRP means transmitting at **5 Watts or less on CW (Morse Code) and digital modes, or 10 Watts or less on SSB Voice.** 
