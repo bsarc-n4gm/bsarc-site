@@ -6,8 +6,15 @@
     <description>Recent content in New to Ham Radio? on Brunswick Shores Amateur Radio Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SDR &amp; RF Hacking: Software Defined Radio Guide</title>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</guid>
+      <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  💻&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in specialized benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced, real-time spectrum analyzer and digital decoder framework.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Amateur Radio Satellites &amp; ISS Communications</title>
       <link>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</link>
@@ -63,13 +70,6 @@
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</guid>
       <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  🏕️&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;parks-on-the-air-pota--portable-operations&#34;&gt;Parks on the Air (POTA) &amp;amp; Portable Operations&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to amateur radio&amp;rsquo;s fastest-growing outdoor adventure sport. Parks on the Air (POTA) bridges portable radio operations with natural spaces. Instead of operating from a permanent home shack, &amp;ldquo;Activators&amp;rdquo; pack up lightweight, battery-powered transceivers, hike out into state or national parks, and deploy temporary antennas to make global contacts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SDR &amp; RF Hacking</title>
-      <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</guid>
-      <description>&lt;div style=&#34;float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));&#34;&gt;&#xA;  💻&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;software-defined-radio-sdr--rf-spectrum-hacking&#34;&gt;Software Defined Radio (SDR) &amp;amp; RF Spectrum Hacking&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the cutting edge of modern radio frequency exploration. You no longer need thousands of dollars in benchtop hardware to analyze the airwaves. With a basic computer and a budget-friendly USB Software Defined Radio (SDR) dongle, you can transform your desk into an advanced spectrum analyzer and digital decoder.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
