@@ -33,6 +33,8 @@ The East Coast features legendary, daily service nets running right on the 40-Me
 ### 1. ECARS (East Coast Amateur Radio Service) — `7.255 MHz LSB`
 Operating daily on or near **`7.255 MHz Lower Sideband`**, ECARS is one of the premier directed traffic nets on the East Coast. Running throughout the morning and early afternoon, Net Control Stations coordinate a massive rolling list of mobile units, portable stations, and fixed shacks checking in from Maine down to Florida. It is a fantastic, welcoming environment to practice clean net etiquette and log quick, crystal-clear signal reports.
 
+📺 **Watch the Net in Action:** For a live look at how veteran operators handle dense check-in traffic on these exact frequencies, check out this **[40-Meter ECARS Net Demonstration Video](http://www.youtube.com/watch?v=3Y2g1eh6VT4)**. This video is highly relevant because it shows a Net Control Station smoothly coordinating multiple check-ins on 7.255 MHz using an advanced software panadapter, giving new hams a perfect visual preview of exactly what to expect when tuning into the service nets described in this guide.
+
 ### 2. South CARS (South Coast Amateur Radio Service) — `7.251 MHz LSB`
 Sitting right next door on **`7.251 MHz LSB`**, South CARS operates daily as a vital coverage blanket for the southeastern states. It features a highly relaxed but disciplined traffic framework, making it an excellent daily monitoring target for operators living along the Carolinas' coastline looking to spot band openings.
 
