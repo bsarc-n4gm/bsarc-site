@@ -1,5 +1,7 @@
 ---
-title: "Amateur Radio Emergency Service (ARES)"
+title: "Amateur Radio Emergency Service (ARES): Brunswick County"
+description: "Join the Brunswick County ARRL ARES program. Learn about emergency communications training nets, FEMA NIMS requirements, and local public service deployment protocols."
+keywords: ["Brunswick County ARES", "Amateur Radio Emergency Service", "emergency communications", "ham radio disaster training", "FEMA ICS training", "KI4KK George Fryer", "N4GM", "ARES training net"]
 date: 2026-05-21
 draft: false
 layout: "single"
