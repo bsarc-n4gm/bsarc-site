@@ -1,19 +1,21 @@
 ---
-title: "Fox Hunting / ARDF"
+title: "Fox Hunting & ARDF: Radio Direction Finding"
+description: "Learn how to participate in amateur radio Fox Hunts and ARDF events. Discover DIY tape measure Yagi antennas, signal attenuation tactics, and direction finding tricks."
+keywords: ["amateur radio fox hunting", "radio direction finding", "ARDF competition", "tape measure yagi", "offset attenuator ham radio", "body shield trick", "BSARC club events", "N4GM"]
 date: 2026-06-12
 draft: false
 layout: "single"
 ---
 
-<div style="float: right; margin-left: 20px; margin-bottom: 20px; font-size: 80px; line-height: 1; padding: 2px; background: transparent; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
-  🦊
+<div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+  <img src="/images/fox-hunting-thumb.webp" alt="Fox Hunting and Radio Direction Finding" style="max-width: 400px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 # Fox Hunting & Amateur Radio Direction Finding (ARDF)
 
 Welcome to the ultimate live-action radio hide-and-seek. "Fox Hunting" (internationally known as Amateur Radio Direction Finding, or ARDF) is a competitive sport that combines map-reading, orienteering, and radio engineering. 
 
-The game is simple: a low-power, automated miniature transmitter (the "Fox") is hidden somewhere inside a local park or community woodland, broadcasting short, periodic signals. Operators weaponized with directional handheld antennas and signal attenuators track the hidden signal, triangulate its position, and hunt it down on foot against the clock.
+The game is simple: a low-power, automated miniature transmitter (the "Fox") is hidden somewhere inside a local park or community woodland, broadcasting short, periodic signals. Operators equipped with directional handheld antennas and signal attenuators track the hidden signal, triangulate its position, and hunt it down on foot against the clock.
 
 ---
 
