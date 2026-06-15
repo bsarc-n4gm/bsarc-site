@@ -2,7 +2,7 @@
 title: "New to Ham Radio?"
 description: "Explore modern amateur radio tech tracks with BSARC, including SDR hacking, weak-signal digital data, POTA, and satellite tracking."
 keywords: ["new to ham radio", "radio tech", "SDR hacking", "POTA NC", "BSARC portal"]
-date: 2026-06-13
+date: 2026-06-15
 draft: false
 layout: "single" 
 ---
@@ -125,6 +125,33 @@ Once you have your bearings, it's time to choose your specialization path. Our a
       <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>Linking Operations:</strong> Regional Net Gateways</span>
     </div>
     <a href="digital-voice/" style="display: block; text-align: center; background-color: #004d40; color: white; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Explore Digital Voice →</a>
+  </div>
+
+  <div style="background: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #cfd8dc; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+  <div>
+    <div style="width: 100%; height: 130px; margin-bottom: 15px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <img src="/images/qrp-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </div>
+    <h3 style="font-size: 18px; margin-top: 0; margin-bottom: 10px; color: #263238; font-weight: 700;">QRP & Portable Adventure</h3>
+    <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 80px;">
+      Discover the thrill of operating low-power (QRP) out in the field. Learn how to throw a wire into a tree, run your station on portable battery power, and work the world from a park picnic table or a beach chair using compact trail rigs.
+    </p>
+  </div>
+<!-- Replace the existing inline link with this button format -->
+<a href="qrp-guide/" style="display: block; width: 100%; text-align: center; padding: 10px 0; background-color: #d84315; color: #ffffff; font-weight: bold; font-size: 13px; text-decoration: none; border-radius: 4px; margin-top: auto;">Explore QRP Operations →</a>
+</div>
+
+<div style="background: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #cfd8dc; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+    <div>
+      <div style="width: 100%; height: 130px; margin-bottom: 15px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <img src="/images/contesting-dx-thumb.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </div>
+      <h3 style="font-size: 18px; margin-top: 0; margin-bottom: 10px; color: #263238; font-weight: 700;">Contesting & Radiosport (DXing)</h3>
+      <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 80px;">
+        Test your station's efficiency and sharpen your operating skills in Radiosport. Learn how to hunt rare international "DX" stations, log rapid-fire exchanges during major contest weekends, and pile up awards.
+      </p>
+    </div>
+    <a href="contesting-guide/" style="display: block; width: 100%; text-align: center; padding: 10px 0; background-color: #00695c; color: #ffffff; font-weight: bold; font-size: 13px; text-decoration: none; border-radius: 4px; margin-top: auto;">Hunt the Bands →</a>
   </div>
 
 </div>

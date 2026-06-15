@@ -9,6 +9,20 @@
     <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://192.168.68.109:1313/new-to-ham-radio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Introduction to DXing &amp; Contesting: Earning Your DXCC</title>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/contesting-guide/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/contesting-guide/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-dxing--contesting-earning-your-dxcc&#34;&gt;Introduction to DXing &amp;amp; Contesting: Earning Your DXCC&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to &lt;strong&gt;Radiosport&lt;/strong&gt;—the competitive, fast-paced, and highly addictive side of amateur radio. When operators talk about &lt;strong&gt;DXing&lt;/strong&gt;, they are referring to chasing &amp;ldquo;Long Distance&amp;rdquo; communication, typically meaning contacts outside of your home country on the High Frequency (HF) bands. &lt;strong&gt;Contesting&lt;/strong&gt; turns this pursuit into a sport, challenging operators to log as many unique stations, states, countries, or grid squares as possible over a single weekend.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to QRP: The Art of Low-Power Radio</title>
+      <link>http://192.168.68.109:1313/new-to-ham-radio/qrp-guide/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.68.109:1313/new-to-ham-radio/qrp-guide/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-qrp-the-art-of-low-power-radio&#34;&gt;Introduction to QRP: The Art of Low-Power Radio&lt;/h1&gt;&#xA;&lt;p&gt;In the amateur radio world, &lt;strong&gt;&amp;ldquo;QRP&amp;rdquo;&lt;/strong&gt; is the universal Q-code designation for reducing your transmitter power. By general agreement, operating QRP means transmitting at &lt;strong&gt;5 Watts or less on CW (Morse Code) and digital modes, or 10 Watts or less on SSB Voice.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While it might sound crazy to newcomers to intentionally limit their signal strength, QRP has become one of the most popular, addictive, and fast-growing ecosystems in the entire hobby. It shifts the game away from raw mechanical muscle and transforms radio operations into a sport of pure skill, engineering efficiency, and portable adventure.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>SDR &amp; RF Hacking: Software Defined Radio Guide</title>
       <link>http://192.168.68.109:1313/new-to-ham-radio/sdr-hacking/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
