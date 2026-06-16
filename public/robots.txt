@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://bsarc-n4gm.github.io/sitemap.xml
+Disallow: /

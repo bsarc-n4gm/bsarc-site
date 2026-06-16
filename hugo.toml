@@ -55,6 +55,11 @@ enableRobotsTXT = true
   url = "/new-to-ham-radio/"
   weight = 60
 
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
