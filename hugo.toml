@@ -58,7 +58,7 @@ enableRobotsTXT = true
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 70
+  weight = 80
 
 [markup]
   [markup.goldmark]
