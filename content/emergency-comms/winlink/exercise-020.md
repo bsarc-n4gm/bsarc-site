@@ -1,6 +1,6 @@
 ---
 title: "Winlink Exercise #020: In this exercise we will use the Winlink.org mapping of RMS to determine the location of all the RMS in Brunswick County NC."
-date: 2026-07-07
+date: 2026-07-06
 draft: false
 description: "In this exercise we will use the Winlink mapping of RMS to find information on all the RMS within Brunswick County NC"
 ---
