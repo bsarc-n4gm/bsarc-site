@@ -36,7 +36,7 @@ The modern club was established under the **Uniform Unincorporated Nonprofit Ass
 
 BSARC acts as an engineering anchor and volunteer training hub for the **Amateur Radio Emergency Service (ARES)** and **AuxComm** units throughout Brunswick County.
 
-* **The Bolivia Nexus:** The club owns and maintains our primary emergency asset—the **147.315 MHz FM analog repeater** ($+600$ kHz offset, $118.8$ Hz tone). This high-profile system is strategically located at the Brunswick County Government Center in Bolivia, NC.
+* **The Bolivia Nexus:** The club maintains our primary emergency asset—the **147.315 MHz FM analog repeater** (+600 kHz offset, 118.8 Hz tone). This high-profile system is strategically located at the Brunswick County Government Center in Bolivia, NC.
 * **N4GM Command Nexus:** Serves as our central staging layout for emergency operations, public service events, and technical deployments.
 * **On-Air Networks:** The club runs two crucial weekly training nets on the 147.315 MHz repeater. All licensed operators are encouraged to check in:
   * 🌅 **The Shrimp Net:** Mondays at 8:30 AM
