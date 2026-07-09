@@ -33,7 +33,7 @@ alt = "Brunswick Shores ARC Banner"
 heading = "Welcome to N4GM"
 subheading = "Brunswick Shores Amateur Radio Club"
 text = "Welcome to the digital home of the Brunswick Shores Amateur Radio Club (BSARC). We serve the amateur radio community in southeastern North Carolina, supporting emergency communications (ARES/RACES) and promoting the hobby through community events, testing, and regular nets."
-last_updated = "February 25, 2026"
+last_updated = "July 9, 2026"
 
 
 # ====================================================================
@@ -114,7 +114,7 @@ notes = "Local Area Coverage (FM and Fusion)"
 # Set active to true to display this prominent alert block at the top of the dash.
 # Set active to false once the event passes to hide it cleanly.
 [featured_event]
-active = true
+active = false
 title = "ARRL Field Day 2026"
 tagline = "When Modern Technology Fails, Ham Radio Works!"
 image = "/images/bsarc_field_day_2026.webp"
