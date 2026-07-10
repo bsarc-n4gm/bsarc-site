@@ -7,6 +7,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-020/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-019/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/about/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -74,6 +84,11 @@
   </url><url>
     <loc>http://192.168.68.109:1313/new-to-ham-radio/pota-portable-radio/</loc>
     <lastmod>2026-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-018/</loc>
+    <lastmod>2026-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -195,14 +195,36 @@ zoom_meeting = true
 canceled = false
 
 [[event]]
+date = "2026-07-11"
+display_date = "July 11"
+name = "📻 Firecracker Hamfest"
+location = "Salisbury Civic Center 315 S. Martin Luther King Ave Salisbury, NC"
+time = "8:00 AM"
+link_url = "https://www.rowanars.net/events/firecracker-hamfest-2026/"
+flyer_path = ""
+zoom_meeting = false
+canceled = false
+
+[[event]]
+date = "2026-07-18"
+display_date = "July 18"
+name = "📻 53rd Annual Cary Mid-Summer Swapfest - Talk-in 146.88 82.5"
+location = "Town of Cary Ritter Park, 301 W. Lochmere Drive, Cary, NC 27511"
+time = "8:00 AM"
+link_url = "https://www.arrl.org/hamfests/53rd-annual-cary-mid-summer-swapfest"
+flyer_path = ""
+zoom_meeting = false
+canceled = false
+
+[[event]]
 date = "2026-07-27"
 display_date = "July 27-31"
-name = "📆 2026 FEMA evaluated Graded Nuclear Exercise for Brunswick County"
-location = "Contact Bill Sirginson - N4PEN"
+name = "⚛️ 2026 FEMA evaluated Graded Nuclear Exercise for Brunswick County - Contact Bill Sirginson - N4PEN for event details"
+location = ""
 time = ""
 link_url = ""
 flyer_path = ""
-zoom_meeting = true
+zoom_meeting = false
 canceled = false
 
 [[event]]
@@ -231,7 +253,7 @@ canceled = false
 date = "2026-09-04"
 display_date = "September 4-5"
 name = "📻 70th Anniversary Shelby Hamfest - Talk in Freq 146.880 (-) 67.0 Hz tone Repeater"
-location = "Cleveland County Fairgrounds, 1751 E Marion St, Shelby, NC 28152"
+location = "Cleveland County Fairground, 1751 E Marion St, Shelby, NC 28152"
 time = "8:00 AM"
 link_url = "https://shelbyhamfest.com/"
 flyer_path = ""
