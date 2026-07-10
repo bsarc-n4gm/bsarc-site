@@ -195,6 +195,17 @@ zoom_meeting = true
 canceled = false
 
 [[event]]
+date = "2026-07-27"
+display_date = "July 27-31"
+name = "📆 2026 FEMA evaluated Graded Nuclear Exercise for Brunswick County"
+location = "Contact Bill Sirginson - N4PEN"
+time = ""
+link_url = ""
+flyer_path = ""
+zoom_meeting = true
+canceled = false
+
+[[event]]
 date = "2026-08-08"
 display_date = "August 8"
 name = "📻 Cape Fear Amateur Radio Swapfest - Talk-in K4MN Repeater 146.910 (-) CTCSS 100Hz"
