@@ -48,7 +48,7 @@ To serve our community effectively, local public safety radio operations are spl
       </div>
       <h3 style="margin: 0 0 10px 0; color: #e65100; font-size: 18px; font-weight: bold; font-family: sans-serif;">NWS Skywarn® Weather Spotters</h3>
       <p style="font-size: 13px; color: #546e7a; margin-bottom: 20px; line-height: 1.5; min-height: 90px;">Executed in direct link coordination with the National Weather Service in Wilmington. Handles localized storm tracking, ground-truth verification nets, and interactive tactical radar loops.</p>
-      <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>Skywarn ECs:</strong> Dean (N4TYS) & John (KD4VRD)</span>
+      <span style="font-size: 12px; display: block; margin-bottom: 15px; color: #37474f;"><strong>Skywarn ECs:</strong> Dean (N4TYS) & David (KN4UKU)</span>
     </div>
     <a href="skywarn/" style="display: block; text-align: center; background-color: #e65100; color: white; padding: 10px; border-radius: 4px; font-size: 13px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Enter Skywarn Portal →</a>
   </div>
