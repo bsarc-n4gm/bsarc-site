@@ -1,8 +1,8 @@
 ---
 title: "Skywarn Severe Weather Operations: Brunswick County"
 description: "Join Brunswick County Skywarn severe weather tracking operations. Learn about NWS Wilmington ground-truth criteria, severe weather reporting checklist, and tactical digital radio networks."
-keywords: ["Brunswick County Skywarn", "severe weather tracking", "NWS Wilmington spotter", "VarAC FM chat simplex", "N4TYS Dean", "KD4VRD John", "ham radio weather net", "N4GM"]
-date: 2026-07-12
+keywords: ["Brunswick County Skywarn", "severe weather tracking", "NWS Wilmington spotter", "VarAC FM chat simplex", "ham radio weather net", "N4GM"]
+date: 2026-0-20
 draft: false
 layout: "single"
 ---
