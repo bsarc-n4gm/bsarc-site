@@ -11,4 +11,4 @@ layout: "single"
 
 Brunswick County Skywarn works in close synchronization with the National Weather Service (NWS) to provide critical ground-truth verification when severe or tropical weather systems threaten our region.
 
-Skywarn&reg; and the Skywarn&reg; logo are registered trademarks of the National Oceanic and Atmospheric Administration, used with permission.
+*Skywarn&reg; and the Skywarn&reg; logo are registered trademarks of the National Oceanic and Atmospheric Administration, used with permission.*
