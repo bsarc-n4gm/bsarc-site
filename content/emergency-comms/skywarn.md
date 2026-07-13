@@ -9,7 +9,7 @@ layout: "single"
 
 <img src="/images/skywarn_copy.webp" alt="Skywarn Logo with &reg; symbol" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
 
-BRUNSWICK SKYWARN
+## BRUNSWICK SKYWARN
 
 When severe or tropical weather threatens Brunswick County, the Brunswick County
 
@@ -53,31 +53,27 @@ method of reporting to the ECs as long as those methods are available.
 
 Spotters can also utilize SSB HF frequencies in the HF bands, as well as VARAC HF
 
-mode, FM Simplex, Winlink and the Brunswick Skywarn GroupMe chat room (download
-
-the GroupMe app for your phone or on a pc www.groupme.com). Search for Brunswick
-
-Skywarn and ask to join the chat room.
+mode, FM Simplex, Winlink and the Brunswick Skywarn GroupMe chat room (download the GroupMe app for your phone or on a pc <a href="https://www.groupme.com" target="_blank">www.groupme.com</a>). Search for **Brunswick Skywarn** and ask to join the chat room.
 
 ECs will alert spotters what mode and frequency to use at time of activation.
 
-What to report:
+### What to report:
 
-• What/When/Where (must have this information in your report)
+* What/When/Where (must have this information in your report)
 
-• Funnel cloud, tornado, or waterspout
+* Funnel cloud, tornado, or waterspout
 
-• Winds over 40 mph,
+* Winds over 40 mph,
 
-• Damage to buildings and/or trees
+* Damage to buildings and/or trees
 
-• Hail of any size (include a photo!)
+* Hail of any size (include a photo!)
 
-• Flooding - describe if standing or flowing
+* Flooding - describe if standing or flowing
 
-• Any weather-related injuries or fatalities
+* Any weather-related injuries or fatalities
 
-• Photos are encouraged as part of a spotter report.
+* Photos are encouraged as part of a spotter report.
 
 Dean N4TYS and for Dan KN4UKU. Skywarn is a registered trademark by NOAA
 
