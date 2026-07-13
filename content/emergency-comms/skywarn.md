@@ -51,7 +51,7 @@ chat room, or a phone call to one of the ECs (as an additional method of reporti
 
 the ECs as long as those methods are available)
 
-The Brunswick Skywarn® GroupMe chat room (download the GroupMe app for your phone or on a pc <a href="https://www.groupme.com" target="_blank">www.groupme.com</a>) Search for **Brunswick Skywarn®** and ask to join the chat room. Or contact an EC and they will send you a link to join the chat room.
+The **Brunswick Skywarn®** GroupMe chat room (download the GroupMe app for your phone or on a pc <a href="https://www.groupme.com" target="_blank">www.groupme.com</a>) Search for **Brunswick Skywarn®** and ask to join the chat room. Or contact an EC and they will send you a link to join the chat room.
 
 ECs will alert spotters what mode to use at time of activation.
 
