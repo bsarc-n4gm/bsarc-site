@@ -9,7 +9,7 @@ copyright = "Brunswick Shores Amateur Radio Club 2026 | 501(c)(3) Tax-Exempt Sta
 
 languageCode = 'en-us'
 title = "Brunswick Shores Amateur Radio Club"
-theme = 'ananke'
+theme = ["hugo-cloak-email", "ananke"]
 
 ############################
 # Global SEO & Search Optimization
