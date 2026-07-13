@@ -7,6 +7,8 @@ draft: false
 layout: "single"
 ---
 
-<img src="/images/skywarn.webp" alt="Skywarn Logo" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+<img src="/images/skywarn_copy.webp" alt="Skywarn Logo with &reg; symbol" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
 
 Brunswick County Skywarn works in close synchronization with the National Weather Service (NWS) to provide critical ground-truth verification when severe or tropical weather systems threaten our region.
+
+Skywarn&reg; and the Skywarn&reg; logo are registered trademarks of the National Oceanic and Atmospheric Administration, used with permission.
