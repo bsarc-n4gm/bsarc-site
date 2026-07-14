@@ -2,7 +2,7 @@
 title: "Winlink Emergency Communications Net: Brunswick County"
 description: "Training resources, guidelines, and exercise histories for the Brunswick County Emergency Communications Winlink Net. Learn how to transmit ICS forms and emergency data via RF."
 keywords: ["Winlink ham radio", "emergency communications Winlink", "ARES AuxComm training", "Winlink ICS forms", "radio email", "BSARC Winlink net", "N4GM", "net control station"]
-date: 2026-05-27
+date: 2026-07-12
 draft: false
 layout: "single"
 ---

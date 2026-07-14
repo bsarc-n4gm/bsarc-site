@@ -2,7 +2,7 @@
 title: "Home"
 description: "Welcome to the Brunswick Shores Amateur Radio Club (BSARC), serving ham radio operators across Brunswick County, NC with active nets, emergency readiness, and community tracking operations."
 keywords: ["amateur radio club", "ham radio North Carolina", "BSARC", "N4GM", "Brunswick County ham radio", "Calabash NC"]
-date: 2026-06-13
+date: 2026-07-14
 draft: false
 layout: "dashboard"
 params:
