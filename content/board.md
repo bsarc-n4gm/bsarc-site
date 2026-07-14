@@ -1,6 +1,6 @@
 ---
 title: "Officers & Committees"
-date: 2026-05-17
+date: 2026-07-14
 draft: false
 ---
 
