@@ -22,6 +22,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-07-06/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-020/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
