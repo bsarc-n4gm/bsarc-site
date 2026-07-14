@@ -7,6 +7,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/board/</loc>
+    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/bulletins/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -22,6 +37,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/emergency-comms/winlink/</loc>
+    <lastmod>2026-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-07-06/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -29,6 +49,16 @@
   </url><url>
     <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-020/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-06-29/</loc>
+    <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-06-22/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -67,6 +97,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-06-15/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/new-to-ham-radio/satellite-comms/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -78,11 +113,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.68.109:1313/new-to-ham-radio/digital-voice/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.68.109:1313/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -107,6 +137,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-06-08/</loc>
+    <lastmod>2026-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://192.168.68.109:1313/emergency-comms/winlink/exercise-018/</loc>
     <lastmod>2026-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -114,16 +149,6 @@
   </url><url>
     <loc>http://192.168.68.109:1313/bulletins/bulletin-2026-06-01/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.68.109:1313/emergency-comms/</loc>
-    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.68.109:1313/emergency-comms/winlink/</loc>
-    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -198,11 +223,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://192.168.68.109:1313/welcome-kit/</loc>
-    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://192.168.68.109:1313/board/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
