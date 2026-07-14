@@ -2,7 +2,7 @@
 title: "Emergency Communications"
 description: "Discover the Brunswick County emergency communications portals managed by BSARC, including local ARES operations, DHS AUXCOMM setups, Skywarn weather spotting, and Winlink networks."
 keywords: ["emergency communications", "Brunswick County ARES", "AUXCOMM North Carolina", "Skywarn weather spotter", "Winlink EmComm", "N4GM", "Calabash NC"]
-date: 2026-05-27
+date: 2026-07-14
 draft: false
 layout: "single"
 ---
