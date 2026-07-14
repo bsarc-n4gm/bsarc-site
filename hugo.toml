@@ -5,7 +5,7 @@ canonifyURLs = true
 relativeURLs = false
 ############################
 
-copyright = "Brunswick Shores Amateur Radio Club 2026 | 501(c)(3) Tax-Exempt Status Pending 2026 | Webmaster: <a href='mailto:webmaster@n4gm.org' style='color: inherit; text-decoration: underline;'>Webmaster</a>"
+copyright = "Brunswick Shores Amateur Radio Club 2026 | 501(c)(3) Tax-Exempt Status Pending 2026 | Webmaster: webmaster@n4gm.org"
 
 languageCode = 'en-us'
 title = "Brunswick Shores Amateur Radio Club"
