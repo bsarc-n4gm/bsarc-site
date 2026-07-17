@@ -27,7 +27,7 @@
 # ====================================================================
 
 # Calendar Last Updated Date Field
-last_updated = "May 21, 2026"
+last_updated = "July 17, 2026"
 
 [[event]]
 date = "2026-01-24"
