@@ -272,17 +272,6 @@ zoom_meeting = true
 canceled = false
 
 [[event]]
-date = "2026-10-03"
-display_date = "October 3"
-name = "📚 VE Test Session"
-location = "Calabash EMS Building, 9031 Beach Dr SW, Calabash, NC 28467"
-time = "9:30 AM"
-link_url = ""
-flyer_path = ""
-zoom_meeting = false
-canceled = true
-
-[[event]]
 date = "2026-10-17"
 display_date = "October 17"
 name = "📚 VE Test Session"
