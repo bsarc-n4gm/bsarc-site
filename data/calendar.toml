@@ -336,3 +336,14 @@ link_url = ""
 flyer_path = ""
 zoom_meeting = false
 canceled = false
+
+[[event]]
+date = "2027-04-03"
+display_date = "April 3"
+name = "RARSfest, The Raleigh Hamfest, ARRL Roanoke Division Convention Talk-In on 146.64 MHz -0.6 offset, no tone"
+location = "NC State Fairgrounds, Raleigh, NC"
+time = "8:00 A.M. - 4:30 P.M."
+link_url = "https://www.rarsfest.org/"
+flyer_path = ""
+zoom_meeting = false
+canceled = false
