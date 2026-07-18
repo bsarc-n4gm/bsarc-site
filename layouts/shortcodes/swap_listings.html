@@ -103,6 +103,13 @@
             <div>
                 👤 <strong>Seller:</strong> {{ .seller_name }} {{ if .seller_call }}<strong style="color: #111;">({{ upper .seller_call }})</strong>{{ end }}
             </div>
+
+            {{ if .date }}
+            <div style="color: #666666; font-size: 11px;">
+                📅 <strong>Listed:</strong> {{ time.Format "Jan 2, 2006" .date }}
+            </div>
+            {{ end }}
+            
             {{ if .seller_note }}
             <div style="font-style: italic; color: #777; border-bottom: 1px solid #e5e5e5; padding-bottom: 4px; margin-bottom: 2px;">
                 "{{ .seller_note }}"

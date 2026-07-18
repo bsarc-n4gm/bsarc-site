@@ -44,6 +44,7 @@
 
 [[items]]
 name = "Astron RS-70M-AP Heavy Duty Linear Power Supply"
+date = "2026-07-17"
 price = "$550"
 sold = false
 free = false
@@ -59,6 +60,7 @@ specs = [
 
 [[items]]
 name = "LNR MTR-4B v2.3 QRP CW Transceiver"
+date = "2026-07-17"
 price = "$350"
 sold = false
 free = false
@@ -78,6 +80,7 @@ specs = [
 
 [[items]]
 name = "LDG Z-817 Automatic QRP Antenna Tuner"
+date = "2026-07-17"
 price = "$60"
 sold = false
 free = false
@@ -97,6 +100,7 @@ specs = [
 
 [[items]]
 name = "Elecraft K3S-F, P3-F and SP3 Station"
+date = "2026-05-18"
 price = "$3000"
 sold = false
 free = false
@@ -117,6 +121,7 @@ specs = [
 
 [[items]]
 name = "Elecraft KX3-F, PX3-F QRP Station"
+date = "2026-05-18"
 price = "$1300"
 sold = false
 free = false
@@ -134,6 +139,7 @@ specs = [
 
 [[items]]
 name = "Elecraft KPA 500 Amplifier & KAT500 Antenna Tuner"
+date = "2026-05-18"
 price = "$2250"
 sold = false
 free = false
@@ -148,6 +154,7 @@ specs = [
 
 [[items]]
 name = "Hardrock 50 QRP Amplifier with Built-in ATU"
+date = "2026-05-18"
 price = "$350"
 sold = false
 free = false
@@ -161,6 +168,7 @@ specs = [
 
 [[items]]
 name = "Icom IC-706 MKII G Mobile HF/VHF/UHF Transceiver"
+date = "2026-05-18"
 price = "$500"
 sold = false
 free = false
@@ -176,6 +184,7 @@ specs = [
 
 [[items]]
 name = "Icom IC-7000 Base/Mobile Transceiver"
+date = "2026-05-18"
 price = "$600"
 sold = false
 free = false
@@ -191,6 +200,7 @@ specs = [
 
 [[items]]
 name = "FlexRadio Systems Flex-5000A SDR Transceiver with ATU"
+date = "2026-05-18"
 price = "$600"
 sold = false
 free = false
@@ -205,6 +215,7 @@ specs = [
 
 [[items]]
 name = "FlexRadio Systems Flex-6500 Signature Series SDR w/ ATU"
+date = "2026-05-18"
 price = "$1300"
 sold = false
 free = false
@@ -220,6 +231,7 @@ specs = [
 
 [[items]]
 name = "Yaesu FTA-850L Air Band Transceiver, for Pilots"
+date = "2026-03-17"
 price = "$425"
 sold = false
 free = false
@@ -239,6 +251,7 @@ specs = [
 
 [[items]]
 name = "Yaesu FT-891 HF transceiver"
+date = "2025-06-19"
 price = "$575"
 sold = false
 free = false
@@ -252,6 +265,7 @@ specs = [
 
 [[items]]
 name = "Powerwerx PS 30 AMP"
+date = "2025-06-19"
 price = "$85"
 sold = false
 free = false
@@ -265,6 +279,7 @@ specs = [
 
 [[items]]
 name = "ICOM 7300"
+date = "2025-06-19"
 price = ""
 sold = false
 free = false
@@ -278,6 +293,7 @@ specs = [
 
 [[items]]
 name = "OpsCenter/Camper"
+date = "2026-04-02"
 price = "$5000"
 sold = false
 free = false
