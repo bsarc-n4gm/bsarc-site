@@ -218,3 +218,22 @@ seller_note = "Up for Sale"
 specs = [
   ""
 ]
+
+[[items]]
+name = "OpsCenter/Camper"
+price = "$5000"
+sold = false
+free = false
+seller_name = "Ed Grogran"
+seller_call = "K3BED"
+seller_email = "egrogan@gmail.com"
+seller_note = "Up for Sale"
+specs = [
+  "5x8 V nose (more than 80 sqft) cargo Trailer, full spare, electric brakes, three windows, document holder. barn doors",
+  "Full Buddipole antenna system with triple balun switch, 18' mast, tripod, standard and long whips.",
+  "Comet GP-15 VHF-UHF antenna",
+  "Like new IC-7100 with full printed manual",
+  "Power center that includes two Li-Time 12V 100Ah RV Lithium Battery, Group 31 LiFePO4 batteries in custom battery boxes", 
+  "3000 Watt sine wave inverter, and 100 watt Renogy solar panel wired with 25' of wire with Anderson PP connectors",
+  "Folding bed, simple porta potty"
+]
