@@ -124,7 +124,7 @@ specs = [
 [[items]]
 name = "Icom IC-706 MKII G Mobile HF/VHF/UHF Transceiver"
 price = "$500"
-sold = true
+sold = false
 free = false
 seller_name = "Erin Douna"
 seller_call = "KY4HL"
@@ -154,7 +154,7 @@ specs = [
 [[items]]
 name = "FlexRadio Systems Flex-5000A SDR Transceiver with ATU"
 price = "$600"
-sold = true
+sold = false
 free = false
 seller_name = "Erin Douna"
 seller_call = "KY4HL"
