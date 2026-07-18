@@ -43,6 +43,22 @@ buyer_email = "n4abc@gmail.com"
 # Copy and paste a complete block to add new gear to the swapfest roster.
 
 [[items]]
+name = "Astron RS-70M-AP Heavy Duty Linear Power Supply"
+price = "$550"
+sold = false
+free = false
+seller_name = "Mark Sergent"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Heavy transformer style supply. Works perfectly."
+specs = [
+  "Regulated 13.8 VDC output 57 Amps continuous and up to 70 Amps surge",
+  "Features analog voltage and current monitoring meters on the front panel",
+  "as well as 2 Anderson Pole connectors. Great stable shack 13.8V power supply"
+]
+
+
+[[items]]
 name = "Legacy 13.8V 20-Amp Linear Power Supply"
 price = ""
 sold = false
