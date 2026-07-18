@@ -204,10 +204,10 @@ model = "N/A"
 serial = "N/A"
 location = "KM4EMR"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "07/04/26"
-note = "Reserved for 4th of July parade South Port"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Duplexer UHF"
@@ -216,10 +216,10 @@ model = "WP-678-R2"
 serial = "33596"
 location = "KM4EMR"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "07/04/26"
-note = "Reserved for 4th of July parade South Port"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Power Supply 10A"
@@ -228,10 +228,10 @@ model = "SEC1212"
 serial = "03051-4E02-00785"
 location = "KM4EMR"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "07/04/26"
-note = "Reserved for 4th of July parade South Port"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Rack Rails"
@@ -300,10 +300,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 2
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Power Supply"
@@ -312,10 +312,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Coax On Reels"
@@ -324,10 +324,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Pass Filters 80-10M"
@@ -336,10 +336,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Computers 4"
@@ -348,10 +348,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Monitor Cables"
@@ -360,10 +360,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Serial Cables to Radios"
@@ -372,10 +372,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Head Sets"
@@ -384,10 +384,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Mic Adsapters"
@@ -396,10 +396,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Footwitches"
@@ -408,10 +408,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 2
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Antenna dipole 40-10m"
@@ -420,10 +420,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Antenna dipole 80m"
@@ -432,10 +432,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Network Switch"
@@ -444,10 +444,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Network Cables"
@@ -456,10 +456,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Safety Cones"
@@ -468,10 +468,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 1
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "White Boards"
@@ -480,10 +480,10 @@ model = "N/A"
 serial = "N/A"
 location = "Calabash EMS"
 qty = 2
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Laptop"
@@ -492,10 +492,10 @@ model = "N/A"
 serial = "N/A"
 location = "George KI4KK"
 qty = 2
-status = "Reserved"
+status = "Official Use Only"
 price = "N/A"
-reserved_date = "06/29/26"
-note = "Reserved for field day Calabash"
+reserved_date = ""
+note = "N/A"
 
 [[items]]
 name = "Oscilloscope"
@@ -876,8 +876,8 @@ model = "H519"
 serial = "N/A"
 location = "Calabash EMS - Bench"
 qty = 1
-status = "For Sale"
-price = "$40"
+status = "Available"
+price = "N/A"
 reserved_date = ""
 note = "N/A"
 
