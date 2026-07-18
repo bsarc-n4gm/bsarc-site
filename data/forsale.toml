@@ -77,6 +77,25 @@ specs = [
 ]
 
 [[items]]
+name = "LDG Z-817 Automatic QRP Antenna Tuner"
+price = "$60"
+sold = false
+free = false
+seller_name = "Mark Sergent"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Like New in the original box. Includes dedicated Yaesu CAT interface cable."
+specs = [
+  "RF power handling of 0.1 to 20 watts SSB/CW (10-15W digital)",
+  "Continuous frequency coverage from 1.8 to 54 MHz",
+  "Tunes 6 to 600 ohm loads (16 to 150 ohms on 6M)",
+  "2,000 memory locations for near-instantaneous tuning",
+  "Designed specifically for Yaesu FT-817 and FT-818 integration",
+  "Latching relays provide zero power consumption when standby",
+  "Powered internally by 4 AA alkaline batteries"
+]
+
+[[items]]
 name = "Elecraft K3S-F, P3-F and SP3 Station"
 price = "$3000"
 sold = false
