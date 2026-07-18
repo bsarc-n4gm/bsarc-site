@@ -58,6 +58,25 @@ specs = [
 ]
 
 [[items]]
+name = "LNR MTR-4B v2.3 QRP CW Transceiver"
+price = "$350"
+sold = false
+free = false
+seller_name = "Mark Sergent"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Excellent Condition, Never Used in field, Last Production Run"
+specs = [
+  "Covers 80m, 40m, 30m, and 20m bands",
+  "Full 5W RF output on 12V supply",
+  "Weighs under 8 ounces in red gloss machined aluminum case",
+  "Low RX current draw of approximately 27mA",
+  "Internal iambic B-mode keyer (5–31 WPM) with 3 message memories",
+  "Large backlit LCD displaying SWR, RF Power, and Real-Time Clock",
+  "v2.3 features side tone adjustments and easy coin cell battery access"
+]
+
+[[items]]
 name = "Elecraft K3S-F, P3-F and SP3 Station"
 price = "$3000"
 sold = false
