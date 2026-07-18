@@ -181,6 +181,25 @@ specs = [
 ]
 
 [[items]]
+name = "Yaesu FTA-850L Air Band Transceiver, for Pilots"
+price = "$425"
+sold = false
+free = false
+seller_name = "Dennis Webb"
+seller_call = "K4ELW"
+seller_email = "dew1513@proton.me"
+seller_note = "New in the Box, Never Used"
+specs = [
+  "6.0 W PEP RF transmit power output",
+  "2.4-inch full-color TFT display",
+  "Integrated 66-channel WAAS GPS receiver",
+  "ILS (Localizer & Glide Slope) and VOR navigation displays",
+  "Built-in Bluetooth for wireless headsets",
+  "8.33 kHz narrow band and 25 kHz channel spacing",
+  "IPX-5 waterproof and MIL-STD-810H durability ratings"
+]
+
+[[items]]
 name = "Yaesu FT-891 HF transceiver"
 price = "$575"
 sold = false
