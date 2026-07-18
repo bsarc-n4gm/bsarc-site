@@ -61,6 +61,7 @@ specs = [
 
 [[items]]
 name = "LNR MTR-4B v2.3 QRP CW Transceiver"
+image = "/images/marketplace/LNR-MTR-4Bv2.webp"
 date = "2026-07-17"
 price = "$350"
 sold = false
@@ -81,6 +82,7 @@ specs = [
 
 [[items]]
 name = "LDG Z-817 Automatic QRP Antenna Tuner"
+image = "/images/marketplace/LDG-Z-817-Tuner.webp"
 date = "2026-07-17"
 price = "$60"
 sold = false
@@ -101,6 +103,7 @@ specs = [
 
 [[items]]
 name = "Elecraft K3S-F, P3-F and SP3 Station"
+image = "/images/marketplace/K3S-Transceiver–Elecraft.webp"
 date = "2026-05-18"
 price = "$3000"
 sold = false
@@ -122,6 +125,7 @@ specs = [
 
 [[items]]
 name = "Elecraft KX3-F, PX3-F QRP Station"
+image = "/images/marketplace/KX3-PX3-Panadapter–Elecraft.webp"
 date = "2026-05-18"
 price = "$1300"
 sold = false
