@@ -144,6 +144,7 @@ specs = [
 
 [[items]]
 name = "Elecraft KPA 500 Amplifier & KAT500 Antenna Tuner"
+image = "/images/marketplace/Elecraft-KPA500-and-KAT500-Amplifier_Tuner-Combo.webp"
 date = "2026-05-18"
 price = "$2250"
 sold = false
@@ -159,6 +160,7 @@ specs = [
 
 [[items]]
 name = "Hardrock 50 QRP Amplifier with Built-in ATU"
+image = "/images/marketplace/hardrock-50-plus-with-atu.webp"
 date = "2026-05-18"
 price = "$350"
 sold = false
@@ -256,6 +258,7 @@ specs = [
 
 [[items]]
 name = "Yaesu FT-891 HF transceiver"
+image = "/images/marketplace/ft-891-k4osg.webp"
 date = "2025-06-19"
 price = "$575"
 sold = false
