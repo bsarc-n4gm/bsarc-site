@@ -22,19 +22,19 @@
 # To remove an active request when a buyer finds their gear, delete its 
 # entire block starting from [[wanted]] down to the buyer's email line.
 
-[[wanted]]
-item = "HF Mobile Antenna (Screwdriver Style)"
-details = "Looking for a working Tarheel, High Sierra, or Little Tarheel II for a mobile installation. Capable of 80m-10m preferred."
-buyer_name = "John Doe"
-buyer_call = "W4XYZ"
-buyer_email = "w4xyz@gmail.com"
+#[[wanted]]
+#item = "HF Mobile Antenna (Screwdriver Style)"
+#details = "Looking for a working Tarheel, High Sierra, or Little Tarheel II for a mobile installation. Capable of 80m-10m preferred."
+#buyer_name = "John Doe"
+#buyer_call = "W4XYZ"
+#buyer_email = "w4xyz@gmail.com"
 
-[[wanted]]
-item = "Heal Set / Boom Mic Headset"
-details = "Looking for a clean Heil Pro Set Elite or Pro 7 with an Icom 8-pin adapter element."
-buyer_name = "Bob Smith"
-buyer_call = "N4ABC"
-buyer_email = "n4abc@gmail.com"
+#[[wanted]]
+#item = "Heal Set / Boom Mic Headset"
+#details = "Looking for a clean Heil Pro Set Elite or Pro 7 with an Icom 8-pin adapter element."
+#buyer_name = "Bob Smith"
+#buyer_call = "N4ABC"
+#buyer_email = "n4abc@gmail.com"
 
 
 # ====================================================================
@@ -55,22 +55,6 @@ specs = [
   "Regulated 13.8 VDC output 57 Amps continuous and up to 70 Amps surge",
   "Features analog voltage and current monitoring meters on the front panel",
   "as well as 2 Anderson Pole connectors. Great stable shack 13.8V power supply"
-]
-
-
-[[items]]
-name = "Legacy 13.8V 20-Amp Linear Power Supply"
-price = ""
-sold = false
-free = true
-seller_name = "Mark"
-seller_call = "KA4EVR"
-seller_email = "sergentm@gmail.com"
-seller_note = "Heavy transformer style supply. Works perfectly."
-specs = [
-  "Regulated 13.8 VDC output up to 20 Amps surge",
-  "Features analog voltage and current monitoring meters on the front panel",
-  "Great starter asset for powering an HF rig or VHF base station in a new ham's shack"
 ]
 
 [[items]]
