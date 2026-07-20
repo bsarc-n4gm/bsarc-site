@@ -90,7 +90,7 @@ text = "A group of local hams meets every Wednesday morning at 8:00 AM at the Te
 frequency = "147.315 MHz"
 offset = "+600 kHz"
 tone = "118.8 Hz"
-location = "Supply, NC"
+location = "Bolivia, NC"
 notes = "Primary Club Repeater / Net Home (EchoLink: N4GM-R)"
 
 [[repeaters]]
