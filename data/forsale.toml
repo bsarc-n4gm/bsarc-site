@@ -43,6 +43,238 @@
 # Copy and paste a complete block to add new gear to the swapfest roster.
 
 [[items]]
+name = "Heathkit SB-220 Linear Amplifier"
+image = "/images/marketplace/heathkit-sb-220.webp"
+date = "2026-07-22"
+price = "$900"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Classic 2kW PEP HF linear amplifier utilizing a pair of 3-500Z triode tubes.",
+  "Frequency Coverage: 80, 40, 20, 15, and 10 meter amateur bands.",
+  "Built-in power supply and cooling fan.",
+  "Grounded-grid design with reliable high-power output."
+]
+
+[[items]]
+name = "Yaesu FT-891 Compact HF/50MHz Transceiver"
+image = "/images/marketplace/yaesu-ft-891.webp"
+date = "2026-07-22"
+price = "$475"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "100W All-Mode HF/50MHz compact mobile/portable transceiver.",
+  "32-bit high-speed floating point IF DSP for excellent noise reduction and QRM rejection.",
+  "Detachable front panel for flexible mounting.",
+  "Includes USB port for CAT control and digital mode interfacing."
+]
+
+[[items]]
+name = "Cushcraft R-7 Multi-Band Vertical Antenna"
+image = "/images/marketplace/cushcraft-r7.webp"
+date = "2026-07-22"
+price = "$350"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "7-Band HF Vertical Antenna covering 10, 12, 15, 17, 20, 30, and 40 meters.",
+  "No radial ground system required (counterpoise hat design).",
+  "Handles up to 1500W PEP.",
+  "Great option for space-restricted or HOA-conscious shacks."
+]
+
+[[items]]
+name = "Astron RS-35M Heavy Duty Regulated Linear Power Supply"
+image = "/images/marketplace/astron-rs-35m.webp"
+date = "2026-07-22"
+price = "$225"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Heavy-duty linear DC power supply with dual illuminated Volt/Amp meters.",
+  "Output: 13.8 VDC regulated.",
+  "Current Handling: 25 Amps Continuous / 35 Amps Peak (ICS).",
+  "Built-in foldback current limiting and over-voltage protection."
+]
+
+[[items]]
+name = "Tektronix 336 Dual-Trace Oscilloscope"
+image = "/images/marketplace/tektronix-336.webp"
+date = "2026-07-22"
+price = "$150"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com). *Buyer should verify exact model on inspection."
+specs = [
+  "Compact dual-trace portable oscilloscope.",
+  "Rugged test bench instrumentation for gear troubleshooting and alignment.",
+  "Dual-channel monitoring capability."
+]
+
+[[items]]
+name = "MFJ-949D Deluxe 300W Antenna Tuner"
+image = "/images/marketplace/mfj-949d.webp"
+date = "2026-07-22"
+price = "$140"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "300 Watt PEP full-featured HF antenna tuner covering 1.8–30 MHz.",
+  "Includes cross-needle peak/average SWR and Wattmeter.",
+  "Built-in 4:1 balun for balanced lines and internal 50-ohm dummy load.",
+  "5-position antenna switch to select two coax lines, single wire, or dummy load."
+]
+
+[[items]]
+name = "Yaesu FT-70DR Dual Band C4FM/FM Handheld Transceiver"
+image = "/images/marketplace/yaesu-ft-70dr.webp"
+date = "2026-07-22"
+price = "$125"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Compact 5W 144/430 MHz dual-band handheld radio.",
+  "Supports both traditional Analog FM and System Fusion C4FM Digital modes.",
+  "Loud 700mW front speaker audio output.",
+  "Includes Automatic Mode Select (AMS) for seamless FM/digital operation."
+]
+
+[[items]]
+name = "Kenwood TM-281A 144MHz FM Mobile Transceiver"
+image = "/images/marketplace/kenwood-tm-281.webp"
+date = "2026-07-22"
+price = "$125"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Rugged MIL-STD compliant 2-meter (144 MHz) FM mobile radio.",
+  "High RF power output: 65 Watts.",
+  "Large front-firing speaker delivering clear audio.",
+  "200 memory channels with alpha-numeric labeling."
+]
+
+[[items]]
+name = "Yaesu FTM-3100R 144MHz FM Mobile Transceiver"
+image = "/images/marketplace/yaesu-ftm-3100.webp"
+date = "2026-07-22"
+price = "$110"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Heavy-duty 65W 2-meter VHF mobile FM transceiver.",
+  "High audio output with 3W front speaker.",
+  "Heavy-duty FACC (Funnel Air-Convection Conductor) heatsink design.",
+  "220 memory channels with custom alphanumeric tags."
+]
+
+[[items]]
+name = "Ameritron RCS-10 8-Position Remote Coax Switch"
+image = "/images/marketplace/ameritron-rcs-10.webp"
+date = "2026-07-22"
+price = "$90"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Remote coaxial antenna switch allowing selection of up to 8 antennas.",
+  "Requires only a single coax feedline and control cable to the tower/yard.",
+  "Power handling: 5 kW PEP below 30 MHz.",
+  "Includes indoor control console and weatherized outdoor switch box."
+]
+
+[[items]]
+name = "MFJ-655B HamProAudio Microphone Equalizer & Conditioner"
+image = "/images/marketplace/mfj-655b.webp"
+date = "2026-07-22"
+price = "$90"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Deluxe 8-band audio equalizer with built-in speech compressor and limiter.",
+  "Includes downward expander noise gate to reduce room/fan noise.",
+  "Universal microphone interface matching dynamic, electret, or crystal mics.",
+  "Front panel VU meter and built-in headphone monitor jack."
+]
+
+[[items]]
+name = "MFJ-434 Voice Keyer"
+image = "/images/marketplace/mfj-434.webp"
+date = "2026-07-22"
+price = "$75"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Contest/DX microprocessor-controlled voice keyer.",
+  "Records and plays back multiple outgoing voice messages.",
+  "Includes repeat mode for hands-free CQ calling.",
+  "Connects directly between your microphone and transceiver."
+]
+
+[[items]]
+name = "Baofeng DM-32UV Dual Band DMR Digital/Analog HT"
+image = "/images/marketplace/baofeng-dm-32uv.webp"
+date = "2026-07-22"
+price = "$55"
+sold = false
+free = false
+seller_name = "John Philips / Bill Sirginson"
+seller_call = "K4IR"
+seller_email = "jp9181@gmail.com"
+seller_note = "Selling on behalf of the estate of Frank Brown, KF4XY. Contact John Philips K4IR (910-620-3819 / jp9181@gmail.com) or Bill Sirginson (bsirginson31@gmail.com)."
+specs = [
+  "Dual-band VHF/UHF handheld radio with Tier I & II DMR digital and analog FM support.",
+  "5W power output with color display.",
+  "Ideal entry-level radio for local repeater and digital DMR talkgroup access."
+]
+
+[[items]]
 name = "Astron VS-35M-AP Heavy Duty Linear Power Supply"
 image = "/images/marketplace/astron-vs-35m-ap-front-2.webp"
 date = "2026-07-22"
