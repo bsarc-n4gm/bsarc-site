@@ -43,6 +43,25 @@
 # Copy and paste a complete block to add new gear to the swapfest roster.
 
 [[items]]
+name = "Astron VS-35M-AP Heavy Duty Linear Power Supply"
+image = "/images/marketplace/astron-vs-35m-ap-front-2.webp"
+date = "2026-07-22"
+price = "$300"
+sold = false
+free = false
+seller_name = "Mark Sergent"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Heavy transformer style supply. Works perfectly."
+specs = [
+  "Up for sale is a like-new Astron VS-35M-AP Variable Linear DC Power Supply.",
+  "Output: Variable 2 to 15 VDC",
+  "Current Handling: 25 Amps Continuous / 35 Amps Peak (ICS) @ 13.8V",
+  "Excellent, clean bench supply that works flawlessly.",
+  "Comes complete with the original factory box, manual, and schematic—hard to find one in this condition!"
+]
+
+[[items]]
 name = "Astron RS-70M-AP Heavy Duty Linear Power Supply"
 image = "/images/marketplace/astron-rs-70m-ap.webp"
 date = "2026-07-17"
