@@ -181,8 +181,9 @@ Want to dive deeper into modern amateur radio technology? Browse slide decks, cu
         Presented by <strong>Mark Sergent (KA4EVR)</strong> — An introduction to utilizing machine learning algorithms, artificial intelligence, and digital signal processing (DSP) tools to clean up weak signals and enhance shack operations.
       </p>
     </div>
-    <div style="display: flex; gap: 10px;">
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
       <a href="/presentations/ai_dsp_ham_presentation.html" target="_blank" style="display: inline-block; padding: 8px 14px; background-color: #1a365d; color: white; font-size: 12px; font-weight: bold; text-decoration: none; border-radius: 4px;">Launch Deck ↗</a>
+      <a href="/pdf/quick_reference_ai_dsp.pdf" target="_blank" style="display: inline-block; padding: 8px 14px; background-color: #0284c7; color: white; font-size: 12px; font-weight: bold; text-decoration: none; border-radius: 4px;">Quick Reference (PDF) 📄</a>
     </div>
   </div>
 
