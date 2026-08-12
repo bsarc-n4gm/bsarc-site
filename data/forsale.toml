@@ -277,8 +277,8 @@ specs = [
 [[items]]
 name = "Astron VS-35M-AP Heavy Duty Linear Power Supply"
 image = "/images/marketplace/astron-vs-35m-ap-front-2.webp"
-date = "2026-07-22"
-price = "$300"
+date = "2026-08-12"
+price = "$245"
 sold = false
 free = false
 seller_name = "Mark Sergent"
@@ -296,8 +296,8 @@ specs = [
 [[items]]
 name = "Astron RS-70M-AP Heavy Duty Linear Power Supply"
 image = "/images/marketplace/astron-rs-70m-ap.webp"
-date = "2026-07-17"
-price = "$400"
+date = "2026-08-12"
+price = "$345"
 sold = false
 free = false
 seller_name = "Mark Sergent"
@@ -311,11 +311,31 @@ specs = [
 ]
 
 [[items]]
+name = "Yaesu FT5D"
+image = "/images/marketplace/yaesu_ft5d.webp"
+date = "2026-08-12"
+price = "$340"
+sold = false
+free = false
+seller_name = "Mark Sergent"
+seller_call = "KA4EVR"
+seller_email = "sergentm@gmail.com"
+seller_note = "Excellent Condition, No cracking around the housing PTT area"
+specs = [
+  "Yaesu FT5DR Handheld Transceiver (Includes original box & printed manual)",
+  "CD-41 Desktop Rapid Charger Base & Power Adapter",
+  "Extra Yaesu Li-Ion Battery Pack (2 total batteries included)",
+  "RT Systems USB-68 Cable & FT5D Software Kit (Cable ready for RT Systems or CHIRP; software license already activated)",
+  "Protective Soft Case",
+  "Extra Limited Edition Quick-Release Holster / Belt Clip"
+]
+
+[[items]]
 name = "LNR MTR-4B v2.3 QRP CW Transceiver"
 image = "/images/marketplace/LNR-MTR-4Bv2.webp"
 date = "2026-07-17"
 price = "$300"
-sold = false
+sold = true
 free = false
 seller_name = "Mark Sergent"
 seller_call = "KA4EVR"
