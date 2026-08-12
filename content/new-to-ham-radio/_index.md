@@ -182,7 +182,7 @@ Want to dive deeper into modern amateur radio technology? Browse slide decks, cu
       </p>
     </div>
     <div style="display: flex; gap: 10px;">
-      <a href="/presentations/ai-dsp-radio-shack.html" target="_blank" style="display: inline-block; padding: 8px 14px; background-color: #1a365d; color: white; font-size: 12px; font-weight: bold; text-decoration: none; border-radius: 4px;">Launch Deck ↗</a>
+      <a href="/presentations/ai_dsp_ham_presentation.html" target="_blank" style="display: inline-block; padding: 8px 14px; background-color: #1a365d; color: white; font-size: 12px; font-weight: bold; text-decoration: none; border-radius: 4px;">Launch Deck ↗</a>
     </div>
   </div>
 
