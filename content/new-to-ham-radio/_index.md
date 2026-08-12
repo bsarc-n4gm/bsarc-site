@@ -164,3 +164,26 @@ If you're eager to get on the air, build your own equipment, or participate in l
 
 * **Step 1: Check Out Our Welcome Guide:** Read through our official **[New Member Welcome Kit](../welcome-kit/)** to see how our regional infrastructure runs and how to apply.
 * **Step 2: Join a Meeting:** Guests are always welcome! Check the homepage schedule to see if our next alternating session is at the Calabash EMS Building or the BEMC Headquarters in Supply.
+
+---
+
+## 📽️ BSARC Presentations & Educational Seminars
+
+Want to dive deeper into modern amateur radio technology? Browse slide decks, custom web presentations, and project walkthroughs delivered by club members during our monthly meetings:
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; font-family: sans-serif;">
+
+  <div style="border: 1px solid #cfd8dc; border-radius: 8px; padding: 20px; background: #f8fafc; display: flex; flex-direction: column; justify-content: space-between; border-left: 5px solid #1a365d;">
+    <div>
+      <span style="font-size: 11px; font-weight: bold; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Featured Presentation</span>
+      <h3 style="margin: 6px 0 10px 0; color: #1a365d; font-size: 16px; font-weight: bold;">AI & Modern DSP in the Radio Shack</h3>
+      <p style="font-size: 12.5px; color: #475569; margin: 0 0 15px 0; line-height: 1.4;">
+        Presented by <strong>Mark Sergent (KA4EVR)</strong> — An introduction to utilizing machine learning algorithms, artificial intelligence, and digital signal processing (DSP) tools to clean up weak signals and enhance shack operations.
+      </p>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <a href="/presentations/ai-dsp-radio-shack.html" target="_blank" style="display: inline-block; padding: 8px 14px; background-color: #1a365d; color: white; font-size: 12px; font-weight: bold; text-decoration: none; border-radius: 4px;">Launch Deck ↗</a>
+    </div>
+  </div>
+
+</div>

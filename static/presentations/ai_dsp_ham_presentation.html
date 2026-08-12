@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI & Modern DSP in the Radio Shack - BSARC</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background-color: #050b14;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(135deg, #0b1329 0%, #050b14 100%);
+            border: 2px solid #1e293b;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            position: relative;
+            overflow: hidden;
+            display: none;
+            padding: 40px 50px;
+        }
+
+        .slide-container.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Ambient Glow & Accent Bar */
+        .top-accent-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #38bdf8, #10b981, #6366f1);
+        }
+
+        /* Slide Header */
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        .slide-title {
+            font-size: 26pt;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .slide-title span {
+            color: #38bdf8;
+        }
+
+        .slide-meta {
+            font-size: 11pt;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Slide Content Area */
+        .slide-body {
+            flex: 1;
+            display: flex;
+            gap: 30px;
+        }
+
+        /* Two-column layout */
+        .col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Cards and Containers */
+        .card {
+            background-color: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-header-emerald {
+            color: #10b981;
+        }
+
+        .card-header-amber {
+            color: #f59e0b;
+        }
+
+        /* List Items */
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 12pt;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        li strong {
+            color: #ffffff;
+        }
+
+        /* Code/Diagram Box */
+        .diagram-box {
+            background-color: #020617;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            padding: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10.5pt;
+            color: #38bdf8;
+            text-align: center;
+            margin: 10px 0;
+            line-height: 1.4;
+        }
+
+        /* Tables inside slides */
+        .slide-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .slide-table th {
+            background-color: #020617;
+            color: #38bdf8;
+            padding: 10px;
+            text-align: left;
+            font-size: 11pt;
+            border-bottom: 2px solid #334155;
+            text-transform: uppercase;
+        }
+
+        .slide-table td {
+            padding: 10px;
+            border-bottom: 1px solid #1e293b;
+            font-size: 11pt;
+            color: #cbd5e1;
+        }
+
+        /* Navigation Bar */
+        .controls {
+            margin-top: 15px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        button {
+            background-color: #1e293b;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+
+        .slide-num {
+            color: #94a3b8;
+            font-size: 12pt;
+            font-weight: 600;
+        }
+
+        /* Title Slide Layout */
+        .title-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            font-size: 40pt;
+            font-weight: 900;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+            letter-spacing: -1px;
+        }
+
+        .title-slide h1 span {
+            color: #38bdf8;
+        }
+
+        .title-slide h2 {
+            font-size: 18pt;
+            color: #94a3b8;
+            font-weight: 400;
+            margin: 0 0 40px 0;
+        }
+
+        .badge-tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 11pt;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: TITLE SLIDE -->
+    <div class="slide-container active title-slide">
+        <div class="top-accent-bar"></div>
+        <div class="badge-tag">BSARC 20-Minute Technical Session</div>
+        <h1>AI & Modern DSP <span>In The Radio Shack</span></h1>
+        <h2>Extracting Weak Signals & Overcoming Local RFI with Neural DSP</h2>
+        <div style="font-size: 12pt; color: #64748b; margin-top: 30px;">
+            Brunswick Sciences & Amateur Radio Club • Presented for Tonight's Meeting
+        </div>
+    </div>
+
+    <!-- SLIDE 2: THE SHIFTING RF LANDSCAPE -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">1. The Shifting <span>RF Noise Landscape</span></div>
+            <div class="slide-meta">Background & Problem</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Traditional DSP Limits</div>
+                    <ul>
+                        <li><strong>Fixed Filtering:</strong> Standard IIR/FIR and crystal filters rely on fixed bandwidths and mathematical notches.</li>
+                        <li><strong>Static Assumptions:</strong> Legacy noise blankers work well on steady ignition pulses but fail against complex, modern household EMI.</li>
+                        <li><strong>Audio Artifacts:</strong> Heavy hardware DSP creates hollow, "underwater" audio artifacts on weak voice signals.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-emerald">The AI & Neural DSP Paradigm</div>
+                    <ul>
+                        <li><strong>Data-Driven Recognition:</strong> Neural networks are trained on thousands of hours of speech and RF noise samples.</li>
+                        <li><strong>Non-Stationary RFI Removal:</strong> Instantly adapts to shifting solar inverters, LED switching supplies, and HVAC blowers.</li>
+                        <li><strong>Formant Reconstruction:</strong> Subtracts the non-speech noise background while preserving human vocal clarity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: NEURAL AUDIO NOISE SUPPRESSION -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">2. Neural <span>Audio Suppression</span></div>
+            <div class="slide-meta">Voice Isolation Engines</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">How Neural Filters Work</div>
+                    <ul>
+                        <li><strong>Deep Learning Models:</strong> Tools like <strong>RM Noise</strong> and <strong>DeepFilterNet</strong> use real-time spectral masking.</li>
+                        <li><strong>Sub-20ms Latency:</strong> Runs locally on standard shack PCs without delay, enabling full-duplex SSB ragchewing.</li>
+                        <li><strong>25–30 dB Attenuation:</strong> Drops broadband hash to zero while leaving buried voice formants intelligible.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-amber">Live Audio Path Setup</div>
+                    <div class="diagram-box">
+                        [Radio Audio Out]<br>
+                        ↓ (USB / 3.5mm Aux Cable)<br>
+                        [PC Sound Input]<br>
+                        ↓<br>
+                        [AI DSP Neural Filter Software]<br>
+                        ↓<br>
+                        [Shack Headphones / Speaker]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: WATERFALL AI & COMPUTER VISION -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">3. Spectrum <span>Computer Vision</span></div>
+            <div class="slide-meta">Waterfall Intelligence</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Automated Signal Detection</div>
+                    <ul>
+                        <li><strong>CNN Spectrum Scanners:</strong> Convolutional Neural Networks analyze SDR waterfall images in real-time.</li>
+                        <li><strong>Mode Classification:</strong> Instantly identifies FT8, VaraC, CW, RTTY, and SSB traces with >90% accuracy.</li>
+                        <li><strong>Automated Routing:</strong> Automatically tunes receivers and launches corresponding decoders (WSJT-X, FLdigi).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-emerald">Benefits for the Shack</div>
+                    <ul>
+                        <li><strong>Wideband Monitoring:</strong> Continuously monitors entire bands for rare DX without manual scanning.</li>
+                        <li><strong>Accessibility Aid:</strong> Assists hams with visual or hearing limitations by highlighting faint signals visually.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: AI PROPAGATION FORECASTING -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">4. ML-Powered <span>Propagation Models</span></div>
+            <div class="slide-meta">Dynamic Predictions</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Legacy VOACAP vs. AI Forecasting</div>
+                    <ul>
+                        <li><strong>Legacy Limits:</strong> Classic models rely on smoothed monthly sunspot averages and miss 15-minute band openings.</li>
+                        <li><strong>Real-Time Data Streams:</strong> AI aggregators pull live telemetry from RBN (Reverse Beacon Network), PSKreporter, and WSPR.</li>
+                        <li><strong>Space Weather Integration:</strong> Blends live geomagnetic (Kp and Ap) indices and solar wind satellite feeds.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-amber">Hyper-Local Openings</div>
+                    <ul>
+                        <li>Calculates exact propagation probability for specific station-to-station paths.</li>
+                        <li>Tells operators precisely when and where to move bands for 10m–15m openings or nighttime 40m low-band DX.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: CASE STUDY - HOA ATTIC ANTENNAS -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">5. Case Study: <span>HOA Attic Antennas</span></div>
+            <div class="slide-meta">Overcoming Indoor EMI</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">The HOA Attic Antenna Challenge</div>
+                    <ul>
+                        <li><strong>Submerged in Noise:</strong> Attic EFHW/dipoles live inside the home's RFI envelope (LEDs, solar, HVAC).</li>
+                        <li><strong>The S8-S9 Hash:</strong> Weak S3–S4 DX signals are completely buried under broadband switching noise.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-emerald">The AI Neural Solution</div>
+                    <ul>
+                        <li><strong>25–30 dB Noise Reduction:</strong> Neural network drops non-speech hash to total silence.</li>
+                        <li><strong>Result:</strong> Extracts the S3 voice signal clearly without altering the radio's RF performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: NEW - HARDWARE INTEGRATION (FTDX10 vs LEGACY) -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">6. Shack Integration: <span>FTDX10 vs. Legacy Rig</span></div>
+            <div class="slide-meta">Hardware Interface Guide</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Modern Rig (e.g., Yaesu FTDX10)</div>
+                    <div class="diagram-box">Single USB Cable ➔ USB AUDIO CODEC</div>
+                    <ul>
+                        <li><strong>Connection:</strong> Single USB cable handles CAT control and 24-bit audio stream.</li>
+                        <li><strong>Menu Config:</strong> <code>FUNC</code> ➔ <code>RADIO SETTING</code> ➔ <code>USB OUT LEVEL</code> (Set to 30%–40%).</li>
+                        <li><strong>Layered DSP:</strong> Combine FTDX10 roofing filters/DNR with PC AI processing.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-emerald">Legacy Analog Rig (e.g., TS-450)</div>
+                    <div class="diagram-box">3.5mm Aux Cable ➔ PC Line In / Sound Card</div>
+                    <ul>
+                        <li><strong>Connection:</strong> 3.5mm cable from Headphone jack or rear ACC port to PC Line In.</li>
+                        <li><strong>Gain Staging:</strong> Set radio volume to 9–10 o'clock to avoid clipping PC input.</li>
+                        <li><strong>Replaces Missing DSP:</strong> Brings modern AI noise reduction to 30-year-old radios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: QUICK START SETUP GUIDE -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">7. Quick-Start <span>Shack Implementation</span></div>
+            <div class="slide-meta">3-Step Setup</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Software Workflow</div>
+                    <ul>
+                        <li><strong>Step 1 (Audio Input):</strong> Select <code>Line (USB AUDIO CODEC)</code> or <code>Line In</code> as input in AI software.</li>
+                        <li><strong>Step 2 (AI Engine):</strong> Launch <strong>RM Noise</strong> or <strong>DeepFilterNet</strong> and set slider to 100% filtered.</li>
+                        <li><strong>Step 3 (Listen):</strong> Route clean output to PC headphones or external shack speaker.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-amber">Operating Strategy for RFI</div>
+                    <ul>
+                        <li><strong>1. ATT / RF Gain:</strong> Back off RF Gain slightly if local noise pegs the S-meter.</li>
+                        <li><strong>2. Clean Levels:</strong> Ensure audio reaching the PC peaks between -12 dB and -6 dB.</li>
+                        <li><strong>3. Engage AI:</strong> Enjoy whisper-quiet background audio on weak SSB contacts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: DISCUSSION & Q&A -->
+    <div class="slide-container">
+        <div class="top-accent-bar"></div>
+        <div class="slide-header">
+            <div class="slide-title">8. Club <span>Discussion & Q&A</span></div>
+            <div class="slide-meta">Wrap-Up</div>
+        </div>
+        <div class="slide-body">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Prompts for the Room</div>
+                    <ul>
+                        <li><strong>1. Local Noise Sources:</strong> What indoor/neighborhood RFI sources are giving your shack the most trouble right now?</li>
+                        <li><strong>2. Operator Skill vs. Automation:</strong> Where do we draw the line between operator filtering skill and software automation?</li>
+                        <li><strong>3. Compromised Antennas:</strong> How many members are currently running stealth/attic antennas in HOA areas?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="controls">
+        <button onclick="prevSlide()">❮ Previous</button>
+        <span class="slide-num" id="slideNum">Slide 1 of 9</span>
+        <button onclick="nextSlide()">Next ❯</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide-container');
+        const slideNumDisplay = document.getElementById('slideNum');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            slideNumDisplay.textContent = `Slide ${index + 1} of ${slides.length}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'Space') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
