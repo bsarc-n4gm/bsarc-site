@@ -1,6 +1,5 @@
 ---
-title: "Winlink Exercise #023: The Winlink Developers have added a new feature to Winlink Express. The new feature is AI. 
-The objective for this exercise will be to examine this new feature and use it to familiarize ourselves with its use."
+title: "Winlink Exercise #023: For this exercise we will go back and practice creating and sending local weather reports to our served agency."
 date: 2026-08-17
 draft: false
 description: "For the exercise #023 we will go back to our roots and do a local weather report."
