@@ -27,6 +27,11 @@ enableRobotsTXT = true
   # This built-in setting strips the text overlay off the main banner:
   omit_header_text = true
 
+[[params.ananke_socials]]
+  name = "facebook"
+  url = "https://www.facebook.com/groups/1458384320857220"
+  label = "BSARC Facebook Group"
+
 [[menu.main]]
   name = "Home"
   url = "/"
