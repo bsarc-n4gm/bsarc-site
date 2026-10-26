@@ -32,7 +32,12 @@ alt = "Brunswick Shores ARC Banner"
 [welcome]
 heading = "Welcome to N4GM"
 subheading = "Brunswick Shores Amateur Radio Club"
-text = "Welcome to the digital home of the Brunswick Shores Amateur Radio Club (BSARC). We serve the amateur radio community in southeastern North Carolina, supporting emergency communications (ARES/RACES) and promoting the hobby through community events, testing, and regular nets."
+#text = "Welcome to the digital home of the Brunswick Shores Amateur Radio Club (BSARC). We serve the amateur radio community in southeastern North Carolina, supporting emergency communications (ARES/RACES) and promoting the hobby through community events, testing, and regular nets."
+text = """
+Welcome to the digital home of the Brunswick Shores Amateur Radio Club (BSARC). We serve the amateur radio community in southeastern North Carolina, supporting emergency communications (ARES/RACES) and promoting the hobby through community events, testing, and regular nets.
+
+**🍂 Fall On The Air:** With cooler weather rolling in, it's peak operating season across coastal Carolina! Join us for our weekly local nets, upcoming club gatherings, and outdoor operating events. Check out our schedule below or stop by our next meeting to say hello.
+"""
 last_updated = "October 25, 2026"
 
 
