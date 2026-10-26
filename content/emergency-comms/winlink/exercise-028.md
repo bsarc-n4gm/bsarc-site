@@ -1,5 +1,7 @@
 ---
-title: "Winlink Exercise #028: For this exercise, we will work with the Winlink USGS DYFI (“Did You Feel It?”)."
+title: "Winlink Exercise #028:For the exercise #028 we are going to research how many communication
+modes (Session) that Winlink Express offers that do not need the Internet to
+send a message to another Winlink user."
 date: 2026-10-26
 draft: false
 description: "For the exercise #028 we are going to research how many communication
