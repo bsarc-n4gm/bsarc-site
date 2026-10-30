@@ -63,5 +63,3 @@ To best serve members spanning both sides of the county, our meeting venues alte
 2. **Calabash EMS Building** (Calabash, NC)
 
 - 📬 **Questions?** Contact our club secretary at [bsarc.sec@gmail.com](mailto:bsarc.sec@gmail.com).
-
-<p style="font-size: 11px; color: #888888; text-align: center; margin-top: 30px;">This page last revised: 10/30/2026</p>
